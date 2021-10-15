@@ -8,7 +8,7 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 
 ### Research Experience
 
-#### Working Paper
+#### Working on progress
 - An Accounting of the Decline in China’s Trade
 
 #### Publication
@@ -22,21 +22,18 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 ### Teaching Experience
 #### Teaching Assistant
 
-Teaching Assistant for Professor Polly Hardee, Macroeconomic Principles (Undergrad), University of Houston, Fall 2019
+- Teaching Assistant for Professor Polly Hardee, Macroeconomic Principles (Undergrad), University of Houston, Fall 2019
 
-Teaching Assistant for Professor Polly Hardee, Money, Banking & Financial Markets (Undergrad), University of Houston, spring 2020
+- Teaching Assistant for Professor Polly Hardee, Money, Banking & Financial Markets (Undergrad), University of Houston, spring 2020
 
-Teaching Assistant and Homework Instructor for Professor Vikram Maheshri, Quantitative Methods (Ph.D.), University of Houston, Fall 2020
+- Teaching Assistant and Homework Instructor for Professor Vikram Maheshri, Quantitative Methods (Ph.D.), University of Houston, Fall 2020
 
-Teaching Assistant and Homework Instructor for Professor Nathan Canen, Econometrics I (Ph.D.), University of Houston, Spring 2021
+- Teaching Assistant and Homework Instructor for Professor Nathan Canen, Econometrics I (Ph.D.), University of Houston, Spring 2021
 
-Teaching Assistant for Professor Ruxandra Prodan Boul, International Monetary Economics (Undergrad), University of Houston, Fall 2021
+- Teaching Assistant for Professor Ruxandra Prodan Boul, International Monetary Economics (Undergrad), University of Houston, Fall 2021
 
-
-
-Research Assistant for Professor Kei-Mu Yi, University of Houston, Summer 2021
-
-
-...
 #### Reaserch Assistant
+- Research Assistant for Professor Kei-Mu Yi, University of Houston, Summer 2021
+
 #### Instructor
+-
