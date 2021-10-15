@@ -1,8 +1,10 @@
-   
-   theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
+
 title: Yang Pei
-description: 
+description: Here is my <a href="ypei5@uh.edu">Email</a>.
+
+logo: img/profile_pic.jpg
+
 show_downloads: false
 github:
   is_project_page: false
-logo: /img/profile_pic.jpg
