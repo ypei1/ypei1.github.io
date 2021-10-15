@@ -6,6 +6,12 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 
 *Please check back for updates to [this site](https://www.yang-pei.com) soon.*
 
+### Education
+- Ph.D. Candidate in Economics, University of Houston, expected graduation: June 2024, 2019 - Present
+- M.A. in Economics, Central University of Finance and Economics, 2016-2019
+- B. S. in Statistics, Anhui University, 2011-2015
+- Studied towards B. S. in Applied Mathematics, University of Science and Technology of China, 2012-2013
+
 ### Research Experience
 
 #### Working on progress
