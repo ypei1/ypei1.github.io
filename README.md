@@ -20,6 +20,7 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
   Ouyang Alice Y., Liu Xuan, Pei Yang*, The Effects of Macro-prudential Policies on Bank Efficiency and Profitability: Evidence from the Micro-data of Chinese Banks.
   
 ### Teaching Experience
+
 #### Teaching Assistant
 
 - Teaching Assistant for Professor Polly Hardee, Macroeconomic Principles (Undergrad), University of Houston, Fall 2019
@@ -33,7 +34,9 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 - Teaching Assistant for Professor Ruxandra Prodan Boul, International Monetary Economics (Undergrad), University of Houston, Fall 2021
 
 #### Reaserch Assistant
+
 - Research Assistant for Professor Kei-Mu Yi, University of Houston, Summer 2021
 
 #### Instructor
+
 -
