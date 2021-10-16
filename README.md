@@ -6,12 +6,6 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 
 *Please check back for updates to [this site](https://www.yang-pei.com) soon.*
 
-### Education
-- Ph.D. Candidate in Economics, University of Houston, expected graduation: June 2024, 2019 - Present
-- M.A. in Economics, Central University of Finance and Economics, 2016-2019
-- B. S. in Statistics, Anhui University, 2011-2015
-- Studied towards B. S. in Applied Mathematics, University of Science and Technology of China, 2012-2013
-
 ### Research Experience
 
 #### Working on progress
@@ -29,15 +23,15 @@ Download my [CV](/cv/YANGPEI_cv.pdf).
 
 #### Teaching Assistant
 
-- Teaching Assistant for Professor Polly Hardee, Macroeconomic Principles (Undergrad), University of Houston, Fall 2019
+- Macroeconomic Principles (Undergrad) for Professor Polly Hardee, University of Houston, Fall 2019
 
-- Teaching Assistant for Professor Polly Hardee, Money, Banking & Financial Markets (Undergrad), University of Houston, spring 2020
+- Money, Banking & Financial Markets (Undergrad) for Professor Polly Hardee, University of Houston, spring 2020
 
-- Teaching Assistant and Homework Instructor for Professor Vikram Maheshri, Quantitative Methods (Ph.D.), University of Houston, Fall 2020
+- Quantitative Methods (Ph.D.) for Professor Vikram Maheshri, University of Houston, Fall 2020
 
-- Teaching Assistant and Homework Instructor for Professor Nathan Canen, Econometrics I (Ph.D.), University of Houston, Spring 2021
+- Econometrics I (Ph.D.) for Professor Nathan Canen, University of Houston, Spring 2021
 
-- Teaching Assistant for Professor Ruxandra Prodan Boul, International Monetary Economics (Undergrad), University of Houston, Fall 2021
+- International Monetary Economics (Undergrad) for Professor Ruxandra Prodan Boul, University of Houston, Fall 2021
 
 #### Reaserch Assistant
 
