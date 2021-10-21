@@ -1,6 +1,6 @@
 ## Welcome to my site
 
-I am Yang Pei, a Ph.D. candidate in the Department of Economics at the University of Houston. My research interests are in International Trade, International Finance, China Economy.
+I am Yang Pei, a Ph.D. candidate in the Department of Economics at the University of Houston. My research interests are in My research interests are in International Trade, International Macro/Finance, Macroeconomics.
 
 Download my [CV](/cv/YANGPEI_cv.pdf).
 
