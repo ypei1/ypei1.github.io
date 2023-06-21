@@ -5,12 +5,15 @@ permalink: others/
 author_profile: true
 ---
 # VISUALIZATION Tools
+## https://www.data-to-viz.com/graph/edge_bundling.html         https://www.data-to-viz.com/graph/chord.html
+## https://d3js.org/
 ## https://geonetworks.github.io/
 ## http://vis.stanford.edu/
 ## http://idl.cs.washington.edu/
 ## https://library.unc.edu/data/network-visualization/
 ## https://mohitmayank.com/projects/
-## 
+## https://journals.library.ualberta.ca/istl/index.php/istl/article/view/2600/2615
+
 <!--   
  
  
