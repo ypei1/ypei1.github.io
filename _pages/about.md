@@ -29,14 +29,14 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>.
     This research project takes advantage of high frequent consumer spending data as well as daily newspaper sentiment to investigate the impact of various consumer expectations on their spending behavior. The research design of this project consists of two parts: First, using a regression discontinuity method around the date of Pfizer's vaccine announcement to identify the impact of consumer expectation on actual spending during COVID-19. Second, implementing a VAR analysis to characterize the long-run dynamics of various consumer expectations (public health, income and unemployment) and changes in daily spending. Finally, we found empirical evidence that Pfrizer's95% efficacy rate of vaccine boosts all sectors' consumer spending by 3.2%. Grocery and food delivery sector's spending serves as the driving force of this increase. Secondly, the VAR analysis found public health sentiment is significant to life necessities related spending but insignificant to recreational spending. Most interestingly, the VAR results also provide the suggestive evidence on the heterogeneous responses of high vs. low-income group consumers. More precisely, we believe income sentiment is representative to high income consumers, while unemployment sentiment is more representative to low-income consumers.
   </details>
   
-- The Effects of Macro-prudential Policies on Bank Effciency and Profitability  ( joint with [Jifan Wang](https://gufaculty360.georgetown.edu/s/contact/0031Q00002Nq2l1QAB/jifan-wang). )  
+- The Effects of Macro-prudential Policies on Bank Effciency and Profitability  
   <details>
   <summary>Abstract</summary>
     We want to know how Chinese banks response to different kinds of macro-prudential regulations, such as capital requirement, legal reserve requirement, loan-to-value (LTV) ratio, liquidity requirement, risk exposure, and etc. How does the implementation of these policies affect the actual capital requirement, liquidity and risk exposure of banks? We extend the work from Shim (2010) and Jokipii and Milne (2011), and build a simultaneous equations model to examine the inter-relationship among banks' capital requirement, liquidity requirement and capital quality. We then extend the model from Bitar et al. (2018) and argue that banks' profitability, effciency and risk are determined by banks' capital structure, liquidity condition, capital quality, and other control variables that may affect these indicators. We estimate how the implementation of macroprudential policies affect banks' balance sheet, i.e. actual capital requirement, liquidity and risk exposure.
   </details>
   
 ### Working in Progress 
-- Accounting for the China's Province Level Border Effects <br>
+- Accounting for the China's Province Level Border Effects ( joint with [Jifan Wang](https://gufaculty360.georgetown.edu/s/contact/0031Q00002Nq2l1QAB/jifan-wang). )   <br>
 - China's VAT Reforms, Distortions, and Intranational Trade
   
 
