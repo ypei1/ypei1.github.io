@@ -39,16 +39,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>.
 - Accounting for the China's Province Level Border Effects ( joint with [Jifan Wang](https://gufaculty360.georgetown.edu/s/contact/0031Q00002Nq2l1QAB/jifan-wang). )   <br>
 - China's VAT Reforms, Distortions, and Intranational Trade
   
-
-
-
-
-
-
-
  
-
-
 <!-- ---
 permalink: /markdown/
 title: "Markdown"
