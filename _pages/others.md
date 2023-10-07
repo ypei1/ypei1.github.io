@@ -4,8 +4,24 @@ title: ""
 permalink: others/
 author_profile: true
 ---
+
+# Solve Eaton Kortum model or Caliendo Parro model (Only labor inputs).
+  <details>
+  <summary>Code and Notes</summary>
+  [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/1.simpleEKJ) 
+  </details>
+
+# Solve Eaton Kortum model or Caliendo Parro model (with labor and capital as inputs).
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
+  </details>
+
+
 # VISUALIZATION Tools
-## https://www.data-to-viz.com/graph/edge_bundling.html         https://www.data-to-viz.com/graph/chord.html
+  <details>
+  <summary>Detail</summary>
+  ## https://www.data-to-viz.com/graph/edge_bundling.html         https://www.data-to-viz.com/graph/chord.html
 ## https://d3js.org/
 ## https://geonetworks.github.io/
 ## http://vis.stanford.edu/
@@ -13,6 +29,9 @@ author_profile: true
 ## https://library.unc.edu/data/network-visualization/
 ## https://mohitmayank.com/projects/
 ## https://journals.library.ualberta.ca/istl/index.php/istl/article/view/2600/2615
+
+  </details>
+
 
 <!--   
  
