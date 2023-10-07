@@ -5,31 +5,30 @@ permalink: others/
 author_profile: true
 ---
 
-# Solve Eaton Kortum model or Caliendo Parro model (Only labor inputs).
+### Solve Eaton Kortum model or Caliendo Parro model (Only labor inputs).
   <details>
   <summary>Code and Notes</summary>
   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/1.simpleEKJ) 
   </details>
 
-# Solve Eaton Kortum model or Caliendo Parro model (with labor and capital as inputs).
+### Solve Eaton Kortum model or Caliendo Parro model (with labor and capital as inputs).
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
   </details>
 
 
-# VISUALIZATION Tools
+### VISUALIZATION Tools
   <details>
   <summary>Detail</summary>
-  ## https://www.data-to-viz.com/graph/edge_bundling.html         https://www.data-to-viz.com/graph/chord.html
-## https://d3js.org/
-## https://geonetworks.github.io/
-## http://vis.stanford.edu/
-## http://idl.cs.washington.edu/
-## https://library.unc.edu/data/network-visualization/
-## https://mohitmayank.com/projects/
-## https://journals.library.ualberta.ca/istl/index.php/istl/article/view/2600/2615
-
+#### https://www.data-to-viz.com/graph/edge_bundling.html         https://www.data-to-viz.com/graph/chord.html
+#### https://d3js.org/
+#### https://geonetworks.github.io/
+#### http://vis.stanford.edu/
+#### http://idl.cs.washington.edu/
+#### https://library.unc.edu/data/network-visualization/
+#### https://mohitmayank.com/projects/
+#### https://journals.library.ualberta.ca/istl/index.php/istl/article/view/2600/2615
   </details>
 
 
