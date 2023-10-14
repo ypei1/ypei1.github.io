@@ -16,7 +16,26 @@ author_profile: true
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
   </details>
+  
+### FORTRAN and Computational Mathematics
+  <details>
+  <summary>Detail</summary>
+    
+    [Fortran](http://micro.ustc.edu.cn/Fortran/ZJDing/) 
+    
+    Computational Mathematics
+    
+    http://micro.ustc.edu.cn/CompPhy/lecturenote/comp_sun_1.pdf
+    
+    http://micro.ustc.edu.cn/CompPhy/lecturenote/comp_sun_2.pdf
+    
+    http://micro.ustc.edu.cn/CompPhy/lecturenote/comp_sun_3_4.pdf
 
+    http://home.ustc.edu.cn/~zegang/refbook/TaoPang.pdf
+
+    
+    
+  </details>
 
 ### VISUALIZATION Tools
   <details>
@@ -43,6 +62,7 @@ author_profile: true
 
 <!--   
  
+ http://home.ustc.edu.cn/~zegang/
  
 I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  I am interested in topics related to International trade, Spatial Economics, and Macroeconometrics.
 
