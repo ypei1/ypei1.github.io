@@ -25,6 +25,8 @@ author_profile: true
     
     Computational Mathematics
     
+    http://home.ustc.edu.cn/~zegang/refbook/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95%E5%92%8C%E7%AE%97%E6%B3%95.pdf
+    
     http://micro.ustc.edu.cn/CompPhy/lecturenote/comp_sun_1.pdf
     
     http://micro.ustc.edu.cn/CompPhy/lecturenote/comp_sun_2.pdf
