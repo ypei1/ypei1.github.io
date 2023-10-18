@@ -16,6 +16,14 @@ author_profile: true
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
   </details>
+
+### Slove Global Value Chain model (Sposi, Yi and Zhang 2022).
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/44d408fa7ed7381a58e7c583f3915619c88fde4c/3.%20Slove%20Global%20Value%20Chain%20model%20(Sposi%2C%20Yi%20and%20Zhang%202022))
+  </details>
+ 
+
   
 ### FORTRAN and Computational Mathematics
   <details>
