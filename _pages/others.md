@@ -4,6 +4,13 @@ title: ""
 permalink: others/
 author_profile: true
 ---
+## China Micro Survey Data (Password: 1234)
+ 
+ Here is the  [link]([https://github.com/academicpages/academicpages.github.io/commits/master](https://pan.baidu.com/s/1VgxPQ08eI2P6khzFyrDq6g?pwd=1234#list/path=%2Fsharelink3299619894-1073831843278149%2F1178%20%E5%BE%AE%E8%A7%82%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E5%88%86%E4%BA%AB%E5%90%88%E9%9B%86%2F%E5%BE%AE%E8%A7%82%E8%B0%83%E6%9F%A5%E6%95%B0%E6%8D%AE%E5%88%86%E4%BA%AB%E5%90%88%E9%9B%86%2Fmicro_raw_data&parentPath=%2Fsharelink3299619894-1073831843278149)) 
+ 
+ 
+
+
 
 ### Solve Eaton Kortum model or Caliendo Parro model (Only labor inputs).
   <details>
