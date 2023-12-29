@@ -19,12 +19,10 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 ### Working Paper
 - An Accounting of the Decline in China's Trade  
 
-- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )  
-
-- The Effects of Macro-prudential Policies on Bank Effciency and Profitability  
-
 ### Working in Progress 
-- Accounting for the China's Province Level Border Effects   <br>
+- Accounting for the China's Province-Level Border Effects   <br>
+- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )  
+- The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  
 - China's VAT Reforms, Distortions, and Intranational Trade
   
  
