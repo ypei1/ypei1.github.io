@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  I am interested in topics related to International economies, Spatial economics, Econometrics, and China economy. I am from [Hefei, Anhui, China](https://goo.gl/maps/nFJeT9D8u1xQcx4Z7)
+I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  I am interested in topics related to International economies, Spatial economics, Econometrics, and Chinese economy. I am from [Hefei, Anhui, China](https://goo.gl/maps/nFJeT9D8u1xQcx4Z7)
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
 
