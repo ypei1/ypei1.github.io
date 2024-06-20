@@ -20,11 +20,11 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 - An Accounting of the Decline in China's Trade  
 
 ### Working in Progress 
-- Accounting for the China's Province-Level Border Effects   <br>
-- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )  
-- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )  
-- The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  
-- China's VAT Reforms, Distortions, and Intranational Trade
+- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
+- Accounting for the China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
+- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
+- The Effects of Macro-prudential Policies on Bank Efficiency and Profitability    <br>
+- China's VAT Reforms, Distortions, and Intranational Trade   <br>
   
  
 <!-- ---
