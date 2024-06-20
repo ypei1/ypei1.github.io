@@ -21,6 +21,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 
 ### Working in Progress 
 - Accounting for the China's Province-Level Border Effects   <br>
+- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )  
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )  
 - The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  
 - China's VAT Reforms, Distortions, and Intranational Trade
