@@ -14,14 +14,17 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 
 ### Job Market Paper / Dissertation
 - Demographics, Growth, and Trade   
- [PDF](<a href="/files/JMP.pdf">PDF</a>) &nbsp; [Slides](<a href="/files/JMPslides.pdf">PDF</a>) 
+ [PDF](<a href="/files/JMP.pdf">PDF</a>) &nbsp; [Slides](<a href="/files/JMPslides.pdf">PDF</a>)
+
+
  
 ### Working Paper
-- An Accounting of the Decline in China's Trade  
+- An Accounting of the Decline in China's Trade
+- Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
+  draft coming soon
 
 ### Working in Progress 
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
-- Accounting for the China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
 - The Effects of Macro-prudential Policies on Bank Efficiency and Profitability    <br>
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
