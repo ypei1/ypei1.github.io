@@ -17,7 +17,7 @@ minimal_mistakes_skin  : "sunrise"  # ,"air""contrast" "aqua", "contrast", "mint
 locale                   : "en-US"
 title                    : "Yang Pei"
 title_separator          : "-"
-name                     : &name "Yang Pei"
+name                     : &name "Yang Pei (裴杨)"
 description              : &description "PhD Candidate in Economics at University of Houston  "
 url                      : https://ypei1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
