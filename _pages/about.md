@@ -19,7 +19,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 
  
 ### Working Paper
-- An Accounting of the Decline in China's Trade <a href="/files/2024TD1_5.pdf">PDF</a>
+- An Accounting of the Decline in China's Trade (<a href="/files/2024TD1_5.pdf">PDF</a>)
 - Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
   draft coming soon
 
