@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  I am interested in topics related to International economies, Spatial economics, Econometrics, and Chinese economy. I am from [Hefei, Anhui, China](https://goo.gl/maps/nFJeT9D8u1xQcx4Z7)
+I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  My research fields are international trade, spatial economics, the Chinese economy, and financial regulation. I focus my research on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic models) and empirical (micro-econometrics and time series) methods to analyze relevant topics. I am from [Hefei, Anhui, China](https://goo.gl/maps/nFJeT9D8u1xQcx4Z7)
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
 
 ### Job Market Paper / Dissertation
-- Demographics, Growth, and Trade   
+- Demographics, Trade, and Growth   
  [PDF](<a href="/files/JMP.pdf">PDF</a>) &nbsp; [Slides](<a href="/files/JMPslides.pdf">PDF</a>)
 
 
@@ -25,9 +25,9 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 
 ### Working in Progress 
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
+- China's VAT Reforms, Distortions, and Intranational Trade   <br>
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
 - The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  ( joint with [Alice Ouyang](https://scholar.google.com/citations?user=Db1HU5kAAAAJ&hl=zh-CN). )    <br>
-- China's VAT Reforms, Distortions, and Intranational Trade   <br>
   
  
 <!-- ---
