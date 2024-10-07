@@ -8,7 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  My research fields are international trade, Environmental economics, the Chinese economy, and financial regulation. I focus my research on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic models) and empirical (micro-econometrics and time series) methods to analyze relevant topics. I am from [Hefei, Anhui, China](https://goo.gl/maps/nFJeT9D8u1xQcx4Z7)
+I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  
+
+My research fields are International, Spatial, Macroeconomics and Financial Regulation. 
+
+I focus my research mainly on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
 
