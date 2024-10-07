@@ -3,8 +3,8 @@ title: "Instructor"
 collection: teaching
 type: "Instructor"
 permalink: /teaching/2023-09-01-instructor
-venue: "Until"
-date: 2023-09-04
+venue: " "
+date:  
 location: "Hosuton, USA"
 ---
 
