@@ -16,7 +16,7 @@ Education
 * Ph.D. Candidate in Economics, University of Houston Sep 2019 - Present
 * M.A. in Economics, University of Houston 2019-2021
 * M.A. in Economics, Central University of Finance and Economics 2016-2019
-* Joint Program on Applied Mathematics, University of Science and Technology of China 2012-2013
+* Exchange student in Applied Mathematics, University of Science and Technology of China 2012-2013
 * B. S. in Statistics, Anhui University 2011-2015
 
 Teaching Experience 
