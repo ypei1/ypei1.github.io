@@ -4,7 +4,7 @@ collection: teaching
 type: "Instructor"
 permalink: /teaching/2023-09-01-instructor
 venue: " "
-date:  
+date:  2022-10-28
 location: "Hosuton, USA"
 ---
 
