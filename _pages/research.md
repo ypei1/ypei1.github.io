@@ -29,7 +29,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  and  <a href="/files/YANGPEI_
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
 - The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  ( joint with [Alice Ouyang](https://scholar.google.com/citations?user=Db1HU5kAAAAJ&hl=zh-CN). )    <br>
   
-<!-- ---
+<!-- 
 ### Job Market Paper /  Dissertation
 - Demographics, Growth, and Trade   
  [PDF](http://example.com/) &nbsp; [Slides](/files/paper1.pdf)  <!--   [PDF](http://example.com/){: .btn} &nbsp; [Slides](/files/paper1.pdf){: .btn} -->
