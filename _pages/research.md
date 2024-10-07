@@ -5,7 +5,6 @@ permalink: projects/
 author_profile: true
 ---
 
-
 My research fields are International, Spatial, Macroeconomics and Financial Regulation. 
 
 I focus my research mainly on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
