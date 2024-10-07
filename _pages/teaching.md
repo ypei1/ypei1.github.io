@@ -8,21 +8,24 @@ author_profile: true
  
 
 
+### Teaching experiences
 ## Instructor
 - Principles of Microeconomics(Undergrad). Fall 2023 
   [Material available](http://example.com/) &nbsp; [Course Evaluation](/files/example.com.pdf)  
 - Principles of Microeconomics(Undergrad). Spring 2023 
   [Material available](http://example.com/) &nbsp; [Course Evaluation](/files/example.com.pdf)  
 - Principles of Microeconomics(Undergrad). Fall 2022
-  [Material available](http://example.com/) &nbsp; [Course Evaluation](/files/example.com.pdf)   
+  [Material available](http://example.com/) &nbsp; [Course Evaluation](/files/example.com.pdf)
+- Econometrics I (Ph.D.). Homework instructor. Spring 2021
+- Quantitative Methods (Ph.D.). Homework instructor. Fall 2020
 
 ## Teaching assistant
-- International Economics (Undergrad). Summer 2022 
-<!--     - Syllabus [here](https://github.com/ypei1/Applied-Econometrics){:target="_blank"} -->
+- International Economics (Undergrad). Summer 2022 <!--     - Syllabus [here](https://github.com/ypei1/Applied-Econometrics){:target="_blank"} -->
 - International Monetary Economics (Undergrad). Fall 2021
-- Econometrics I (Ph.D.). Spring 2021
-- Quantitative Methods (Ph.D.). Fall 2020
 - Money, Banking Financial Markets (Undergrad). spring 2020
 - Macroeconomic Principles (Undergrad). Fall 2019
+
+### Teaching materials
+- [Notes on Stochastic Process](https://ypei1.github.io/files/20240514_SP.pdf) &nbsp;  
 
  
