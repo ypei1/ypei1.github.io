@@ -14,8 +14,6 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  and  <a href="/files/Y
 ### Job Market Paper / Dissertation
 - Demographics, Trade, and Growth   
  [PDF](<a href="/files/JMP.pdf">PDF</a>) &nbsp; [Slides](<a href="/files/JMPslides.pdf">PDF</a>)
-
-
  
 ### Working Paper
 - An Accounting of the Decline in China's Trade (<a href="/files/2024TD1_5.pdf">PDF</a>)
