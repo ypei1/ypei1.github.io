@@ -14,7 +14,7 @@ My research fields are International, Spatial, Macroeconomics and Financial Regu
 
 I focus my research mainly on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
 
-Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
+Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
 ### Job Market Paper / Dissertation
 - Demographics, Trade, and Growth   
@@ -61,7 +61,7 @@ redirect_from:
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1383271884&auto=1&height=66"></iframe>
 
 ## Locations of key files/directories
-
+* and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
 * Basic config options: _config.yml
 * Top navigation bar config: _data/navigation.yml
 * Single pages: _pages/
