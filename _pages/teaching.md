@@ -27,6 +27,9 @@ author_profile: true
 - Macroeconomic Principles (Undergrad). Fall 2019
 
 ## Teaching materials
-- [Notes on Stochastic Process](https://ypei1.github.io/files/20240514_SP.pdf) &nbsp;  
+- [Notes on Stochastic Process](https://ypei1.github.io/files/20240514_SP.pdf) &nbsp;
+- [Notes on CES structure](https://ypei1.github.io/files/CES_notes.pdf) &nbsp;
+
+
 
  
