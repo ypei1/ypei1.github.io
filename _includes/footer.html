@@ -67,25 +67,22 @@ function siteTime(){
 
 
 
+
 <script>
 (async () => {
   try {
-    // 第一步：获取 IP 地址
     const ipRes = await fetch("https://api.ipify.org?format=json");
     const ipData = await ipRes.json();
     const ip = ipData.ip;
 
-    // 第二步：通过 IP 获取地理信息
     const geoRes = await fetch(`https://ip-api.com/json/${ip}`);
     const geo = await geoRes.json();
     const country = geo.country || "unknown";
     const city = geo.city || "unknown";
 
-    // 获取浏览器信息和当前页面路径
     const userAgent = navigator.userAgent;
     const path = window.location.pathname;
 
-    // 拼接查询字符串，传递到 Google Apps Script
     const query = new URLSearchParams({
       ip: ip,
       ua: userAgent,
@@ -94,12 +91,9 @@ function siteTime(){
       path: path
     });
 
-    // 调用 Google Apps Script，记录数据
     await fetch("https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec?" + query.toString());
-
   } catch (err) {
-    // 错误处理
-    console.error("日志记录失败：", err);
+    console.error("Logging failed:", err);
   }
 })();
 </script>
