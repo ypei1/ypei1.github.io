@@ -69,19 +69,34 @@ function siteTime(){
 
 
 <script>
-fetch("https://api.ipify.org?format=json")
-  .then(response => response.json())
-  .then(data => {
-    const ip = data.ip;
-    // 把IP发送到你的Google Apps Script接口
-    fetch("https://script.google.com/macros/s/AKfycbzKJmaqNsmySNpYxnDm_WV-9ulD9Kzz-7DT2QGP46O3JfBdl6r-ZmZZDo3P1wZuNJn0OQ/exec?ip=" + ip, {
-      method: "POST"
+(async () => {
+  try {
+    const ipRes = await fetch("https://api.ipify.org?format=json");
+    const ipData = await ipRes.json();
+    const ip = ipData.ip;
+
+    const geoRes = await fetch(`https://ip-api.com/json/${ip}`);
+    const geo = await geoRes.json();
+    const country = geo.country || "unknown";
+    const city = geo.city || "unknown";
+
+    const userAgent = navigator.userAgent;
+    const path = window.location.pathname;
+
+    const query = new URLSearchParams({
+      ip: ip,
+      ua: userAgent,
+      country: country,
+      city: city,
+      path: path
     });
-  });
+
+    await fetch("https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec?" + query.toString());
+  } catch (err) {
+    console.error("IP logging failed:", err);
+  }
+})();
 </script>
-
-  
-
   
 
 <script>
