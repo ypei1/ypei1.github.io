@@ -23,6 +23,8 @@
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }}
 
+
+
   
  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="sitetime"></span> <!--显示建站时间的地方放置此代码 可以加上其他代HTML代码加粗颜色等-->
@@ -62,6 +64,26 @@ function siteTime(){
 </span>
 
 
+
+
+
+
+<script>
+fetch("https://api.ipify.org?format=json")
+  .then(response => response.json())
+  .then(data => {
+    const ip = data.ip;
+    // 把IP发送到你的Google Apps Script接口
+    fetch("https://script.google.com/macros/s/AKfycbz-AYqtpagvufRvhnsZwcyJZ3lPAdj2uYBraaJgYXGayHvwdiU_Osc-8zRJ8-n2PSJsCA/exec?ip=" + ip, {
+      method: "POST"
+    });
+  });
+</script>
+
+ 
+
+
+  
 
 <script>
 fetch('https://api.ipify.org?format=json')
