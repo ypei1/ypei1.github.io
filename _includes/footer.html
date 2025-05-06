@@ -74,14 +74,13 @@ fetch("https://api.ipify.org?format=json")
   .then(data => {
     const ip = data.ip;
     // 把IP发送到你的Google Apps Script接口
-    fetch("https://script.google.com/macros/s/AKfycbz-AYqtpagvufRvhnsZwcyJZ3lPAdj2uYBraaJgYXGayHvwdiU_Osc-8zRJ8-n2PSJsCA/exec?ip=" + ip, {
+    fetch("https://script.google.com/macros/s/AKfycbzKJmaqNsmySNpYxnDm_WV-9ulD9Kzz-7DT2QGP46O3JfBdl6r-ZmZZDo3P1wZuNJn0OQ/exec?ip=" + ip, {
       method: "POST"
     });
   });
 </script>
 
- 
-
+  
 
   
 
