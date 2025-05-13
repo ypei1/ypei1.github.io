@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  
+I am a PhD student in Economics at the [University of Houston](https://www.uh.edu/class/economics/).  
 
-My research fields are International, Spatial, Macroeconomics and Financial Regulation. 
+My research fields are International and Macroeconomics. 
 
-I focus my research mainly on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
+My research focuses on analyzing economic interactions across space, quantifying their driving forces, and deriving policy implications. I use quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
