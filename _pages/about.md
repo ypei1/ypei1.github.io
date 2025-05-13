@@ -18,7 +18,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
 ### Job Market Paper / Dissertation
 - Demographics, Trade, and Growth   
- [PDF](<a href="/files/JMP.pdf">PDF</a>) &nbsp; [Slides](<a href="/files/JMPslides.pdf">PDF</a>)
+ [PDF](<a href="/files/JMPx.pdf">PDF</a>) &nbsp; [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
  
 ### Working Paper
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
