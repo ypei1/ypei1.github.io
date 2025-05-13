@@ -20,17 +20,17 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 - Demographics, Trade, and Growth   
  [Full Version](<a href="/files/JMPx.pdf">PDF</a>) &nbsp; [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
  
-### Working Paper
+### Selected Working Paper
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
 - Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
   draft coming soon
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
   draft coming soon
   
-### Working in Progress 
+### Selected Paper Working in Progress 
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
-- The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  ( joint with [Alice Ouyang](https://scholar.google.com/citations?user=Db1HU5kAAAAJ&hl=zh-CN). )    <br>
+ 
   
 
 ### Conference Presentations
@@ -57,7 +57,7 @@ redirect_from:
 <audio controls>
   <source src="/files/liangjian.mp3" type="audio/mp3">
 </audio>
-
+- The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  ( joint with [Alice Ouyang](https://scholar.google.com/citations?user=Db1HU5kAAAAJ&hl=zh-CN). )    <br>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1383271884&auto=1&height=66"></iframe>
 
 ## Locations of key files/directories
