@@ -30,7 +30,7 @@ author_profile: true
 - [Notes on Stochastic Process](https://ypei1.github.io/files/20240514_SP.pdf) &nbsp;
 - [Notes on CES structure](https://ypei1.github.io/files/CES_notes.pdf) &nbsp;
 - [Notes on DFS](https://ypei1.github.io/files/notes/20250422Yang_dfs.pdf) &nbsp;
-- [Notes on Bootstrap](https://ypei1.github.io/files/notes/bootstrap.pdf) &nbsp;
+- [Notes on Bootstrap](https://ypei1.github.io/files/bootstrap.pdf) &nbsp;
 
 
 
