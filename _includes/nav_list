@@ -46,11 +46,7 @@
 
 
 
-
- <button id="theme-toggle" title="切换模式"
-    style="margin-left:auto; background:none; border:none; font-size:1.2rem; cursor:pointer;">
-    🌓
-  </button>
+ 
 
 
 
