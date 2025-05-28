@@ -140,3 +140,17 @@ html[data-theme='dark'] video {
   background: transparent;
   box-shadow: none !important;
 }
+
+
+/* --- 🔧 修复 sidebar 简介文字发灰 --- */
+html[data-theme='dark'] .sidebar p,
+html[data-theme='dark'] .sidebar li,
+html[data-theme='dark'] .sidebar .contact__item {
+  color: #cccccc !important;
+}
+
+/* --- 🔧 修复位置图标颜色 --- */
+html[data-theme='dark'] .sidebar .contact__item svg,
+html[data-theme='dark'] .sidebar .contact__item i {
+  color: #999999 !important;
+}
