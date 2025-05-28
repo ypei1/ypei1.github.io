@@ -1,0 +1,11 @@
+// _custom.scss
+
+html[data-theme='dark'] {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #111 !important;
+}
+
+html[data-theme='dark'] img,
+html[data-theme='dark'] video {
+  filter: invert(1) hue-rotate(180deg);
+}
