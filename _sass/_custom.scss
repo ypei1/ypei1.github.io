@@ -111,3 +111,42 @@ html[data-theme='dark'] .page__footer {
   background-color: #1a1a1a;
   color: #999999;
 }
+
+
+
+
+
+
+
+// ==================== 💠 卡片美化和 hover 高亮 ====================
+
+html[data-theme='dark'] .sidebar,
+html[data-theme='dark'] .page,
+html[data-theme='dark'] .page__content {
+  border-radius: 12px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+html[data-theme='dark'] .sidebar:hover,
+html[data-theme='dark'] .page__content:hover {
+  box-shadow: 0 0 10px rgba(100, 255, 255, 0.1);
+}
+
+// ==================== 🎛️ 黑夜按钮切换动画 ====================
+
+#theme-toggle {
+  transition: transform 0.2s ease;
+}
+#theme-toggle:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+// ==================== 💻 代码块优化 ====================
+
+html[data-theme='dark'] pre,
+html[data-theme='dark'] code {
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: Consolas, Menlo, monospace;
+  font-size: 0.9rem;
+}
