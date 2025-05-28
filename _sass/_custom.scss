@@ -1,12 +1,14 @@
 // ===== 🌙 Dark Mode Styles for AcademicPages =====
 
-// 夜间模式整体背景 + 文字色
+// === 全局基础背景与文字 ===
 html[data-theme='dark'] {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-// 正文区域背景 + 文字
+// === 正文区域背景 + 文字 ===
+html[data-theme='dark'] body,
+html[data-theme='dark'] .site,
 html[data-theme='dark'] .page,
 html[data-theme='dark'] .page__content,
 html[data-theme='dark'] .archive,
@@ -14,10 +16,10 @@ html[data-theme='dark'] .archive__item,
 html[data-theme='dark'] .post,
 html[data-theme='dark'] .entry {
   background-color: #121212 !important;
-  color: #e0e0e0;
+  color: #e0e0e0 !important;
 }
 
-// 标题颜色
+// === 标题样式 ===
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -28,7 +30,7 @@ html[data-theme='dark'] h6 {
   font-weight: 600;
 }
 
-// 链接颜色
+// === 链接颜色 ===
 html[data-theme='dark'] a {
   color: #4dd0e1;
 }
@@ -37,21 +39,25 @@ html[data-theme='dark'] a:hover {
   text-decoration: underline;
 }
 
-// 代码块
+// === 代码块样式 ===
 html[data-theme='dark'] pre,
 html[data-theme='dark'] code {
   background-color: #1a1a1a;
   color: #80cbc4;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: Consolas, Menlo, monospace;
+  font-size: 0.9rem;
 }
 
-// 引用块
+// === 引用块样式 ===
 html[data-theme='dark'] blockquote {
   background-color: #1f1f1f;
   border-left: 4px solid #4fc3f7;
   color: #cccccc;
 }
 
-// 图片与视频不反转
+// === 图像/视频不反转 ===
 html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none !important;
@@ -59,34 +65,37 @@ html[data-theme='dark'] video {
   box-shadow: none !important;
 }
 
-// ==================== ✅ 导航栏修复 ====================
-html[data-theme='dark'] .masthead {
+// ====================== ✅ 顶部导航栏 ======================
+html[data-theme='dark'] body > header,
+html[data-theme='dark'] .site-header,
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav .visible-links {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
-  border-bottom: 1px solid #222;  // 更深更自然
+  border: none !important;
   box-shadow: none !important;
 }
-
 html[data-theme='dark'] .masthead__menu a,
-html[data-theme='dark'] .masthead__menu a:visited {
-  color: #4dd0e1 !important;     // 与正文链接一致
-  font-weight: 500;
+html[data-theme='dark'] .greedy-nav a {
+  color: #4dd0e1 !important;
 }
-
-html[data-theme='dark'] .masthead__menu a:hover {
-  color: #80deea !important;     // 与正文 hover 一致
+html[data-theme='dark'] .masthead__menu a:hover,
+html[data-theme='dark'] .greedy-nav a:hover {
+  color: #80deea !important;
   text-decoration: underline;
 }
 
-// ==================== ✅ 侧边栏修复 ====================
+// ====================== ✅ 侧边栏 ======================
 html[data-theme='dark'] .sidebar {
   background-color: #1a1a1a !important;
-  color: #e0e0e0;
+  color: #e0e0e0 !important;
   border-radius: 10px;
 }
+html[data-theme='dark'] .sidebar .contact__item,
 html[data-theme='dark'] .sidebar p,
-html[data-theme='dark'] .sidebar li,
-html[data-theme='dark'] .sidebar .contact__item {
+html[data-theme='dark'] .sidebar li {
   color: #cccccc !important;
 }
 html[data-theme='dark'] .sidebar a {
@@ -95,28 +104,16 @@ html[data-theme='dark'] .sidebar a {
 html[data-theme='dark'] .sidebar a:hover {
   color: #18ffff;
 }
-html[data-theme='dark'] .sidebar .contact__item.disabled {
-  color: #999999 !important;
-}
 html[data-theme='dark'] .sidebar .contact__item svg,
 html[data-theme='dark'] .sidebar .contact__item i {
-  color: #999999 !important;
-}
-html[data-theme='dark'] .sidebar .contact__item.disabled svg,
-html[data-theme='dark'] .sidebar .contact__item.disabled i {
-  color: #999999 !important;
-}
-html[data-theme='dark'] .sidebar .contact__item.disabled a {
-  color: #aaaaaa !important;
+  color: #64ffda !important;
 }
 
-// ==================== ✅ 页脚 ====================
+// ====================== ✅ 页脚 ======================
 html[data-theme='dark'] .page__footer {
   background-color: #1a1a1a;
   color: #999999;
 }
-
-
 
 
 
