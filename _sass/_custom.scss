@@ -1,12 +1,33 @@
- 
-
 
 html[data-theme='dark'] {
-  filter: invert(1) hue-rotate(180deg);
-  background-color: #111 !important;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] a {
+  color: #80cbc4;  // 柔和蓝绿色
+}
+
+html[data-theme='dark'] a:hover {
+  color: #4dd0e1;
+}
+
+html[data-theme='dark'] header,
+html[data-theme='dark'] nav,
+html[data-theme='dark'] footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .sidebar {
+  background-color: #1e1e1e;
+}
+
+html[data-theme='dark'] .page__footer {
+  background-color: #1a1a1a;
 }
 
 html[data-theme='dark'] img,
 html[data-theme='dark'] video {
-  filter: invert(1) hue-rotate(180deg);
+  filter: none;  // 不反色图像
 }
