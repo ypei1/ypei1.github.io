@@ -116,4 +116,18 @@ html[data-theme='dark'] .page__footer {
 }
 
 
+/* ✅ 暗黑模式下统一 sidebar 联系信息颜色，图标 + 文本都跟 Email 一样亮 */
+html[data-theme='dark'] .sidebar .contact__item,
+html[data-theme='dark'] .sidebar .contact__item a {
+  color: #64ffda !important;  /* Email 使用的蓝绿色 */
+}
+
+html[data-theme='dark'] .sidebar .contact__item svg,
+html[data-theme='dark'] .sidebar .contact__item i {
+  color: #64ffda !important;  /* 图标颜色统一 */
+}
+
+html[data-theme='dark'] .sidebar .contact__item a:hover {
+  color: #18ffff !important;  /* 悬停时颜色加亮 */
+}
 
