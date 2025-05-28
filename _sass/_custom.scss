@@ -232,3 +232,46 @@ html[data-theme='light'] {
   background-color: #ffffff;
   color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🌤 白天模式背景改为粉蓝色 (#B7DCEB) */
+html[data-theme='light'] {
+  background-color: #B7DCEB;
+  color: #111111; // 适合粉蓝背景的字体色，可调整为 #222 或 #333
+}
+
+html[data-theme='light'] .page,
+html[data-theme='light'] .page__content,
+html[data-theme='light'] .sidebar,
+html[data-theme='light'] .page__footer,
+html[data-theme='light'] .masthead,
+html[data-theme='light'] .site-header,
+html[data-theme='light'] body {
+  background-color: #B7DCEB !important;
+  color: #111 !important;
+}
+
+html[data-theme='light'] a {
+  color: #005f7f; // 链接色与背景协调
+}
+html[data-theme='light'] a:hover {
+  color: #0088aa;
+}
+
