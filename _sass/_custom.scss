@@ -73,15 +73,70 @@ html[data-theme='dark'] video {
 }
 
 
+/* --- 🔧 修复导航栏颜色不一致 --- */
 html[data-theme='dark'] .masthead {
-  background-color: #121212 !important;
+  background-color: #1a1a1a !important;
   color: #e0e0e0;
-  box-shadow: none;
   border-bottom: 1px solid #333;
+  box-shadow: none;
 }
 
-html[data-theme='dark'] img {
+/* 修复导航链接颜色太淡 */
+html[data-theme='dark'] .masthead__menu a,
+html[data-theme='dark'] .masthead__menu a:visited {
+  color: #80cbc4 !important;
+}
+html[data-theme='dark'] .masthead__menu a:hover {
+  color: #4dd0e1 !important;
+}
+
+/* --- 🔧 修复 sidebar 区块颜色和字体发灰 --- */
+html[data-theme='dark'] .sidebar {
+  background-color: #1a1a1a !important;
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .sidebar a {
+  color: #64ffda;
+}
+html[data-theme='dark'] .sidebar a:hover {
+  color: #18ffff;
+}
+
+html[data-theme='dark'] .sidebar .contact__item i,
+html[data-theme='dark'] .sidebar .contact__item svg {
+  color: #888 !important;
+}
+
+/* --- 🔧 修正文中字体浅、对比度不够 --- */
+html[data-theme='dark'] body,
+html[data-theme='dark'] .page,
+html[data-theme='dark'] .page__content {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  font-weight: 400;
+}
+
+/* --- ✅ 加强标题视觉对比 --- */
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3 {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* --- ✅ 链接统一蓝绿风格 --- */
+html[data-theme='dark'] a {
+  color: #4dd0e1;
+}
+html[data-theme='dark'] a:hover {
+  color: #80deea;
+}
+
+/* --- 🖼 图像和图标 --- */
+html[data-theme='dark'] img,
+html[data-theme='dark'] video {
   filter: none !important;
+  background: transparent;
   box-shadow: none !important;
-  background: transparent !important;
 }
