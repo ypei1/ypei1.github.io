@@ -290,3 +290,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Add this at the bottom or somewhere under 'Site Settings'
+toggle:
+  theme: true
