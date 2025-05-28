@@ -1,0 +1,18 @@
+/* Default light mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark mode override */
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #d4d4d4;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* 可选：为导航栏和链接也定义颜色 */
