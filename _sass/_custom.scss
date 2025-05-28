@@ -193,3 +193,31 @@ html[data-theme='dark'] body,
 html[data-theme='dark'] .site {
   background-color: #121212 !important;
 }
+
+
+
+// === 💣 彻底覆盖顶部白色条背景 ===
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .site-header,
+html[data-theme='dark'] .nav,
+html[data-theme='dark'] .site-nav,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav__toggle,
+html[data-theme='dark'] .greedy-nav .visible-links {
+  background-color: #121212 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// === 统一导航字体颜色（防止淡蓝变白）===
+html[data-theme='dark'] .masthead__menu a,
+html[data-theme='dark'] .greedy-nav a {
+  color: #4dd0e1 !important;
+}
+html[data-theme='dark'] .masthead__menu a:hover,
+html[data-theme='dark'] .greedy-nav a:hover {
+  color: #80deea !important;
+  text-decoration: underline;
+}
+
