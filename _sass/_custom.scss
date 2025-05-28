@@ -61,17 +61,21 @@ html[data-theme='dark'] video {
 
 // ==================== ✅ 导航栏修复 ====================
 html[data-theme='dark'] .masthead {
-  background-color: #1a1a1a !important;
-  color: #e0e0e0;
-  border-bottom: 1px solid #333;
-  box-shadow: none;
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  border-bottom: 1px solid #222;  // 更深更自然
+  box-shadow: none !important;
 }
+
 html[data-theme='dark'] .masthead__menu a,
 html[data-theme='dark'] .masthead__menu a:visited {
-  color: #80cbc4 !important;
+  color: #4dd0e1 !important;     // 与正文链接一致
+  font-weight: 500;
 }
+
 html[data-theme='dark'] .masthead__menu a:hover {
-  color: #4dd0e1 !important;
+  color: #80deea !important;     // 与正文 hover 一致
+  text-decoration: underline;
 }
 
 // ==================== ✅ 侧边栏修复 ====================
@@ -149,4 +153,8 @@ html[data-theme='dark'] code {
   padding: 0.5rem 0.75rem;
   font-family: Consolas, Menlo, monospace;
   font-size: 0.9rem;
+}
+
+html[data-theme='dark'] .masthead {
+  border-radius: 0 0 10px 10px;
 }
