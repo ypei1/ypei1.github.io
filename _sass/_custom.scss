@@ -158,3 +158,24 @@ html[data-theme='dark'] code {
 html[data-theme='dark'] .masthead {
   border-radius: 0 0 10px 10px;
 }
+
+
+// === 修复 sidebar 中图标和文字颜色，使其与 Email 一致 ===
+
+/* 所有联系项统一颜色（包括 GitHub 和 Location） */
+html[data-theme='dark'] .sidebar .contact__item {
+  color: #64ffda !important;              /* 设置文字颜色为 Email 同色 */
+}
+html[data-theme='dark'] .sidebar .contact__item a {
+  color: #64ffda !important;              /* 修复链接文本 */
+}
+html[data-theme='dark'] .sidebar .contact__item a:hover {
+  color: #18ffff !important;              /* 悬浮时颜色 */
+}
+
+/* 所有图标（例如 map-marker、GitHub 图标） */
+html[data-theme='dark'] .sidebar .contact__item svg,
+html[data-theme='dark'] .sidebar .contact__item i {
+  color: #64ffda !important;
+}
+
