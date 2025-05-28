@@ -202,3 +202,18 @@ html[data-theme='dark'] .page__footer {
     background-color: #121212;
   }
 }
+
+
+
+
+
+#theme-toggle svg {
+  transition: transform 0.3s ease;
+  color: #f9d71c;
+}
+#theme-toggle:hover svg {
+  transform: rotate(20deg) scale(1.1);
+}
+[data-theme='dark'] #theme-toggle svg {
+  color: #cccccc;
+}
