@@ -1,52 +1,71 @@
 (function () {
-  const isDark = () => document.documentElement.getAttribute('data-theme') === 'dark';
-  if (!isDark()) return;
+  function startStarCursor() {
+    let stars = [];
 
-  const canvas = document.createElement('canvas');
-  document.body.appendChild(canvas);
-  canvas.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;z-index:9999;';
-  const ctx = canvas.getContext('2d');
-  let width, height;
-  function resize() {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.style.position = "fixed";
+    canvas.style.left = 0;
+    canvas.style.top = 0;
+    canvas.style.pointerEvents = "none";
+    canvas.style.zIndex = 9999;
+    document.body.appendChild(canvas);
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    document.addEventListener("mousemove", e => {
+      for (let i = 0; i < 3; i++) {
+        stars.push({
+          x: e.clientX,
+          y: e.clientY,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+          life: 60,
+          color: `hsl(${Math.random() * 360}, 100%, 70%)`
+        });
+      }
+    });
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      for (let i = stars.length - 1; i >= 0; i--) {
+        const s = stars[i];
+        s.x += s.vx;
+        s.y += s.vy;
+        s.life--;
+        if (s.life <= 0) {
+          stars.splice(i, 1);
+          continue;
+        }
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, 2, 0, Math.PI * 2);
+        ctx.fillStyle = s.color;
+        ctx.fill();
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
   }
-  window.addEventListener('resize', resize);
-  resize();
 
-  const particles = [];
-  document.addEventListener('mousemove', e => {
-    for (let i = 0; i < 3; i++) {
-      particles.push({
-        x: e.clientX,
-        y: e.clientY,
-        alpha: 1,
-        size: Math.random() * 3 + 1,
-        dx: (Math.random() - 0.5) * 2,
-        dy: (Math.random() - 0.5) * 2,
-        color: `hsl(${Math.random() * 360}, 100%, 70%)`
-      });
+  // 如果已是 dark mode，立即执行
+  if (document.documentElement.getAttribute("data-theme") === "dark") {
+    startStarCursor();
+  }
+
+  // 听暗黑模式变化事件（支持切换后动态启用）
+  const observer = new MutationObserver(() => {
+    if (document.documentElement.getAttribute("data-theme") === "dark") {
+      if (!document.querySelector("canvas")) {
+        startStarCursor();
+      }
     }
   });
 
-  function draw() {
-    ctx.clearRect(0, 0, width, height);
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      ctx.globalAlpha = p.alpha;
-      ctx.fillStyle = p.color;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, 2 * Math.PI);
-      ctx.fill();
-      p.x += p.dx;
-      p.y += p.dy;
-      p.alpha -= 0.02;
-      if (p.alpha <= 0) {
-        particles.splice(i, 1);
-        i--;
-      }
-    }
-    requestAnimationFrame(draw);
-  }
-  draw();
+  observer.observe(document.documentElement, { attributes: true });
 })();
