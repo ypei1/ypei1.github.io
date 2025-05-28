@@ -1,144 +1,12 @@
-// // ===== 🌙 Dark Mode Styles for AcademicPages =====
+/* ===== 🌙 Dark Mode Styles for AcademicPages ===== */
 
-// // === 全局基础背景与文字 ===
-// html[data-theme='dark'] {
-//   background-color: #121212;
-//   color: #e0e0e0;
-// }
-
-// // === 正文区域背景 + 文字 ===
-// html[data-theme='dark'] body,
-// html[data-theme='dark'] .site,
-// html[data-theme='dark'] .page,
-// html[data-theme='dark'] .page__content,
-// html[data-theme='dark'] .archive,
-// html[data-theme='dark'] .archive__item,
-// html[data-theme='dark'] .post,
-// html[data-theme='dark'] .entry {
-//   background-color: #121212 !important;
-//   color: #e0e0e0 !important;
-// }
-
-// // === 标题样式 ===
-// html[data-theme='dark'] h1,
-// html[data-theme='dark'] h2,
-// html[data-theme='dark'] h3,
-// html[data-theme='dark'] h4,
-// html[data-theme='dark'] h5,
-// html[data-theme='dark'] h6 {
-//   color: #ffffff !important;
-//   font-weight: 600;
-// }
-
-// // === 链接颜色 ===
-// html[data-theme='dark'] a {
-//   color: #4dd0e1;
-// }
-// html[data-theme='dark'] a:hover {
-//   color: #80deea;
-//   text-decoration: underline;
-// }
-
-// // === 代码块样式 ===
-// html[data-theme='dark'] pre,
-// html[data-theme='dark'] code {
-//   background-color: #1a1a1a;
-//   color: #80cbc4;
-//   border-radius: 6px;
-//   padding: 0.5rem 0.75rem;
-//   font-family: Consolas, Menlo, monospace;
-//   font-size: 0.9rem;
-// }
-
-// // === 引用块样式 ===
-// html[data-theme='dark'] blockquote {
-//   background-color: #1f1f1f;
-//   border-left: 4px solid #4fc3f7;
-//   color: #cccccc;
-// }
-
-// // === 图像/视频不反转 ===
-// html[data-theme='dark'] img,
-// html[data-theme='dark'] video {
-//   filter: none !important;
-//   background: transparent;
-//   box-shadow: none !important;
-// }
-
-// // ====================== ✅ 顶部导航栏 ======================
-// html[data-theme='dark'] body > header,
-// html[data-theme='dark'] .site-header,
-// html[data-theme='dark'] .masthead,
-// html[data-theme='dark'] .masthead__inner-wrap,
-// html[data-theme='dark'] .greedy-nav,
-// html[data-theme='dark'] .greedy-nav .visible-links {
-//   background-color: #121212 !important;
-//   color: #e0e0e0 !important;
-//   border: none !important;
-//   box-shadow: none !important;
-// }
-// html[data-theme='dark'] .masthead__menu a,
-// html[data-theme='dark'] .greedy-nav a {
-//   color: #4dd0e1 !important;
-// }
-// html[data-theme='dark'] .masthead__menu a:hover,
-// html[data-theme='dark'] .greedy-nav a:hover {
-//   color: #80deea !important;
-//   text-decoration: underline;
-// }
-
-// // ====================== ✅ 侧边栏 ======================
-// html[data-theme='dark'] .sidebar {
-//   background-color: #1a1a1a !important;
-//   color: #e0e0e0 !important;
-//   border-radius: 10px;
-// }
-// html[data-theme='dark'] .sidebar .contact__item,
-// html[data-theme='dark'] .sidebar p,
-// html[data-theme='dark'] .sidebar li {
-//   color: #cccccc !important;
-// }
-// html[data-theme='dark'] .sidebar a {
-//   color: #64ffda;
-// }
-// html[data-theme='dark'] .sidebar a:hover {
-//   color: #18ffff;
-// }
-// html[data-theme='dark'] .sidebar .contact__item svg,
-// html[data-theme='dark'] .sidebar .contact__item i {
-//   color: #64ffda !important;
-// }
-
-// // ====================== ✅ 页脚 ======================
-// html[data-theme='dark'] .page__footer {
-//   background-color: #1a1a1a;
-//   color: #999999;
-// }
-
-
-// /* ✅ 暗黑模式下统一 sidebar 联系信息颜色，图标 + 文本都跟 Email 一样亮 */
-// html[data-theme='dark'] .sidebar .contact__item,
-// html[data-theme='dark'] .sidebar .contact__item a {
-//   color: #64ffda !important;  /* Email 使用的蓝绿色 */
-// }
-
-// html[data-theme='dark'] .sidebar .contact__item svg,
-// html[data-theme='dark'] .sidebar .contact__item i {
-//   color: #64ffda !important;  /* 图标颜色统一 */
-// }
-
-// html[data-theme='dark'] .sidebar .contact__item a:hover {
-//   color: #18ffff !important;  /* 悬停时颜色加亮 */
-// }
-// ===== 🌙 Dark Mode Styles for AcademicPages =====
-
-// === 全局基础背景与文字 ===
+/* === 全局基础背景与文字 === */
 html[data-theme='dark'] {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-// === 正文区域背景 + 文字 ===
+/* === 正文区域背景 + 文字 === */
 html[data-theme='dark'] body,
 html[data-theme='dark'] .site,
 html[data-theme='dark'] .page,
@@ -149,9 +17,17 @@ html[data-theme='dark'] .post,
 html[data-theme='dark'] .entry {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-// === 标题样式 ===
+/* === hover 高亮效果 === */
+html[data-theme='dark'] .page__content:hover,
+html[data-theme='dark'] .sidebar:hover {
+  box-shadow: 0 0 10px rgba(100, 255, 255, 0.07);
+}
+
+/* === 标题样式 === */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -162,34 +38,48 @@ html[data-theme='dark'] h6 {
   font-weight: 600;
 }
 
-// === 链接颜色 ===
+/* === 链接颜色 + 渐变下划线 === */
 html[data-theme='dark'] a {
   color: #4dd0e1;
+  position: relative;
+  text-decoration: none;
 }
-html[data-theme='dark'] a:hover {
-  color: #80deea;
-  text-decoration: underline;
+html[data-theme='dark'] a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #4dd0e1, #80deea);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+html[data-theme='dark'] a:hover::after {
+  transform: scaleX(1);
 }
 
-// === 代码块样式 ===
+/* === 代码块样式（卡片效果） === */
 html[data-theme='dark'] pre,
 html[data-theme='dark'] code {
   background-color: #1a1a1a;
   color: #80cbc4;
   border-radius: 6px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem;
   font-family: Consolas, Menlo, monospace;
   font-size: 0.9rem;
+  overflow-x: auto;
 }
 
-// === 引用块样式 ===
+/* === 引用块样式 === */
 html[data-theme='dark'] blockquote {
   background-color: #1f1f1f;
   border-left: 4px solid #4fc3f7;
   color: #cccccc;
 }
 
-// === 图像/视频不反转 ===
+/* === 图像/视频不反转 === */
 html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none !important;
@@ -197,7 +87,7 @@ html[data-theme='dark'] video {
   box-shadow: none !important;
 }
 
-// ====================== ✅ 顶部导航栏 ======================
+/* === 顶部导航栏 === */
 html[data-theme='dark'] body > header,
 html[data-theme='dark'] .site-header,
 html[data-theme='dark'] .masthead,
@@ -208,6 +98,8 @@ html[data-theme='dark'] .greedy-nav .visible-links {
   color: #e0e0e0 !important;
   border: none !important;
   box-shadow: none !important;
+  backdrop-filter: blur(10px); /* 🔮 Glassmorphism 背景模糊 */
+  background: rgba(18, 18, 18, 0.85);
 }
 html[data-theme='dark'] .masthead__menu a,
 html[data-theme='dark'] .greedy-nav a {
@@ -219,11 +111,12 @@ html[data-theme='dark'] .greedy-nav a:hover {
   text-decoration: underline;
 }
 
-// ====================== ✅ 侧边栏 ======================
+/* === 侧边栏样式 === */
 html[data-theme='dark'] .sidebar {
-  background-color: #1a1a1a !important;
-  color: #e0e0e0 !important;
+  background-color: rgba(26, 26, 26, 0.85) !important;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(100, 255, 255, 0.04);
 }
 html[data-theme='dark'] .sidebar .contact__item,
 html[data-theme='dark'] .sidebar p,
@@ -241,26 +134,71 @@ html[data-theme='dark'] .sidebar .contact__item i {
   color: #64ffda !important;
 }
 
-// ====================== ✅ 页脚 ======================
+/* === 页脚 === */
 html[data-theme='dark'] .page__footer {
   background-color: #1a1a1a;
   color: #999999;
 }
 
-
-/* ✅ 暗黑模式下统一 sidebar 联系信息颜色，图标 + 文本都跟 Email 一样亮 */
-html[data-theme='dark'] .sidebar .contact__item,
-html[data-theme='dark'] .sidebar .contact__item a {
-  color: #64ffda !important;  /* Email 使用的蓝绿色 */
+/* === 夜间切换按钮动效 + 提示气泡 + 水波纹效果 === */
+#theme-toggle {
+  transition: transform 0.25s ease;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+#theme-toggle:hover {
+  transform: scale(1.15) rotate(6deg);
+}
+#theme-toggle::after {
+  content: "切换暗/亮模式";
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+#theme-toggle:hover::after {
+  opacity: 1;
+}
+/* 水波纹点击动画 */
+#theme-toggle::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s, opacity 1s;
+}
+#theme-toggle:active::before {
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
-html[data-theme='dark'] .sidebar .contact__item svg,
-html[data-theme='dark'] .sidebar .contact__item i {
-  color: #64ffda !important;  /* 图标颜色统一 */
+/* === 自动根据系统首选项设定初始模式 === */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    color-scheme: dark;
+    background-color: #121212;
+  }
 }
-
-html[data-theme='dark'] .sidebar .contact__item a:hover {
-  color: #18ffff !important;  /* 悬停时颜色加亮 */
-}
-
-
