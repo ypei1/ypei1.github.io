@@ -1,3 +1,5 @@
+// ===== 🌙 Dark Mode Styles for AcademicPages =====
+
 // 夜间模式整体背景 + 文字色
 html[data-theme='dark'] {
   background-color: #121212;
@@ -22,41 +24,17 @@ html[data-theme='dark'] h3,
 html[data-theme='dark'] h4,
 html[data-theme='dark'] h5,
 html[data-theme='dark'] h6 {
-  color: #ffffff;
+  color: #ffffff !important;
+  font-weight: 600;
 }
 
 // 链接颜色
 html[data-theme='dark'] a {
-  color: #4fc3f7;
+  color: #4dd0e1;
 }
 html[data-theme='dark'] a:hover {
-  color: #81d4fa;
+  color: #80deea;
   text-decoration: underline;
-}
-
-// 侧边栏
-html[data-theme='dark'] .sidebar {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-}
-html[data-theme='dark'] .sidebar a {
-  color: #4fc3f7;
-}
-html[data-theme='dark'] .sidebar a:hover {
-  color: #81d4fa;
-}
-
-// 页脚
-html[data-theme='dark'] .page__footer {
-  background-color: #1a1a1a;
-  color: #999999;
-}
-
-// 引用块
-html[data-theme='dark'] blockquote {
-  background-color: #1f1f1f;
-  border-left: 4px solid #4fc3f7;
-  color: #cccccc;
 }
 
 // 代码块
@@ -66,22 +44,28 @@ html[data-theme='dark'] code {
   color: #80cbc4;
 }
 
-// 图片不变色
-html[data-theme='dark'] img,
-html[data-theme='dark'] video {
-  filter: none;
+// 引用块
+html[data-theme='dark'] blockquote {
+  background-color: #1f1f1f;
+  border-left: 4px solid #4fc3f7;
+  color: #cccccc;
 }
 
+// 图片与视频不反转
+html[data-theme='dark'] img,
+html[data-theme='dark'] video {
+  filter: none !important;
+  background: transparent;
+  box-shadow: none !important;
+}
 
-/* --- 🔧 修复导航栏颜色不一致 --- */
+// ==================== ✅ 导航栏修复 ====================
 html[data-theme='dark'] .masthead {
   background-color: #1a1a1a !important;
   color: #e0e0e0;
   border-bottom: 1px solid #333;
   box-shadow: none;
 }
-
-/* 修复导航链接颜色太淡 */
 html[data-theme='dark'] .masthead__menu a,
 html[data-theme='dark'] .masthead__menu a:visited {
   color: #80cbc4 !important;
@@ -90,67 +74,40 @@ html[data-theme='dark'] .masthead__menu a:hover {
   color: #4dd0e1 !important;
 }
 
-/* --- 🔧 修复 sidebar 区块颜色和字体发灰 --- */
+// ==================== ✅ 侧边栏修复 ====================
 html[data-theme='dark'] .sidebar {
   background-color: #1a1a1a !important;
   color: #e0e0e0;
+  border-radius: 10px;
 }
-
+html[data-theme='dark'] .sidebar p,
+html[data-theme='dark'] .sidebar li,
+html[data-theme='dark'] .sidebar .contact__item {
+  color: #cccccc !important;
+}
 html[data-theme='dark'] .sidebar a {
   color: #64ffda;
 }
 html[data-theme='dark'] .sidebar a:hover {
   color: #18ffff;
 }
-
-html[data-theme='dark'] .sidebar .contact__item i,
-html[data-theme='dark'] .sidebar .contact__item svg {
-  color: #888 !important;
+html[data-theme='dark'] .sidebar .contact__item.disabled {
+  color: #999999 !important;
 }
-
-/* --- 🔧 修正文中字体浅、对比度不够 --- */
-html[data-theme='dark'] body,
-html[data-theme='dark'] .page,
-html[data-theme='dark'] .page__content {
-  background-color: #121212 !important;
-  color: #e0e0e0 !important;
-  font-weight: 400;
-}
-
-/* --- ✅ 加强标题视觉对比 --- */
-html[data-theme='dark'] h1,
-html[data-theme='dark'] h2,
-html[data-theme='dark'] h3 {
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
-/* --- ✅ 链接统一蓝绿风格 --- */
-html[data-theme='dark'] a {
-  color: #4dd0e1;
-}
-html[data-theme='dark'] a:hover {
-  color: #80deea;
-}
-
-/* --- 🖼 图像和图标 --- */
-html[data-theme='dark'] img,
-html[data-theme='dark'] video {
-  filter: none !important;
-  background: transparent;
-  box-shadow: none !important;
-}
-
-
-/* --- 🔧 修复 sidebar 简介文字发灰 --- */
-html[data-theme='dark'] .sidebar p,
-html[data-theme='dark'] .sidebar li,
-html[data-theme='dark'] .sidebar .contact__item {
-  color: #cccccc !important;
-}
-
-/* --- 🔧 修复位置图标颜色 --- */
 html[data-theme='dark'] .sidebar .contact__item svg,
 html[data-theme='dark'] .sidebar .contact__item i {
   color: #999999 !important;
+}
+html[data-theme='dark'] .sidebar .contact__item.disabled svg,
+html[data-theme='dark'] .sidebar .contact__item.disabled i {
+  color: #999999 !important;
+}
+html[data-theme='dark'] .sidebar .contact__item.disabled a {
+  color: #aaaaaa !important;
+}
+
+// ==================== ✅ 页脚 ====================
+html[data-theme='dark'] .page__footer {
+  background-color: #1a1a1a;
+  color: #999999;
 }
