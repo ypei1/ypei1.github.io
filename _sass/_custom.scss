@@ -71,3 +71,17 @@ html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none;
 }
+
+
+html[data-theme='dark'] .masthead {
+  background-color: #121212 !important;
+  color: #e0e0e0;
+  box-shadow: none;
+  border-bottom: 1px solid #333;
+}
+
+html[data-theme='dark'] img {
+  filter: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
