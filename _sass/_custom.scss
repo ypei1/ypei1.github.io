@@ -1,3 +1,135 @@
+// // ===== 🌙 Dark Mode Styles for AcademicPages =====
+
+// // === 全局基础背景与文字 ===
+// html[data-theme='dark'] {
+//   background-color: #121212;
+//   color: #e0e0e0;
+// }
+
+// // === 正文区域背景 + 文字 ===
+// html[data-theme='dark'] body,
+// html[data-theme='dark'] .site,
+// html[data-theme='dark'] .page,
+// html[data-theme='dark'] .page__content,
+// html[data-theme='dark'] .archive,
+// html[data-theme='dark'] .archive__item,
+// html[data-theme='dark'] .post,
+// html[data-theme='dark'] .entry {
+//   background-color: #121212 !important;
+//   color: #e0e0e0 !important;
+// }
+
+// // === 标题样式 ===
+// html[data-theme='dark'] h1,
+// html[data-theme='dark'] h2,
+// html[data-theme='dark'] h3,
+// html[data-theme='dark'] h4,
+// html[data-theme='dark'] h5,
+// html[data-theme='dark'] h6 {
+//   color: #ffffff !important;
+//   font-weight: 600;
+// }
+
+// // === 链接颜色 ===
+// html[data-theme='dark'] a {
+//   color: #4dd0e1;
+// }
+// html[data-theme='dark'] a:hover {
+//   color: #80deea;
+//   text-decoration: underline;
+// }
+
+// // === 代码块样式 ===
+// html[data-theme='dark'] pre,
+// html[data-theme='dark'] code {
+//   background-color: #1a1a1a;
+//   color: #80cbc4;
+//   border-radius: 6px;
+//   padding: 0.5rem 0.75rem;
+//   font-family: Consolas, Menlo, monospace;
+//   font-size: 0.9rem;
+// }
+
+// // === 引用块样式 ===
+// html[data-theme='dark'] blockquote {
+//   background-color: #1f1f1f;
+//   border-left: 4px solid #4fc3f7;
+//   color: #cccccc;
+// }
+
+// // === 图像/视频不反转 ===
+// html[data-theme='dark'] img,
+// html[data-theme='dark'] video {
+//   filter: none !important;
+//   background: transparent;
+//   box-shadow: none !important;
+// }
+
+// // ====================== ✅ 顶部导航栏 ======================
+// html[data-theme='dark'] body > header,
+// html[data-theme='dark'] .site-header,
+// html[data-theme='dark'] .masthead,
+// html[data-theme='dark'] .masthead__inner-wrap,
+// html[data-theme='dark'] .greedy-nav,
+// html[data-theme='dark'] .greedy-nav .visible-links {
+//   background-color: #121212 !important;
+//   color: #e0e0e0 !important;
+//   border: none !important;
+//   box-shadow: none !important;
+// }
+// html[data-theme='dark'] .masthead__menu a,
+// html[data-theme='dark'] .greedy-nav a {
+//   color: #4dd0e1 !important;
+// }
+// html[data-theme='dark'] .masthead__menu a:hover,
+// html[data-theme='dark'] .greedy-nav a:hover {
+//   color: #80deea !important;
+//   text-decoration: underline;
+// }
+
+// // ====================== ✅ 侧边栏 ======================
+// html[data-theme='dark'] .sidebar {
+//   background-color: #1a1a1a !important;
+//   color: #e0e0e0 !important;
+//   border-radius: 10px;
+// }
+// html[data-theme='dark'] .sidebar .contact__item,
+// html[data-theme='dark'] .sidebar p,
+// html[data-theme='dark'] .sidebar li {
+//   color: #cccccc !important;
+// }
+// html[data-theme='dark'] .sidebar a {
+//   color: #64ffda;
+// }
+// html[data-theme='dark'] .sidebar a:hover {
+//   color: #18ffff;
+// }
+// html[data-theme='dark'] .sidebar .contact__item svg,
+// html[data-theme='dark'] .sidebar .contact__item i {
+//   color: #64ffda !important;
+// }
+
+// // ====================== ✅ 页脚 ======================
+// html[data-theme='dark'] .page__footer {
+//   background-color: #1a1a1a;
+//   color: #999999;
+// }
+
+
+// /* ✅ 暗黑模式下统一 sidebar 联系信息颜色，图标 + 文本都跟 Email 一样亮 */
+// html[data-theme='dark'] .sidebar .contact__item,
+// html[data-theme='dark'] .sidebar .contact__item a {
+//   color: #64ffda !important;  /* Email 使用的蓝绿色 */
+// }
+
+// html[data-theme='dark'] .sidebar .contact__item svg,
+// html[data-theme='dark'] .sidebar .contact__item i {
+//   color: #64ffda !important;  /* 图标颜色统一 */
+// }
+
+// html[data-theme='dark'] .sidebar .contact__item a:hover {
+//   color: #18ffff !important;  /* 悬停时颜色加亮 */
+// }
 // ===== 🌙 Dark Mode Styles for AcademicPages =====
 
 // === 全局基础背景与文字 ===
@@ -130,4 +262,5 @@ html[data-theme='dark'] .sidebar .contact__item i {
 html[data-theme='dark'] .sidebar .contact__item a:hover {
   color: #18ffff !important;  /* 悬停时颜色加亮 */
 }
+
 
