@@ -179,3 +179,17 @@ html[data-theme='dark'] .sidebar .contact__item i {
   color: #64ffda !important;
 }
 
+// === 🔧 修复顶部白色背景块问题 ===
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .site-header {
+  background-color: #121212 !important;  /* 深色统一 */
+  box-shadow: none !important;
+  border-bottom: 1px solid #222;
+}
+
+// === ✅ 也统一主容器背景 ===
+html[data-theme='dark'] body,
+html[data-theme='dark'] .site {
+  background-color: #121212 !important;
+}
