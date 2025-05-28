@@ -31,3 +31,35 @@ html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none;  // 不反色图像
 }
+
+
+html[data-theme='dark'] .page,
+html[data-theme='dark'] .page__content,
+html[data-theme='dark'] .archive,
+html[data-theme='dark'] .archive__item,
+html[data-theme='dark'] .post,
+html[data-theme='dark'] .entry {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: #ffffff;
+}
+
+html[data-theme='dark'] blockquote {
+  background-color: #1e1e1e;
+  border-left: 5px solid #4dd0e1;
+  color: #cccccc;
+}
+
+html[data-theme='dark'] pre,
+html[data-theme='dark'] code {
+  background-color: #1a1a1a;
+  color: #8be9fd;
+}
