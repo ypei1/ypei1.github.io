@@ -259,19 +259,46 @@ html[data-theme='light'] .site {
 
  
 
-// ✅ 白天模式下内容卡片：柔和自然半透明风格
-html[data-theme='light'] .page__content,
-html[data-theme='light'] .sidebar,
-html[data-theme='light'] .masthead,
-html[data-theme='light'] .page__footer {
-  background-color: rgba(255, 255, 255, 0.7); // 更柔和，不是死白
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(8px); // 玻璃拟态质感
-  -webkit-backdrop-filter: blur(8px); // 兼容性
+/* 白天主题下的柔和玻璃拟态效果 */
+html[data-theme='light'] {
+  /* 主内容容器（正文） */
+  .page__content {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  /* 侧边栏 */
+  .sidebar {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  /* 顶部导航栏 */
+  .masthead,
+  .masthead__inner-wrap {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* 页脚区域 */
+  .page__footer {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
-
-
 
 
 
