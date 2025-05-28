@@ -1,3 +1,4 @@
+<script>
 (function () {
   const html = document.documentElement;
   const toggle = document.getElementById("theme-toggle");
@@ -6,14 +7,9 @@
   function applyTheme(mode) {
     html.setAttribute("data-theme", mode);
     localStorage.setItem("theme", mode);
-    if (icon) {
-      icon.src = mode === "dark"
-        ? "/assets/img/icon-dark.png"
-        : "/assets/img/icon-light.png";
-    }
+    icon.textContent = mode === "dark" ? "☀️" : "🌙";
   }
 
-  // 页面加载时自动应用主题
   document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
@@ -24,7 +20,6 @@
     }
   });
 
-  // 按钮点击切换主题
   if (toggle) {
     toggle.addEventListener("click", () => {
       const current = html.getAttribute("data-theme");
@@ -33,3 +28,4 @@
     });
   }
 })();
+</script>
