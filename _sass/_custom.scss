@@ -220,4 +220,20 @@ html[data-theme='dark'] .greedy-nav a:hover {
   color: #80deea !important;
   text-decoration: underline;
 }
+// === 💣 终极清除顶部白条：彻底黑化 header 树 ===
+html[data-theme='dark'] body,
+html[data-theme='dark'] body > header,
+html[data-theme='dark'] .site-header,
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .nav,
+html[data-theme='dark'] .site-nav,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav__toggle,
+html[data-theme='dark'] .visible-links {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 
