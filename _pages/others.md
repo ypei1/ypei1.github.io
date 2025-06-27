@@ -36,7 +36,7 @@ author_profile: true
   </details>
 
   
-### Solve RBC Trade model 
+### Solve the RBC Trade model 
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
