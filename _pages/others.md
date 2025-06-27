@@ -5,38 +5,38 @@ permalink: others/
 author_profile: true
 ---
   
-### Solve Eaton Kortum model or Caliendo Parro model (Only labor inputs).
+### Solve the Eaton Kortum model or the Caliendo Parro model (Only labor inputs).
   <details>
   <summary>Code and Notes</summary>
   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/1.simpleEKJ) 
   </details>
 
-### Solve Dynamic Eaton Kortum model or Caliendo Parro model (with labor and capital as inputs).
+### Solve the Dynamic Eaton Kortum model or the Caliendo Parro model (with labor and capital as inputs).
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
   </details>
  
-### Slove Global Value Chain (Vertical Specialization) model (Sposi, Yi and Zhang, 2022；Antràs and de Gortari, 2020).
+### Solve Global Value Chain (Vertical Specialization) model (Sposi, Yi and Zhang, 2022； Antràs and de Gortari, 2020).
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/44d408fa7ed7381a58e7c583f3915619c88fde4c/3.%20Slove%20Global%20Value%20Chain%20model%20(Sposi%2C%20Yi%20and%20Zhang%202022))
   </details>
  
-### Slove Melize model 
+### Solve the Melize model 
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
   </details>
   
-### Slove Close Economy OLG model 
+### Solve the Closed Economy OLG model 
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
   </details>
 
   
-### Slove RBC Trade model 
+### Solve RBC Trade model 
   <details>
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
