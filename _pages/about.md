@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Economics at the [University of Houston](https://www.uh.edu/class/economics/).  
+I am a Postdoctoral Research Fellow at the Institute of Energy, Environment and Economy (3E) and the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025.
 
-My research fields are International and Macroeconomics. 
+ 
+My research interests lie at the intersection of International Economics, Environmental Economics, and the Chinese Economy.
 
-My research focuses on analyzing economic interactions across space, quantifying their driving forces, and deriving policy implications. I use quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
+My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, and deriving policy implications. I employ quantitative (international trade and macroeconomic structural models) and empirical (micro-econometric and time-series) methods.
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
