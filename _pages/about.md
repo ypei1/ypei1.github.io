@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Research Fellow at the Institute of Energy, Environment and Economy (3E) and the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. 
+I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. 
 
 I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025.
  
