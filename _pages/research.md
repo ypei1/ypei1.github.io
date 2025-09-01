@@ -5,11 +5,16 @@ permalink: projects/
 author_profile: true
 ---
 
-My research fields are International, Spatial, Macroeconomics and Financial Regulation. 
+ 
+My current research filed lie at the intersection of International Economics, Environmental Economics, and the Chinese Economy.
 
-I focus my research mainly on analyzing economic interactions over space, identifying and quantifying their driving forces, and deriving policy implications. I use both quantitative (international trade and macroeconomic) models and empirical (micro-econometrics and time series) methods.
+My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, and deriving policy implications.
 
-Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
+I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (micro-econometric, time-series, and structural econometric model).
+
+
+
+and  <a href="/files/YANGPEI_RS.pdf">Research Statement</a>. 
 
 ### Job Market Paper / Dissertation
 - Demographics, Trade, and Growth   
