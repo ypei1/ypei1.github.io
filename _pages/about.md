@@ -12,11 +12,11 @@ I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy T
 
 I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025.
  
-My research interests lie at the intersection of International Economics, Environmental Economics, and the Chinese Economy.
+My current research filed lie at the intersection of International Economics, Environmental Economics, and the Chinese Economy.
 
 My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, and deriving policy implications.
 
-I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (micro-econometric and time-series).
+I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (micro-econometric, time-series, and structural econometric model).
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
