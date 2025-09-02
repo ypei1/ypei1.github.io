@@ -19,22 +19,20 @@ My research focuses on analyzing economic and environmental interactions across 
 I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (micro-econometric, time-series, and structural econometric model).
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
+ 
 
-### Job Market Paper 
-- Demographics, Trade, and Growth   
- [Full Version](<a href="/files/JMPx.pdf">PDF</a>) &nbsp; [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
  
 ### Selected Working Papers
+- Demographics, Trade, and Growth （Job Market Paper）
+ [Full Version](<a href="/files/JMPx.pdf">PDF</a>) &nbsp; [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
+
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
-- Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
-  draft coming soon
-- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
-  draft coming soon
-  
-### Selected Papers Working in Progress 
+
+  ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
-- China's VAT Reforms, Distortions, and Intranational Trade   <br>
- 
+- Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
+
+
   
 
 ### Conference Presentations
@@ -49,6 +47,8 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 “The Effects of Macro-prudential Policies on Bank Efficiency and Profitability”
 - Western Economic Association 15th International Conference, Tokyo 2019
 
+- China's VAT Reforms, Distortions, and Intranational Trade   <br>
+ 
  
 <!-- ---
 permalink: /markdown/
@@ -59,6 +59,10 @@ redirect_from:
   - /markdown.html
 ---
 <audio controls>
+
+- Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
+  draft coming soon
+
   <source src="/files/liangjian.mp3" type="audio/mp3">
 </audio>
 - The Effects of Macro-prudential Policies on Bank Efficiency and Profitability  ( joint with [Alice Ouyang](https://scholar.google.com/citations?user=Db1HU5kAAAAJ&hl=zh-CN). )    <br>
