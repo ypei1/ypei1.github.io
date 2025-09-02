@@ -28,7 +28,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
 
-  ### Selected Papers Working in Progress
+### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 - Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
