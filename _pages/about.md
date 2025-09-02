@@ -31,25 +31,15 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 - Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
-
-
-  
-
-### Conference Presentations
-“Demographics, Trade, and Growth”
-- UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2023
-  
-“The Decline in China’s Trade Share of GDP: A Structural Accounting”
+ 
+### Conference Presentations 
+- UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
 - Chinese Economic Association (CEA) Conference, Hangzhou, Zhejiang 2024
 - Midwest International Trade Conference, Indianapolis, IN 2023
 - Midwest Macroeconomics Conference, Lubbock, TX 2023
-  
-“The Effects of Macro-prudential Policies on Bank Efficiency and Profitability”
 - Western Economic Association 15th International Conference, Tokyo 2019
 
-- China's VAT Reforms, Distortions, and Intranational Trade   <br>
- 
- 
+
 <!-- ---
 permalink: /markdown/
 title: "Markdown"
@@ -59,7 +49,13 @@ redirect_from:
   - /markdown.html
 ---
 <audio controls>
-
+- China's VAT Reforms, Distortions, and Intranational Trade   <br>
+ 
+  
+“The Decline in China’s Trade Share of GDP: A Structural Accounting”
+  
+“The Effects of Macro-prudential Policies on Bank Efficiency and Profitability”
+ 
 - Expectation Sentiments and Consumption Fluctuations in the Time of COVID ( joint with [Kunyao Xu](https://www.linkedin.com/in/richard-xu-econ/). )    <br>
   draft coming soon
 
