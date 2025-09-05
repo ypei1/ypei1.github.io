@@ -16,7 +16,7 @@ My current research filed lie at the intersection of International Economics, En
 
 My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, and deriving policy implications.
 
-I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (micro-econometric, time-series, and structural econometric model).
+I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  
