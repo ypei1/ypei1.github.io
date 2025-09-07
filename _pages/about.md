@@ -24,7 +24,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
- [Full Version](<a href="/files/JMPx.pdf">PDF</a>) &nbsp; [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
+ [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
 
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
 
@@ -211,7 +211,7 @@ You will learn later on in these tests that `word-wrap: break-word;` will be you
 This tag will let you <strike>strikeout text</strike>.
 
 ### Emphasize Tag
-
+ [Full Version](<a href="/files/JMPx.pdf">PDF</a>) &nbsp;
 The emphasize tag should _italicize_ text.
 
 ### Insert Tag
