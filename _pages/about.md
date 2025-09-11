@@ -27,10 +27,13 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
 
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
+ 
+- Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
 ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
-- Accounting for China's Province-Level Border Effects ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
+
+- Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
  
 ### Conference Presentations 
 - UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
