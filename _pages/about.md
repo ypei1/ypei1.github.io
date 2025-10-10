@@ -20,7 +20,7 @@ I employ both quantitative models (especially structural trade and macroeconomic
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  
-
+Available in person: 南开国际经济论坛, Nankai University 10/17, 2025; YES-SHINE-2025 Workshop, Shanghai Jiao Tong University, 11/15-11/16, 2025.
  
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
