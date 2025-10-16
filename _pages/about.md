@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. 
-
-I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
+I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). I would like to express my special thanks and heartfelt appreciation to Professor Yu, Professor Tang, Professor Ju, and Professor Ma for their help and kindness during the special time of the final year of my Ph.D. career. 
  
 My current research lies at the intersection of international economics, environmental economics, and the Chinese economy.
  
@@ -20,7 +18,7 @@ I employ both quantitative models (especially structural trade and macroeconomic
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  
-Available in person: 南开国际经济论坛, Nankai University 10/17, 2025; YES-SHINE-2025 Workshop, Shanghai Jiao Tong University, 11/15-11/16, 2025.
+ 
  
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
