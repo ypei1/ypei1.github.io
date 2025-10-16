@@ -10,11 +10,7 @@ redirect_from:
 
 I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy Technology (INET) at Tsinghua University. I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). I would like to express my special thanks and heartfelt appreciation to Professor Yu, Professor Tang, Professor Ju, Professor Ma, and Professor Zhang Da for their kindness during the special time of the final year of my Ph.D. career. 
  
-My current research lies at the intersection of international economics, environmental economics, and the Chinese economy.
- 
-My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, as well as deriving policy implications.
-
-I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
+My current research lies at the intersection of international economics, environmental economics, and the Chinese economy. My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, as well as deriving policy implications. I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
 
 Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
  
