@@ -38,6 +38,9 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 - Western Economic Association 15th International Conference, Tokyo 2019
 
 
+### Seminars
+- 南开国际经济论坛, TianJin, 2025
+
 <!-- ---
 permalink: /markdown/
 title: "Markdown"
