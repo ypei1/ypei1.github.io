@@ -25,10 +25,15 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 - Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
 ### Selected Papers Working in Progress
-- The Missing Link Between CGE and NQTMs ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
+- Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
+- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
 - Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
+
+
  
 ### Conference Presentations 
 - UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
