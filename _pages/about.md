@@ -33,7 +33,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
 - Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
 
-
+- Expectation Sentiment and Consumption Fluctuation: Insights from the Covid Era ( joint with [Richard Xu](https://elliott.gwu.edu/richard-xu). )     <br>
  
 ### Conference Presentations 
 - UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
