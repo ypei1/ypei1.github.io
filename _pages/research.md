@@ -18,10 +18,16 @@ My current research filed lie at the intersection of International Economics, En
  
 - Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
-### Selected Papers Working in Progress
+### Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
+- Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
+- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
 - Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
+
+- Expectation Sentiment and Consumption Fluctuation: Insights from the Covid Era ( joint with [Richard Xu](https://elliott.gwu.edu/richard-xu). )     <br>
  
 ### Conference Presentations 
 - UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
@@ -29,6 +35,9 @@ My current research filed lie at the intersection of International Economics, En
 - Midwest International Trade Conference, Indianapolis, IN 2023
 - Midwest Macroeconomics Conference, Lubbock, TX 2023
 - Western Economic Association 15th International Conference, Tokyo 2019
+
+### Seminars
+- Nankai University, 2025;
 
   
  
