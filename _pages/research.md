@@ -33,7 +33,7 @@ My current research filed lie at the intersection of International Economics, En
 - Western Economic Association 15th International Conference, Tokyo 2019
 
 ### Seminars
-- Nankai University, 2025;
+- Shanghai Jiaotong University, SHINE, 2025; Nankai University, NKIIE, 2025; 
 
   <!--  
  - Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
