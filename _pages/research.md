@@ -35,8 +35,7 @@ My current research filed lie at the intersection of International Economics, En
 ### Seminars
 - Shanghai Jiaotong University, SHINE, 2025; Nankai University, NKIIE, 2025; 
 
-  <!--  
- - Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+  <!--    Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
 
-- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
-  -->
+- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>    -->
+
