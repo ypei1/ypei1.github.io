@@ -29,7 +29,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
-- Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br> 
+
 
  
 ### Conference Presentations 
@@ -79,7 +79,7 @@ redirect_from:
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
 * Profile image (can set in _config.yml): images/profile.png
-
+- TBA ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br> 
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
