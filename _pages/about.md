@@ -41,7 +41,7 @@ Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
 
 
 ### Seminars
-- 南开国际经济论坛, TianJin, 2025
+- Shanghai Jiaotong University, SHINE, 2025; Nankai University, NKIIE, 2025; 
 
 <!-- ---
 permalink: /markdown/
