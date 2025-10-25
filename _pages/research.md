@@ -21,10 +21,6 @@ My current research filed lie at the intersection of International Economics, En
 ### Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
-- Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
-
-- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
-
 - Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
 
 - Expectation Sentiment and Consumption Fluctuation: Insights from the Covid Era ( joint with [Richard Xu](https://elliott.gwu.edu/richard-xu). )     <br>
@@ -39,6 +35,8 @@ My current research filed lie at the intersection of International Economics, En
 ### Seminars
 - Nankai University, 2025;
 
-  
- 
- 
+  <!--  
+ - Bridging the Missing Link Between CGE and NQTM Models ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
+- Does Globalization Lead to Higher Emissions? ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+  -->
