@@ -12,15 +12,15 @@ I am a Postdoctoral Research Fellow at the Institute of Nuclear and New Energy T
  
 My current research lies at the intersection of international economics, environmental economics, and the Chinese economy. My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, as well as deriving policy implications. I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
 
-Here is my <a href="/files/YANGPEI_cv__Copy_.pdf">CV</a>  .
+Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
  
  
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
- [Short  Version](<a href="/files/JMP.pdf">PDF</a>)
+ [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970">PDF</a>)
 
-- The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
+- The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968">PDF</a>)
  
 - Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
