@@ -19,7 +19,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
  [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970">PDF</a>)
-
+ 
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968">PDF</a>)
  
 - Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
@@ -29,6 +29,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
+- On CGE and NQTM Models ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
 
 
  
@@ -79,7 +80,7 @@ redirect_from:
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
 * Profile image (can set in _config.yml): images/profile.png
-- TBA ( joint with [Anton C. Yang](https://www.antonyang.com/), [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and [Chenfei Qu](https://chenfeiqu.com/) ) <br> 
+
 ## Tips and hints
 
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
