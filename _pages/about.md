@@ -24,7 +24,6 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
 - Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
-- Expectation Sentiment and Consumption Fluctuation: Insights from the Covid Era ( joint with [Richard Xu](https://elliott.gwu.edu/richard-xu). )    draft coming soon    <br>
 
 ### Selected Papers Working in Progress
 - Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
