@@ -4,44 +4,7 @@ title: ""
 permalink: others/
 author_profile: true
 ---
-  <!--
-### Solve the Eaton Kortum model or the Caliendo Parro model (Only labor inputs).
-  <details>
-  <summary>Code and Notes</summary>
-  [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/1.simpleEKJ) 
-  </details>
-
-### Solve the Dynamic Eaton Kortum model or the Caliendo Parro model (with labor and capital as inputs).
-  <details>
-  <summary>Code and Notes</summary>
-   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
-  </details>
  
-### Solve Global Value Chain (Vertical Specialization) model (Sposi, Yi and Zhang, 2022； Antràs and de Gortari, 2020).
-  <details>
-  <summary>Code and Notes</summary>
-   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/44d408fa7ed7381a58e7c583f3915619c88fde4c/3.%20Slove%20Global%20Value%20Chain%20model%20(Sposi%2C%20Yi%20and%20Zhang%202022))
-  </details>
- 
-### Solve the Melize model 
-  <details>
-  <summary>Code and Notes</summary>
-   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
-  </details>
-  
-### Solve the Closed Economy OLG model 
-  <details>
-  <summary>Code and Notes</summary>
-   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
-  </details>
-
-  
-### Solve the RBC Trade model 
-  <details>
-  <summary>Code and Notes</summary>
-   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
-  </details>
-  -->
 ### FORTRAN and Computational Mathematics
   <details>
   <summary>Detail</summary>
@@ -91,6 +54,43 @@ author_profile: true
  
  http://home.ustc.edu.cn/~zegang/
  
+### Solve the Eaton Kortum model or the Caliendo Parro model (Only labor inputs).
+  <details>
+  <summary>Code and Notes</summary>
+  [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/1.simpleEKJ) 
+  </details>
+
+### Solve the Dynamic Eaton Kortum model or the Caliendo Parro model (with labor and capital as inputs).
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/main/2.CPwithKL.s.s) 
+  </details>
+ 
+### Solve Global Value Chain (Vertical Specialization) model (Sposi, Yi and Zhang, 2022； Antràs and de Gortari, 2020).
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code](https://github.com/ypei1/EKCP/tree/44d408fa7ed7381a58e7c583f3915619c88fde4c/3.%20Slove%20Global%20Value%20Chain%20model%20(Sposi%2C%20Yi%20and%20Zhang%202022))
+  </details>
+ 
+### Solve the Melize model 
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
+  </details>
+  
+### Solve the Closed Economy OLG model 
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
+  </details>
+
+  
+### Solve the RBC Trade model 
+  <details>
+  <summary>Code and Notes</summary>
+   [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
+  </details>
+  
 I am a PhD student in Economics at the [Universtity of Houston](https://www.uh.edu/class/economics/).  I am interested in topics related to International trade, Spatial Economics, and Macroeconometrics.
 
   <details>
