@@ -4,7 +4,7 @@ title: ""
 permalink: others/
 author_profile: true
 ---
-  
+  <!--
 ### Solve the Eaton Kortum model or the Caliendo Parro model (Only labor inputs).
   <details>
   <summary>Code and Notes</summary>
@@ -41,7 +41,7 @@ author_profile: true
   <summary>Code and Notes</summary>
    [PDF](https://github.com/ypei1/EKCP) &nbsp; [Code]( )
   </details>
-  
+  -->
 ### FORTRAN and Computational Mathematics
   <details>
   <summary>Detail</summary>
