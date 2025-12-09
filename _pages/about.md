@@ -40,8 +40,9 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - Western Economic Association 15th International Conference, Tokyo 2019
 
 
-### Seminars
-- Shanghai Jiaotong University, SHINE, 2025; Nankai University, NKIIE, 2025; 
+### Seminars and Conferences
+- Nankai University, NKIIE, 2025; 
+- Shanghai Jiaotong University, SHINE-YES-With-NO, 2025; Shandong University, 12th ICCE, 2025;
 
 <!-- ---
 permalink: /markdown/
