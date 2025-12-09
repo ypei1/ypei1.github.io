@@ -42,7 +42,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 ### Seminars and Conferences
 - Nankai University, NKIIE, 2025; 
-- Shanghai Jiaotong University, SHINE-YES-With-NO, 2025; Shandong University, 12th ICCE, 2025;
+- Shanghai Jiaotong University, SHINE-YES-With-NO, 2025; Shandong University, The 12th International Conference on the Chinese Economy: Past, Present, and Future, 2025;
 
 <!-- ---
 permalink: /markdown/
