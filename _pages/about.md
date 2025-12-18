@@ -30,6 +30,8 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - On CGE and NQTM Models ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
 
+- On Green Energy  ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+
 
  
 ### Presentations 
