@@ -30,8 +30,6 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - On CGE and NQTM Models ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
 
-- On Green Energy  ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
-
 
  
 ### Presentations 
@@ -59,6 +57,8 @@ redirect_from:
 <audio controls>
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
  
+
+- On Green Energy  ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
   
 “The Decline in China’s Trade Share of GDP: A Structural Accounting”
   
