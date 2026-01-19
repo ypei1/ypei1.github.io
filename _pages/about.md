@@ -22,7 +22,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968">PDF</a>)
  
-- Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
+- Local Trade Protection and Spatial Income Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
 
 ### Selected Papers Working in Progress
