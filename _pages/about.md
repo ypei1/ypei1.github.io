@@ -17,39 +17,57 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
  
 ### Selected Working Papers
-- *Demographics, Trade, and Growth* ( joint with [Wei Jin](https://weijinsite.weebly.com/). ) 
- [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970"> Draft </a>)
- 
-- *The Decline in China’s Trade Share of GDP: A Structural Accounting* (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968"> Draft </a>)
- 
-- *Domestic Market Segmentation and Spatial Income Inequality* ( joint with [Jun Nie](https://www.junnie27.com/). )   (<a href="https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0"> Draft </a>) <br>
 
-- Two Papers on CGE and NQTM Models and Emissions ( both joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) )  (Draft coming soon)  <br>
+- *Demographics, Trade, and Growth*  
+  (joint with [Wei Jin](https://weijinsite.weebly.com/))  
+  [Short Version (Draft)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970)
+
+- *The Decline in China’s Trade Share of GDP: A Structural Accounting*  
+  [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968)
+
+- *Domestic Market Segmentation and Spatial Income Inequality*  
+  (joint with [Jun Nie](https://www.junnie27.com/))  
+  [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0)
+
+- **Two Papers on CGE and NQTM Models with Emissions**  
+  (both co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), 
+  [Anton C. Yang](https://www.antonyang.com/), and 
+  [Chenfei Qu](https://chenfeiqu.com/); drafts in preparation)
+
   - *Biofuel Policy, Trade, and Land-Use Change*
   - *The Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
 
-### Selected Papers Working in Progress
-- *Internal trade and optimal external tariff* ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
+### Selected Papers in Progress
 
-- *AI and technology diffusion* ( joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/). )    <br>
+- *Internal Trade and Optimal External Tariff*  
+  (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home))
 
-- *On deglobalization and inequality* ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
+- *AI and Technology Diffusion*  
+  (joint with [Wei Jin](https://weijinsite.weebly.com/) and 
+  [Jun Nie](https://www.junnie27.com/))
 
-- *Firms, immigrations, and home trade bias* ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
+- *On Deglobalization and Inequality*  
+  (joint with [Jun Nie](https://www.junnie27.com/))
+
+- *Firms, Immigration, and Home Trade Bias*  
+  (joint with [Jun Nie](https://www.junnie27.com/))
  
-### Presentations 
-#### Conference 
-- 29th Annual Conference on Global Economic Analysis, Kyoto, Japan, June 17–19, 2026 (forthcoming).
-- The 12th International Conference on the Chinese Economy: Past, Present, and Future, Shandong University, Shandong 2025
-- UT-Austin, Texas A&M, U. of Houston Macro Job Candidates Workshop, Federal Reserve Bank of Dallas, TX 2024
-- Chinese Economic Association Conference (Online), Hangzhou, Zhejiang 2024
-- Midwest International Trade Conference, Indianapolis, IN 2023
-- Midwest Macroeconomics Conference, Lubbock, TX 2023
-- Western Economic Association 15th International Conference, Tokyo 2019
+### Presentations
 
+#### Conference
 
-#### Seminar 
-- Nankai University, NKIIE, 2025;  Shanghai Jiaotong University, SHINE-YES-With-NO, 2025;  
+- 29th Annual Conference on Global Economic Analysis, Kyoto, Japan, June 17–19, 2026 (forthcoming)
+- 12th International Conference on the Chinese Economy: Past, Present, and Future, Shandong University, China, 2025
+- UT Austin; Texas A&M University; University of Houston Macro Job Candidates Workshop; Federal Reserve Bank of Dallas, 2024
+- Chinese Economic Association Conference (Online), 2024
+- Midwest International Trade Conference, Indianapolis, IN, 2023
+- Midwest Macroeconomics Conference, Lubbock, TX, 2023
+- 15th International Conference of the Western Economic Association, Tokyo, 2019
+
+#### Seminar
+
+- Nankai University (NKIIE), 2025  
+- Shanghai Jiao Tong University (SHINE-YES-With-NO), 2025
 
 
 <!-- ---
