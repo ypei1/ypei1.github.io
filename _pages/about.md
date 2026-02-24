@@ -15,15 +15,14 @@ My current research lies at the intersection of international economics, environ
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
  
- 
 ### Selected Working Papers
 
 - *Demographics, Trade, and Growth* (joint with [Wei Jin](https://weijinsite.weebly.com/)), [Short Version (Draft)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970)  
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*, [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968)  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0)  
-- **Two Papers on CGE and NQTM Models with Emissions** (both co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/); drafts coming soon): 
- -*Biofuel Policy, Trade, and Land-Use Change*
- -*The Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
+- **Two Papers on CGE and NQTM Models with Emissions** (both co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/); drafts coming soon):
+  - *Biofuel Policy, Trade, and Land-Use Change*
+  - *The Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
 
 ### Selected Papers in Progress
 
@@ -47,6 +46,10 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - Nankai University (NKIIE), 2025; 
 - Shanghai Jiao Tong University (SHINE-YES-With-NO), 2025
+
+
+
+
 
 
 
