@@ -17,20 +17,25 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
  
 ### Selected Working Papers
-- Demographics, Trade, and Growth （Job Market Paper）
+- *Demographics, Trade, and Growth* ( joint with [Wei Jin](https://weijinsite.weebly.com/). ) 
  [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970"> Draft </a>)
  
-- The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968"> Draft </a>)
+- *The Decline in China’s Trade Share of GDP: A Structural Accounting* (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968"> Draft </a>)
  
-- Local Trade Protection and Spatial Income Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )   (<a href="https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0"> Draft </a>) <br>
+- *Domestic Market Segmentation and Spatial Income Inequality* ( joint with [Jun Nie](https://www.junnie27.com/). )   (<a href="https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0"> Draft </a>) <br>
 
+- Two Papers on CGE and NQTM Models and Emissions ( both joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) )  (Draft coming soon)  <br>
+  - *Biofuel Policy, Trade, and Land-Use Change*
+  - cThe Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
 
 ### Selected Papers Working in Progress
-- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
+- *Internal trade and optimal external tariff* ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
-- On CGE and NQTM Models ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
+- *AI and technology diffusion* ( joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/). )    <br>
 
+- *On deglobalization and inequality* ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
 
+- *Firms, immigrations, and home trade bias* ( joint with [Jun Nie](https://www.junnie27.com/). )    <br>
  
 ### Presentations 
 #### Conference 
