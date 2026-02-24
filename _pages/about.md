@@ -18,11 +18,11 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
 ### Selected Working Papers
 - Demographics, Trade, and Growth （Job Market Paper）
- [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970">PDF</a>)
+ [Short  Version](<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970"> Draft </a>)
  
-- The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968">PDF</a>)
+- The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968"> Draft </a>)
  
-- Local Trade Protection and Spatial Income Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
+- Local Trade Protection and Spatial Income Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )   (<a href="https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0"> Draft </a>) <br>
 
 
 ### Selected Papers Working in Progress
