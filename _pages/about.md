@@ -26,7 +26,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - Two Papers on CGE and NQTM Models and Emissions ( both joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) )  (Draft coming soon)  <br>
   - *Biofuel Policy, Trade, and Land-Use Change*
-  - cThe Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
+  - *The Cost of Going It Alone: Carbon Consequences of Deglobalization via Green Trade and FDI*
 
 ### Selected Papers Working in Progress
 - *Internal trade and optimal external tariff* ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
