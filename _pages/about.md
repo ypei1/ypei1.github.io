@@ -20,7 +20,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*, [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968)  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0)  
 - *Demographics, Trade, and Growth* (joint with [Wei Jin](https://weijinsite.weebly.com/)), draft coming soon.  
-- On CGE and NQTM Models* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)), drafts coming soon: 
+- *On CGE and NQTM Models* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)), drafts coming soon: 
 
 ### Selected Papers in Progress
 
