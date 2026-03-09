@@ -15,7 +15,7 @@ author_profile: true
   [Material available](http://example.com/) &nbsp; [Course Evaluation](/files/example.com.pdf)   -->
 
   
-- Energy Economics(Ph.D.), Guest Lecture on General Equalibrium Model, Tshinghua University,  Spring 2026
+- Energy and Environmental Economics (Ph.D.), Guest Lecture on General Equalibrium Model, Tshinghua University,  Spring 2026
   
 - Principles of Microeconomics(Undergrad), University of Houston, Spring 2023 
  
