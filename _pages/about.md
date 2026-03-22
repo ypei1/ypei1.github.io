@@ -20,15 +20,13 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*, [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968)  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0)  
 - *Demographics, Trade, and Growth* (joint with [Wei Jin](https://weijinsite.weebly.com/)), [old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970).  
-- *On CGE and NQTM Models* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)), drafts coming soon: 
+- *Biofuel Policy, Trade, and Land-Use Change* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)), drafts coming soon.  
+- *Carbon Consequences of Deglobalization* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)), drafts coming soon. 
 
 ### Selected Papers in Progress
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home))  
-- *AI and Technology Diffusion* (joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/))  
-- *On Deglobalization* (joint with [Jun Nie](https://www.junnie27.com/))  
-- *Firms, Immigration, and Home Trade Bias* (joint with [Jun Nie](https://www.junnie27.com/))
-
+- *On CGE and NQTM Models* (co-authored with [Anton C. Yang](https://www.antonyang.com/) ), drafts coming soon. 
 
 ### Conference
 
@@ -64,7 +62,10 @@ redirect_from:
 ---
 <audio controls>
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
- 
+- *AI and Technology Diffusion* (joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/))  
+- *On Deglobalization* (joint with [Jun Nie](https://www.junnie27.com/))  
+- *Firms, Immigration, and Home Trade Bias* (joint with [Jun Nie](https://www.junnie27.com/))
+
 
 - On Green Energy  ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
   
