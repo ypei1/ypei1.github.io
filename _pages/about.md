@@ -28,7 +28,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *On CGE and NQTM Models* (co-authored with [Anton C. Yang](https://www.antonyang.com/) ). 
 - *Biofuel Policy, Trade, and Land-Use Change* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).  
 - *Carbon Consequences of Deglobalization* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
-- 
+ 
 ### Conference
 
 - 29th Annual Conference on Global Economic Analysis, Kyoto, Japan, June 17–19, 2026 (forthcoming)  
