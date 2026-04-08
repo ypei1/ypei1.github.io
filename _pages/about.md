@@ -31,7 +31,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
 ### Conference
 
-- 29th Annual Conference on Global Economic Analysis, Kyoto, Japan, June 17–19, 2026 (forthcoming)  
+- 29th Annual Conference on Global Economic Analysis, Kyoto, Japan, June 17–19, 2026 (canceled)  
 - 12th International Conference on the Chinese Economy: Past, Present, and Future, Shandong University, China, 2025  
 - UT Austin; Texas A&M University; University of Houston Macro Job Candidates Workshop; Federal Reserve Bank of Dallas, 2024  
 - Chinese Economic Association Conference (Online), 2024  
