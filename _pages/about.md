@@ -22,7 +22,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *Demographics, Trade, and Growth* Job Market Paper (joint with [Wei Jin](https://weijinsite.weebly.com/)), [old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970).  
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*, [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968)  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0) 
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with [Wei Jin](https://weijinsite.weebly.com/), Bin Sheng, Chenxin Jin, HenZhang), [Draft].
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with [Wei Jin](https://weijinsite.weebly.com/), Bin Sheng, Chenxin Jin, HenZhang),  Draft.
 
 ### Selected Papers in Progress
 
