@@ -26,10 +26,10 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 ### Selected Papers in Progress
 
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home))  
-- *On CGE and NQTM Models* (co-authored with [Anton C. Yang](https://www.antonyang.com/) ). 
-- *Biofuel Policy, Trade, and Land-Use Change* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).  
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)). 
+- *Biofuel Policy, Trade, and Land-Use Change* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steve Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).     
 - *Carbon Consequences of Deglobalization* (co-authored with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
+- *On CGE and NQTM Models* (co-authored with [Anton C. Yang](https://www.antonyang.com/) ). 
  
 ### Conference
 
