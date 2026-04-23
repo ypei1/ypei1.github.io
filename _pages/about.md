@@ -27,9 +27,10 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 ### Selected Papers in Progress
 
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).    
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
+- *Fragmentation Abroad, Integration at Home: Regional Reallocation in an Ageing China* (joint with [Wei Jin](https://weijinsite.weebly.com/)).
 - *Carbon Consequences of Deglobalization* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
-- *On CGE and NQTM Models* (joint with [Anton C. Yang](https://www.antonyang.com/) ). 
+- *On CGE and NQTM Models* (joint with [Anton C. Yang](https://www.antonyang.com/) ).
  
 ### Conference
 
