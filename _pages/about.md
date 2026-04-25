@@ -28,9 +28,8 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 ### Selected Papers in Progress
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
-- *Fragmentation Abroad, Integration at Home: Regional Reallocation in an Ageing China* (joint with [Wei Jin](https://weijinsite.weebly.com/)).
-- *Carbon Consequences of Deglobalization* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
 - *On CGE and NQTM Models* (joint with [Anton C. Yang](https://www.antonyang.com/) ).
+- *Carbon Consequences of Deglobalization* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
  
 ### Conference
 
@@ -64,6 +63,7 @@ redirect_from:
   - /md/
   - /markdown.html
 ---
+- *Fragmentation Abroad, Integration at Home: Regional Reallocation in an Ageing China* (joint with [Wei Jin](https://weijinsite.weebly.com/)).
 <audio controls>
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
 - *AI and Technology Diffusion* (joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/))  
