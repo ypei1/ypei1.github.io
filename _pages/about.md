@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Postdoctoral Research Fellow at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University, where I work closely with Dr. [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and Dr. [Anton C. Yang](https://www.antonyang.com/). 
+I am a Postdoctoral  Research Fellow at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University, where I work closely with Dr. [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and Dr. [Anton C. Yang](https://www.antonyang.com/). 
 
 I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
  
