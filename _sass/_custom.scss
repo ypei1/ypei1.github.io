@@ -1,7 +1,7 @@
 /* ============================================================
-   🌙 Dark Mode + 🌈 Light Mode
-   Only Modify Middle Content and Sidebar
-   Header and Footer Are Not Modified
+   Minimal Border Effects Only
+   Keep Original AcademicPages Style
+   Only Enhance .page__content and .sidebar
    ============================================================ */
 
 
@@ -9,516 +9,194 @@
    0. Smooth Transition
    ============================================================ */
 
-html,
-body,
-.site,
-.page,
 .page__content,
 .sidebar {
   transition:
-    background 0.35s ease,
-    background-color 0.35s ease,
-    color 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease,
-    backdrop-filter 0.35s ease;
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease;
 }
 
 
 /* ============================================================
-   1. Light Mode: Page Background
-   ============================================================ */
-
-html[data-theme='light'],
-html[data-theme='light'] body,
-html[data-theme='light'] .site {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.55), transparent 26%),
-    radial-gradient(circle at 82% 12%, rgba(210, 245, 255, 0.60), transparent 30%),
-    radial-gradient(circle at 88% 82%, rgba(255, 225, 238, 0.65), transparent 34%),
-    radial-gradient(circle at 18% 78%, rgba(225, 248, 255, 0.70), transparent 34%),
-    linear-gradient(
-      145deg,
-      #fdeff9,
-      #ecf0fc,
-      #e0f7fa,
-      #e1f5fe,
-      #fffde7,
-      #fce4ec,
-      #f3e5f5
-    ) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  color: #222222 !important;
-}
-
-
-/* ============================================================
-   2. Dark Mode: Page Background
-   ============================================================ */
-
-html[data-theme='dark'],
-html[data-theme='dark'] body,
-html[data-theme='dark'] .site {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(70, 90, 120, 0.18), transparent 28%),
-    radial-gradient(circle at 82% 12%, rgba(40, 120, 140, 0.14), transparent 32%),
-    radial-gradient(circle at 88% 82%, rgba(120, 70, 110, 0.16), transparent 34%),
-    radial-gradient(circle at 18% 78%, rgba(55, 90, 120, 0.15), transparent 34%),
-    linear-gradient(
-      145deg,
-      #0e0e12,
-      #121212,
-      #101820,
-      #15121a,
-      #0f1117
-    ) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  color: #e0e0e0 !important;
-}
-
-
-/* ============================================================
-   3. Remove Default Middle Backgrounds Only
-   ============================================================ */
-
-html[data-theme='light'] .page,
-html[data-theme='light'] .page__inner-wrap,
-html[data-theme='light'] .initial-content,
-html[data-theme='light'] .archive,
-html[data-theme='light'] .archive__item,
-html[data-theme='light'] .post,
-html[data-theme='light'] .entry,
-html[data-theme='dark'] .page,
-html[data-theme='dark'] .page__inner-wrap,
-html[data-theme='dark'] .initial-content,
-html[data-theme='dark'] .archive,
-html[data-theme='dark'] .archive__item,
-html[data-theme='dark'] .post,
-html[data-theme='dark'] .entry {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-
-/* ============================================================
-   4. Light Mode: Main Content, 75% Transparent
+   1. Light Mode: Main Content Border Effect
    ============================================================ */
 
 html[data-theme='light'] .page__content {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-
-  /* 75% transparent = only 25% white layer */
-  background: rgba(255, 255, 255, 0.25) !important;
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  background-image: none !important;
-
-  color: #222222 !important;
-
-  border-radius: 24px !important;
-  padding: 2rem !important;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.70) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
-
-  backdrop-filter: blur(6px) saturate(1.15);
-  -webkit-backdrop-filter: blur(6px) saturate(1.15);
-
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow:
-    0 26px 68px rgba(31, 88, 120, 0.10),
-    0 8px 20px rgba(31, 88, 120, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
+    0 10px 28px rgba(31, 88, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.10);
 }
 
-
-/* crystal highlight */
 html[data-theme='light'] .page__content::before {
   content: "";
   position: absolute;
-  top: -60%;
-  left: -48%;
-  width: 85%;
-  height: 210%;
+  top: -50%;
+  left: -35%;
+  width: 70%;
+  height: 180%;
   pointer-events: none;
-  z-index: -1;
-
-  background:
-    linear-gradient(
-      115deg,
-      rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.16) 47%,
-      rgba(255, 255, 255, 0.04) 58%,
-      rgba(255, 255, 255, 0.00) 100%
-    );
-
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.00) 0%,
+    rgba(255, 255, 255, 0.00) 35%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.04) 60%,
+    rgba(255, 255, 255, 0.00) 100%
+  );
   transform: rotate(12deg);
 }
 
 html[data-theme='light'] .page__content:hover {
-  background: rgba(255, 255, 255, 0.28) !important;
-  background-color: rgba(255, 255, 255, 0.28) !important;
-
   box-shadow:
-    0 32px 78px rgba(31, 88, 120, 0.13),
-    0 10px 24px rgba(31, 88, 120, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.68),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.16) !important;
+    0 14px 34px rgba(31, 88, 120, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12);
 }
 
 
 /* ============================================================
-   5. Light Mode: Sidebar, 75% Transparent
+   2. Light Mode: Sidebar Border Effect
    ============================================================ */
 
 html[data-theme='light'] .sidebar {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-
-  /* 75% transparent = only 25% white layer */
-  background: rgba(255, 255, 255, 0.25) !important;
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  background-image: none !important;
-
-  color: #222222 !important;
-
-  border-radius: 24px !important;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.70) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
-
-  backdrop-filter: blur(6px) saturate(1.15);
-  -webkit-backdrop-filter: blur(6px) saturate(1.15);
-
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow:
-    0 24px 58px rgba(31, 88, 120, 0.10),
-    0 8px 18px rgba(31, 88, 120, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
+    0 10px 24px rgba(31, 88, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.10);
 }
 
-
-/* crystal highlight */
 html[data-theme='light'] .sidebar::before {
   content: "";
   position: absolute;
-  top: -62%;
-  left: -70%;
-  width: 120%;
-  height: 220%;
+  top: -55%;
+  left: -45%;
+  width: 85%;
+  height: 190%;
   pointer-events: none;
-  z-index: -1;
-
-  background:
-    linear-gradient(
-      115deg,
-      rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.16) 48%,
-      rgba(255, 255, 255, 0.04) 60%,
-      rgba(255, 255, 255, 0.00) 100%
-    );
-
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.00) 0%,
+    rgba(255, 255, 255, 0.00) 35%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.04) 60%,
+    rgba(255, 255, 255, 0.00) 100%
+  );
   transform: rotate(12deg);
 }
 
 html[data-theme='light'] .sidebar:hover {
-  background: rgba(255, 255, 255, 0.28) !important;
-  background-color: rgba(255, 255, 255, 0.28) !important;
-
   box-shadow:
-    0 30px 68px rgba(31, 88, 120, 0.13),
-    0 10px 24px rgba(31, 88, 120, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.68),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.16) !important;
+    0 14px 30px rgba(31, 88, 120, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12);
 }
 
 
 /* ============================================================
-   6. Dark Mode: Main Content, 75% Transparent
+   3. Dark Mode: Main Content Border Effect
    ============================================================ */
 
 html[data-theme='dark'] .page__content {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-
-  /* 75% transparent = only 25% dark layer */
-  background: rgba(18, 18, 18, 0.25) !important;
-  background-color: rgba(18, 18, 18, 0.25) !important;
-  background-image: none !important;
-
-  color: #e0e0e0 !important;
-
-  border-radius: 24px !important;
-  padding: 2rem !important;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.13) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.07) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-
-  backdrop-filter: blur(6px) saturate(1.15);
-  -webkit-backdrop-filter: blur(6px) saturate(1.15);
-
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
   box-shadow:
-    0 26px 68px rgba(0, 0, 0, 0.22),
-    0 8px 20px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
+    0 12px 30px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
 }
 
-
-/* crystal highlight */
 html[data-theme='dark'] .page__content::before {
   content: "";
   position: absolute;
-  top: -60%;
-  left: -48%;
-  width: 85%;
-  height: 210%;
+  top: -50%;
+  left: -35%;
+  width: 70%;
+  height: 180%;
   pointer-events: none;
-  z-index: -1;
-
-  background:
-    linear-gradient(
-      115deg,
-      rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.08) 47%,
-      rgba(255, 255, 255, 0.02) 58%,
-      rgba(255, 255, 255, 0.00) 100%
-    );
-
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.00) 0%,
+    rgba(255, 255, 255, 0.00) 35%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 60%,
+    rgba(255, 255, 255, 0.00) 100%
+  );
   transform: rotate(12deg);
 }
 
 html[data-theme='dark'] .page__content:hover {
-  background: rgba(18, 18, 18, 0.20) !important;
-  background-color: rgba(18, 18, 18, 0.20) !important;
-
   box-shadow:
-    0 32px 78px rgba(0, 0, 0, 0.28),
-    0 10px 24px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05) !important;
+    0 16px 36px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04);
 }
 
 
 /* ============================================================
-   7. Dark Mode: Sidebar, 75% Transparent
+   4. Dark Mode: Sidebar Border Effect
    ============================================================ */
 
 html[data-theme='dark'] .sidebar {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
-
-  /* 75% transparent = only 25% dark layer */
-  background: rgba(18, 18, 18, 0.25) !important;
-  background-color: rgba(18, 18, 18, 0.25) !important;
-  background-image: none !important;
-
-  color: #e0e0e0 !important;
-
-  border-radius: 24px !important;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.13) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.07) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-
-  backdrop-filter: blur(6px) saturate(1.15);
-  -webkit-backdrop-filter: blur(6px) saturate(1.15);
-
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
   box-shadow:
-    0 24px 58px rgba(0, 0, 0, 0.22),
-    0 8px 18px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
+    0 12px 28px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
 }
 
-
-/* crystal highlight */
 html[data-theme='dark'] .sidebar::before {
   content: "";
   position: absolute;
-  top: -62%;
-  left: -70%;
-  width: 120%;
-  height: 220%;
+  top: -55%;
+  left: -45%;
+  width: 85%;
+  height: 190%;
   pointer-events: none;
-  z-index: -1;
-
-  background:
-    linear-gradient(
-      115deg,
-      rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.08) 48%,
-      rgba(255, 255, 255, 0.02) 60%,
-      rgba(255, 255, 255, 0.00) 100%
-    );
-
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.00) 0%,
+    rgba(255, 255, 255, 0.00) 35%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 60%,
+    rgba(255, 255, 255, 0.00) 100%
+  );
   transform: rotate(12deg);
 }
 
 html[data-theme='dark'] .sidebar:hover {
-  background: rgba(18, 18, 18, 0.20) !important;
-  background-color: rgba(18, 18, 18, 0.20) !important;
-
   box-shadow:
-    0 30px 68px rgba(0, 0, 0, 0.28),
-    0 10px 24px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05) !important;
+    0 16px 34px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04);
 }
 
 
 /* ============================================================
-   8. Sidebar Inner Parts: Keep Transparent
+   5. Keep Sidebar Inner Parts Clean
    ============================================================ */
 
-html[data-theme='light'] .author__avatar,
-html[data-theme='light'] .author__content,
-html[data-theme='light'] .author__urls-wrapper,
-html[data-theme='light'] .author__urls,
-html[data-theme='light'] .author__urls.social-icons,
-html[data-theme='light'] .author__bio,
-html[data-theme='light'] .author__name,
-html[data-theme='dark'] .author__avatar,
-html[data-theme='dark'] .author__content,
-html[data-theme='dark'] .author__urls-wrapper,
-html[data-theme='dark'] .author__urls,
-html[data-theme='dark'] .author__urls.social-icons,
-html[data-theme='dark'] .author__bio,
-html[data-theme='dark'] .author__name {
+.author__avatar,
+.author__content,
+.author__urls-wrapper,
+.author__urls,
+.author__bio,
+.author__name {
   background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
   box-shadow: none !important;
   border: none !important;
-}
-
-
-/* ============================================================
-   9. Light Mode: Text and Links
-   ============================================================ */
-
-html[data-theme='light'] h1,
-html[data-theme='light'] h2,
-html[data-theme='light'] h3,
-html[data-theme='light'] h4,
-html[data-theme='light'] h5,
-html[data-theme='light'] h6 {
-  color: #222222 !important;
-}
-
-html[data-theme='light'] p,
-html[data-theme='light'] li,
-html[data-theme='light'] .page__content,
-html[data-theme='light'] .archive,
-html[data-theme='light'] .sidebar {
-  color: #222222 !important;
-}
-
-html[data-theme='light'] a {
-  color: #2b7bbb;
-}
-
-html[data-theme='light'] a:hover {
-  color: #005f99;
-}
-
-
-/* ============================================================
-   10. Dark Mode: Text and Links
-   ============================================================ */
-
-html[data-theme='dark'] h1,
-html[data-theme='dark'] h2,
-html[data-theme='dark'] h3,
-html[data-theme='dark'] h4,
-html[data-theme='dark'] h5,
-html[data-theme='dark'] h6 {
-  color: #ffffff !important;
-}
-
-html[data-theme='dark'] p,
-html[data-theme='dark'] li,
-html[data-theme='dark'] .page__content,
-html[data-theme='dark'] .archive,
-html[data-theme='dark'] .sidebar {
-  color: #e0e0e0 !important;
-}
-
-html[data-theme='dark'] a {
-  color: #4dd0e1;
-}
-
-html[data-theme='dark'] a:hover {
-  color: #80deea;
-}
-
-
-/* ============================================================
-   11. Code and Blockquote: Middle Content Only
-   ============================================================ */
-
-html[data-theme='light'] .page__content pre,
-html[data-theme='light'] .page__content code {
-  background: rgba(255, 255, 255, 0.25) !important;
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  color: #244b5a;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-}
-
-html[data-theme='dark'] .page__content pre,
-html[data-theme='dark'] .page__content code {
-  background: rgba(18, 18, 18, 0.35) !important;
-  background-color: rgba(18, 18, 18, 0.35) !important;
-  color: #80cbc4;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
-
-html[data-theme='light'] .page__content blockquote {
-  background: rgba(255, 255, 255, 0.25) !important;
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  border-left: 4px solid rgba(43, 123, 187, 0.45);
-  color: #333333;
-}
-
-html[data-theme='dark'] .page__content blockquote {
-  background: rgba(18, 18, 18, 0.35) !important;
-  background-color: rgba(18, 18, 18, 0.35) !important;
-  border-left: 4px solid rgba(77, 208, 225, 0.45);
-  color: #cccccc;
-}
-
-
-/* ============================================================
-   12. System Default Dark Mode
-   ============================================================ */
-
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) {
-    color-scheme: dark;
-    background-color: #121212;
-  }
 }
