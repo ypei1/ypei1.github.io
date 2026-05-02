@@ -188,6 +188,7 @@ html[data-theme='dark'] video {
 
 /* ============================================================
    9. Dark Mode: Header / Navigation
+   Use the same gradient-beam background as the page
    ============================================================ */
 
 html[data-theme='dark'] body > header,
@@ -195,8 +196,32 @@ html[data-theme='dark'] .site-header,
 html[data-theme='dark'] .masthead,
 html[data-theme='dark'] .masthead__inner-wrap,
 html[data-theme='dark'] .greedy-nav,
-html[data-theme='dark'] .greedy-nav .visible-links {
-  background-color: rgba(10, 12, 18, 0.88) !important;
+html[data-theme='dark'] .greedy-nav .visible-links,
+html[data-theme='dark'] .greedy-nav .hidden-links {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
+    radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
+    radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
+    linear-gradient(118deg,
+      transparent 0%,
+      rgba(60, 130, 255, 0.06) 16%,
+      rgba(60, 130, 255, 0.03) 23%,
+      transparent 31%),
+    linear-gradient(72deg,
+      transparent 0%,
+      rgba(0, 220, 255, 0.05) 20%,
+      rgba(0, 220, 255, 0.025) 28%,
+      transparent 36%),
+    linear-gradient(145deg,
+      #080a0f 0%,
+      #0b1017 24%,
+      #0b111a 50%,
+      #0a0d14 74%,
+      #07090d 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
   color: #e0e0e0 !important;
   border: none !important;
   box-shadow: none !important;
@@ -246,11 +271,40 @@ html[data-theme='dark'] .sidebar .contact__item i {
 
 /* ============================================================
    11. Dark Mode: Footer
+   Use the same gradient-beam background as the page
    ============================================================ */
 
-html[data-theme='dark'] .page__footer {
-  background-color: rgba(12, 14, 20, 0.90);
+html[data-theme='dark'] .page__footer,
+html[data-theme='dark'] .page__footer footer,
+html[data-theme='dark'] .page__footer-follow,
+html[data-theme='dark'] .page__footer-copyright {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
+    radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
+    radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
+    linear-gradient(118deg,
+      transparent 0%,
+      rgba(60, 130, 255, 0.06) 16%,
+      rgba(60, 130, 255, 0.03) 23%,
+      transparent 31%),
+    linear-gradient(72deg,
+      transparent 0%,
+      rgba(0, 220, 255, 0.05) 20%,
+      rgba(0, 220, 255, 0.025) 28%,
+      transparent 36%),
+    linear-gradient(145deg,
+      #080a0f 0%,
+      #0b1017 24%,
+      #0b111a 50%,
+      #0a0d14 74%,
+      #07090d 100%) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
   color: #999999;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 
