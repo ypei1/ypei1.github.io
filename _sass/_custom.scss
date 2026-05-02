@@ -1,11 +1,11 @@
 /* ============================================================
-   🌙 Dark Mode + 🌈 Transparent Crystal Light Mode
+   🌙 Dark Mode + 🌈 75% Transparent Crystal Light Mode
    Yang Pei Website
    ============================================================ */
 
 
 /* ============================================================
-   0. Smooth Transition
+   0. Global Transition
    ============================================================ */
 
 html,
@@ -21,7 +21,8 @@ body,
     background-color 0.35s ease,
     color 0.35s ease,
     box-shadow 0.35s ease,
-    border-color 0.35s ease;
+    border-color 0.35s ease,
+    backdrop-filter 0.35s ease;
 }
 
 
@@ -238,7 +239,7 @@ html[data-theme='light'] .site {
 
 
 /* ============================================================
-   12. Light Mode: Force All Layout Containers Transparent
+   12. Light Mode: Remove Default Solid Backgrounds
    ============================================================ */
 
 html[data-theme='light'] body,
@@ -246,7 +247,6 @@ html[data-theme='light'] .site,
 html[data-theme='light'] .initial-content,
 html[data-theme='light'] .page,
 html[data-theme='light'] .page__inner-wrap,
-html[data-theme='light'] .page__content,
 html[data-theme='light'] .archive,
 html[data-theme='light'] .archive__item,
 html[data-theme='light'] .post,
@@ -262,13 +262,11 @@ html[data-theme='light'] .feature__item--center {
   background-image: none !important;
   box-shadow: none !important;
   border: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
 }
 
 
 /* ============================================================
-   13. Light Mode: Transparent Crystal Main Content
+   13. Light Mode: Main Content, 75% Transparent
    ============================================================ */
 
 html[data-theme='light'] .page__content {
@@ -276,26 +274,27 @@ html[data-theme='light'] .page__content {
   overflow: hidden;
   isolation: isolate;
 
-  background: transparent !important;
-  background-color: transparent !important;
+  /* 75% transparent = 25% white opacity */
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   background-image: none !important;
 
   border-radius: 24px !important;
   padding: 2rem !important;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.72) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.70) !important;
   border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
   border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+
+  backdrop-filter: blur(8px) saturate(1.18);
+  -webkit-backdrop-filter: blur(8px) saturate(1.18);
 
   box-shadow:
     0 26px 68px rgba(31, 88, 120, 0.10),
     0 8px 20px rgba(31, 88, 120, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.55),
     inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
-
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
 
   color: #222222 !important;
 }
@@ -315,8 +314,8 @@ html[data-theme='light'] .page__content::before {
       115deg,
       rgba(255, 255, 255, 0.00) 0%,
       rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.20) 47%,
-      rgba(255, 255, 255, 0.05) 58%,
+      rgba(255, 255, 255, 0.16) 47%,
+      rgba(255, 255, 255, 0.04) 58%,
       rgba(255, 255, 255, 0.00) 100%
     );
 
@@ -336,15 +335,16 @@ html[data-theme='light'] .page__content::after {
   background:
     radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.16) 0%,
-      rgba(255, 255, 255, 0.06) 35%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.04) 35%,
       rgba(255, 255, 255, 0.00) 72%
     );
 }
 
 html[data-theme='light'] .page__content:hover {
-  background: transparent !important;
-  background-color: transparent !important;
+  /* hover 时稍微亮一点，但仍然约 75% 透明 */
+  background: rgba(255, 255, 255, 0.28) !important;
+  background-color: rgba(255, 255, 255, 0.28) !important;
   background-image: none !important;
 
   box-shadow:
@@ -356,7 +356,7 @@ html[data-theme='light'] .page__content:hover {
 
 
 /* ============================================================
-   14. Light Mode: Transparent Crystal Sidebar
+   14. Light Mode: Sidebar, 75% Transparent
    ============================================================ */
 
 html[data-theme='light'] .sidebar {
@@ -364,25 +364,26 @@ html[data-theme='light'] .sidebar {
   overflow: hidden;
   isolation: isolate;
 
-  background: transparent !important;
-  background-color: transparent !important;
+  /* 75% transparent = 25% white opacity */
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   background-image: none !important;
 
   border-radius: 24px !important;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.72) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.70) !important;
   border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
   border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+
+  backdrop-filter: blur(8px) saturate(1.18);
+  -webkit-backdrop-filter: blur(8px) saturate(1.18);
 
   box-shadow:
     0 24px 58px rgba(31, 88, 120, 0.10),
     0 8px 18px rgba(31, 88, 120, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.55),
     inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
-
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
 }
 
 html[data-theme='light'] .sidebar::before {
@@ -400,8 +401,8 @@ html[data-theme='light'] .sidebar::before {
       115deg,
       rgba(255, 255, 255, 0.00) 0%,
       rgba(255, 255, 255, 0.00) 30%,
-      rgba(255, 255, 255, 0.22) 48%,
-      rgba(255, 255, 255, 0.05) 60%,
+      rgba(255, 255, 255, 0.16) 48%,
+      rgba(255, 255, 255, 0.04) 60%,
       rgba(255, 255, 255, 0.00) 100%
     );
 
@@ -421,15 +422,16 @@ html[data-theme='light'] .sidebar::after {
   background:
     radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 255, 255, 0.05) 38%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.04) 38%,
       rgba(255, 255, 255, 0.00) 72%
     );
 }
 
 html[data-theme='light'] .sidebar:hover {
-  background: transparent !important;
-  background-color: transparent !important;
+  /* hover 时稍微亮一点，但仍然约 75% 透明 */
+  background: rgba(255, 255, 255, 0.28) !important;
+  background-color: rgba(255, 255, 255, 0.28) !important;
   background-image: none !important;
 
   box-shadow:
@@ -441,7 +443,7 @@ html[data-theme='light'] .sidebar:hover {
 
 
 /* ============================================================
-   15. Light Mode: Sidebar Inner Parts Transparent
+   15. Light Mode: Sidebar Inner Parts
    ============================================================ */
 
 html[data-theme='light'] .author__avatar,
@@ -468,7 +470,7 @@ html[data-theme='light'] .author__avatar img {
 
 
 /* ============================================================
-   16. Light Mode: Header Transparent
+   16. Light Mode: Header, 75% Transparent
    ============================================================ */
 
 html[data-theme='light'] body > header,
@@ -479,33 +481,33 @@ html[data-theme='light'] .greedy-nav,
 html[data-theme='light'] .greedy-nav .visible-links,
 html[data-theme='light'] .greedy-nav .hidden-links,
 html[data-theme='light'] .greedy-nav button {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   background-image: none !important;
   color: #222222 !important;
   box-shadow: none !important;
   border: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+  backdrop-filter: blur(6px) saturate(1.12);
+  -webkit-backdrop-filter: blur(6px) saturate(1.12);
 }
 
 
 /* ============================================================
-   17. Light Mode: Footer Transparent
+   17. Light Mode: Footer, 75% Transparent
    ============================================================ */
 
 html[data-theme='light'] .page__footer,
 html[data-theme='light'] .page__footer footer,
 html[data-theme='light'] .page__footer-follow,
 html[data-theme='light'] .page__footer-copyright {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   background-image: none !important;
   color: #777777 !important;
   box-shadow: none !important;
   border: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+  backdrop-filter: blur(6px) saturate(1.12);
+  -webkit-backdrop-filter: blur(6px) saturate(1.12);
 }
 
 
@@ -550,8 +552,8 @@ html[data-theme='light'] a:hover {
 
 html[data-theme='light'] pre,
 html[data-theme='light'] code {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   color: #244b5a;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -560,8 +562,8 @@ html[data-theme='light'] code {
 }
 
 html[data-theme='light'] blockquote {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   border-left: 4px solid rgba(43, 123, 187, 0.45);
   color: #333333;
 }
@@ -577,8 +579,8 @@ html[data-theme='light'] blockquote {
   right: 10px;
   z-index: 9999;
 
-  background: transparent !important;
-  background-color: transparent !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   background-image: none !important;
 
   border: 1px solid rgba(255, 255, 255, 0.45);
@@ -587,6 +589,9 @@ html[data-theme='light'] blockquote {
   cursor: pointer;
   overflow: visible;
   padding: 0.25rem 0.45rem;
+
+  backdrop-filter: blur(6px) saturate(1.12);
+  -webkit-backdrop-filter: blur(6px) saturate(1.12);
 
   box-shadow:
     0 8px 22px rgba(31, 88, 120, 0.10),
