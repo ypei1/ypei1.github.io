@@ -1,11 +1,11 @@
 /* ============================================================
-   🌙 Dark Mode + 🌈 Light Crystal Mode for AcademicPages
+   🌙 Dark Mode + 🌈 Transparent Crystal Light Mode
    Yang Pei Website
    ============================================================ */
 
 
 /* ============================================================
-   0. Shared Smooth Transition
+   0. Smooth Transition
    ============================================================ */
 
 html,
@@ -21,8 +21,7 @@ body,
     background-color 0.35s ease,
     color 0.35s ease,
     box-shadow 0.35s ease,
-    border-color 0.35s ease,
-    backdrop-filter 0.35s ease;
+    border-color 0.35s ease;
 }
 
 
@@ -38,43 +37,24 @@ html[data-theme='dark'] {
 html[data-theme='dark'] body,
 html[data-theme='dark'] .site,
 html[data-theme='dark'] .page,
+html[data-theme='dark'] .page__content,
 html[data-theme='dark'] .archive,
 html[data-theme='dark'] .archive__item,
 html[data-theme='dark'] .post,
 html[data-theme='dark'] .entry {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
+  border-radius: 12px;
 }
 
 
 /* ============================================================
-   2. Dark Mode: Main Content
+   2. Dark Mode: Hover Highlight
    ============================================================ */
-
-html[data-theme='dark'] .page__content {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(40, 40, 40, 0.88),
-      rgba(18, 18, 18, 0.92)
-    ) !important;
-  color: #e0e0e0 !important;
-  border-radius: 18px;
-  padding: 2rem;
-  border: 1px solid rgba(100, 255, 255, 0.08);
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-}
 
 html[data-theme='dark'] .page__content:hover,
 html[data-theme='dark'] .sidebar:hover {
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.38),
-    0 0 14px rgba(100, 255, 255, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(100, 255, 255, 0.07);
 }
 
 
@@ -155,7 +135,7 @@ html[data-theme='dark'] blockquote {
 html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none !important;
-  background: transparent;
+  background: transparent !important;
   box-shadow: none !important;
 }
 
@@ -174,8 +154,6 @@ html[data-theme='dark'] .greedy-nav .visible-links {
   color: #e0e0e0 !important;
   border: none !important;
   box-shadow: none !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 html[data-theme='dark'] .masthead__menu a,
@@ -195,21 +173,9 @@ html[data-theme='dark'] .greedy-nav a:hover {
    ============================================================ */
 
 html[data-theme='dark'] .sidebar {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(35, 35, 35, 0.88),
-      rgba(18, 18, 18, 0.92)
-    ) !important;
-  backdrop-filter: blur(14px) saturate(1.15);
-  -webkit-backdrop-filter: blur(14px) saturate(1.15);
-  border-radius: 18px;
-  border: 1px solid rgba(100, 255, 255, 0.08);
-  box-shadow:
-    0 14px 32px rgba(0, 0, 0, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  background-color: rgba(26, 26, 26, 0.85) !important;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(100, 255, 255, 0.04);
 }
 
 html[data-theme='dark'] .sidebar .contact__item,
@@ -237,23 +203,23 @@ html[data-theme='dark'] .sidebar .contact__item i {
    ============================================================ */
 
 html[data-theme='dark'] .page__footer {
-  background-color: #1a1a1a;
-  color: #999999;
+  background-color: #1a1a1a !important;
+  color: #999999 !important;
 }
 
 
 /* ============================================================
-   11. Light Mode: Soft Rainbow Background
+   11. Light Mode: Rainbow Background
    ============================================================ */
 
 html[data-theme='light'],
 html[data-theme='light'] body,
 html[data-theme='light'] .site {
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.65), transparent 26%),
-    radial-gradient(circle at 82% 12%, rgba(210, 245, 255, 0.65), transparent 30%),
-    radial-gradient(circle at 88% 82%, rgba(255, 225, 238, 0.72), transparent 34%),
-    radial-gradient(circle at 18% 78%, rgba(225, 248, 255, 0.75), transparent 34%),
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.55), transparent 26%),
+    radial-gradient(circle at 82% 12%, rgba(210, 245, 255, 0.60), transparent 30%),
+    radial-gradient(circle at 88% 82%, rgba(255, 225, 238, 0.65), transparent 34%),
+    radial-gradient(circle at 18% 78%, rgba(225, 248, 255, 0.70), transparent 34%),
     linear-gradient(
       145deg,
       #fdeff9,
@@ -272,25 +238,37 @@ html[data-theme='light'] .site {
 
 
 /* ============================================================
-   12. Light Mode: Remove Default Solid Backgrounds
+   12. Light Mode: Force All Layout Containers Transparent
    ============================================================ */
 
+html[data-theme='light'] body,
+html[data-theme='light'] .site,
+html[data-theme='light'] .initial-content,
 html[data-theme='light'] .page,
 html[data-theme='light'] .page__inner-wrap,
+html[data-theme='light'] .page__content,
 html[data-theme='light'] .archive,
 html[data-theme='light'] .archive__item,
 html[data-theme='light'] .post,
 html[data-theme='light'] .entry,
-html[data-theme='light'] .initial-content {
+html[data-theme='light'] .list__item,
+html[data-theme='light'] .feature__wrapper,
+html[data-theme='light'] .feature__item,
+html[data-theme='light'] .feature__item--left,
+html[data-theme='light'] .feature__item--right,
+html[data-theme='light'] .feature__item--center {
   background: transparent !important;
   background-color: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
   border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 
 /* ============================================================
-   13. Light Mode: Crystal Main Content Card
+   13. Light Mode: Transparent Crystal Main Content
    ============================================================ */
 
 html[data-theme='light'] .page__content {
@@ -298,30 +276,26 @@ html[data-theme='light'] .page__content {
   overflow: hidden;
   isolation: isolate;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.50) 0%,
-      rgba(255, 255, 255, 0.24) 42%,
-      rgba(255, 255, 255, 0.12) 100%
-    ) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 
-  border-radius: 24px;
-  padding: 2rem;
+  border-radius: 24px !important;
+  padding: 2rem !important;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.82);
-  border-left: 1px solid rgba(255, 255, 255, 0.66);
-  border-right: 1px solid rgba(255, 255, 255, 0.28);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-
-  backdrop-filter: blur(22px) saturate(1.55) brightness(1.04);
-  -webkit-backdrop-filter: blur(22px) saturate(1.55) brightness(1.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.72) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
 
   box-shadow:
-    0 28px 70px rgba(31, 88, 120, 0.14),
-    0 8px 22px rgba(31, 88, 120, 0.08),
-    inset 0 1px 1px rgba(255, 255, 255, 0.86),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.26);
+    0 26px 68px rgba(31, 88, 120, 0.10),
+    0 8px 20px rgba(31, 88, 120, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 
   color: #222222 !important;
 }
@@ -329,20 +303,20 @@ html[data-theme='light'] .page__content {
 html[data-theme='light'] .page__content::before {
   content: "";
   position: absolute;
-  top: -38%;
-  left: -32%;
+  top: -60%;
+  left: -48%;
   width: 85%;
-  height: 170%;
-  z-index: -1;
+  height: 210%;
   pointer-events: none;
+  z-index: -1;
 
   background:
     linear-gradient(
       115deg,
       rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.10) 28%,
-      rgba(255, 255, 255, 0.58) 47%,
-      rgba(255, 255, 255, 0.14) 63%,
+      rgba(255, 255, 255, 0.00) 30%,
+      rgba(255, 255, 255, 0.20) 47%,
+      rgba(255, 255, 255, 0.05) 58%,
       rgba(255, 255, 255, 0.00) 100%
     );
 
@@ -352,41 +326,37 @@ html[data-theme='light'] .page__content::before {
 html[data-theme='light'] .page__content::after {
   content: "";
   position: absolute;
-  right: -16%;
-  bottom: -22%;
+  right: -22%;
+  bottom: -30%;
   width: 58%;
-  height: 48%;
-  z-index: -1;
+  height: 50%;
   pointer-events: none;
+  z-index: -1;
 
   background:
     radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.48) 0%,
-      rgba(255, 255, 255, 0.22) 35%,
+      rgba(255, 255, 255, 0.16) 0%,
+      rgba(255, 255, 255, 0.06) 35%,
       rgba(255, 255, 255, 0.00) 72%
     );
 }
 
 html[data-theme='light'] .page__content:hover {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.58) 0%,
-      rgba(255, 255, 255, 0.30) 42%,
-      rgba(255, 255, 255, 0.16) 100%
-    ) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 
   box-shadow:
-    0 34px 82px rgba(31, 88, 120, 0.18),
-    0 10px 26px rgba(31, 88, 120, 0.10),
-    inset 0 1px 1px rgba(255, 255, 255, 0.90),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.30);
+    0 32px 78px rgba(31, 88, 120, 0.13),
+    0 10px 24px rgba(31, 88, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.16) !important;
 }
 
 
 /* ============================================================
-   14. Light Mode: Crystal Sidebar Card
+   14. Light Mode: Transparent Crystal Sidebar
    ============================================================ */
 
 html[data-theme='light'] .sidebar {
@@ -394,48 +364,44 @@ html[data-theme='light'] .sidebar {
   overflow: hidden;
   isolation: isolate;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.52) 0%,
-      rgba(255, 255, 255, 0.26) 48%,
-      rgba(255, 255, 255, 0.14) 100%
-    ) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 
-  border-radius: 24px;
+  border-radius: 24px !important;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.82);
-  border-left: 1px solid rgba(255, 255, 255, 0.66);
-  border-right: 1px solid rgba(255, 255, 255, 0.28);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-
-  backdrop-filter: blur(20px) saturate(1.55) brightness(1.04);
-  -webkit-backdrop-filter: blur(20px) saturate(1.55) brightness(1.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.72) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
 
   box-shadow:
-    0 24px 58px rgba(31, 88, 120, 0.13),
-    0 8px 18px rgba(31, 88, 120, 0.08),
-    inset 0 1px 1px rgba(255, 255, 255, 0.86),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.24);
+    0 24px 58px rgba(31, 88, 120, 0.10),
+    0 8px 18px rgba(31, 88, 120, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 html[data-theme='light'] .sidebar::before {
   content: "";
   position: absolute;
-  top: -38%;
-  left: -48%;
-  width: 110%;
-  height: 180%;
-  z-index: -1;
+  top: -62%;
+  left: -70%;
+  width: 120%;
+  height: 220%;
   pointer-events: none;
+  z-index: -1;
 
   background:
     linear-gradient(
       115deg,
       rgba(255, 255, 255, 0.00) 0%,
-      rgba(255, 255, 255, 0.12) 28%,
-      rgba(255, 255, 255, 0.55) 48%,
-      rgba(255, 255, 255, 0.12) 64%,
+      rgba(255, 255, 255, 0.00) 30%,
+      rgba(255, 255, 255, 0.22) 48%,
+      rgba(255, 255, 255, 0.05) 60%,
       rgba(255, 255, 255, 0.00) 100%
     );
 
@@ -446,35 +412,31 @@ html[data-theme='light'] .sidebar::after {
   content: "";
   position: absolute;
   right: -35%;
-  bottom: -30%;
-  width: 90%;
-  height: 60%;
-  z-index: -1;
+  bottom: -36%;
+  width: 92%;
+  height: 66%;
   pointer-events: none;
+  z-index: -1;
 
   background:
     radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.42) 0%,
-      rgba(255, 255, 255, 0.18) 38%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 38%,
       rgba(255, 255, 255, 0.00) 72%
     );
 }
 
 html[data-theme='light'] .sidebar:hover {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.60) 0%,
-      rgba(255, 255, 255, 0.31) 48%,
-      rgba(255, 255, 255, 0.16) 100%
-    ) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
 
   box-shadow:
-    0 30px 68px rgba(31, 88, 120, 0.17),
-    0 10px 24px rgba(31, 88, 120, 0.10),
-    inset 0 1px 1px rgba(255, 255, 255, 0.90),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.28);
+    0 30px 68px rgba(31, 88, 120, 0.13),
+    0 10px 24px rgba(31, 88, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.16) !important;
 }
 
 
@@ -485,23 +447,28 @@ html[data-theme='light'] .sidebar:hover {
 html[data-theme='light'] .author__avatar,
 html[data-theme='light'] .author__content,
 html[data-theme='light'] .author__urls-wrapper,
-html[data-theme='light'] .author__urls {
+html[data-theme='light'] .author__urls,
+html[data-theme='light'] .author__urls.social-icons,
+html[data-theme='light'] .author__bio,
+html[data-theme='light'] .author__name {
   background: transparent !important;
   background-color: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
   border: none !important;
 }
 
 html[data-theme='light'] .author__avatar img {
   border-radius: 50%;
+  background: transparent !important;
   box-shadow:
-    0 12px 28px rgba(31, 88, 120, 0.14),
-    0 0 0 4px rgba(255, 255, 255, 0.50);
+    0 12px 28px rgba(31, 88, 120, 0.12),
+    0 0 0 3px rgba(255, 255, 255, 0.45) !important;
 }
 
 
 /* ============================================================
-   16. Light Mode: Header Crystal Bar
+   16. Light Mode: Header Transparent
    ============================================================ */
 
 html[data-theme='light'] body > header,
@@ -509,39 +476,36 @@ html[data-theme='light'] .site-header,
 html[data-theme='light'] .masthead,
 html[data-theme='light'] .masthead__inner-wrap,
 html[data-theme='light'] .greedy-nav,
-html[data-theme='light'] .greedy-nav .visible-links {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.38),
-      rgba(255, 255, 255, 0.14)
-    ) !important;
+html[data-theme='light'] .greedy-nav .visible-links,
+html[data-theme='light'] .greedy-nav .hidden-links,
+html[data-theme='light'] .greedy-nav button {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
   color: #222222 !important;
-  box-shadow:
-    0 8px 24px rgba(31, 88, 120, 0.06),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.32);
+  box-shadow: none !important;
   border: none !important;
-  backdrop-filter: blur(18px) saturate(1.35);
-  -webkit-backdrop-filter: blur(18px) saturate(1.35);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 
 /* ============================================================
-   17. Light Mode: Footer Transparent Crystal
+   17. Light Mode: Footer Transparent
    ============================================================ */
 
-html[data-theme='light'] .page__footer {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.22),
-      rgba(255, 255, 255, 0.08)
-    ) !important;
+html[data-theme='light'] .page__footer,
+html[data-theme='light'] .page__footer footer,
+html[data-theme='light'] .page__footer-follow,
+html[data-theme='light'] .page__footer-copyright {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
   color: #777777 !important;
+  box-shadow: none !important;
   border: none !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.30);
-  backdrop-filter: blur(12px) saturate(1.25);
-  -webkit-backdrop-filter: blur(12px) saturate(1.25);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 
@@ -586,19 +550,20 @@ html[data-theme='light'] a:hover {
 
 html[data-theme='light'] pre,
 html[data-theme='light'] code {
-  background: rgba(255, 255, 255, 0.38);
+  background: transparent !important;
+  background-color: transparent !important;
   color: #244b5a;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 html[data-theme='light'] blockquote {
-  background: rgba(255, 255, 255, 0.30);
-  border-left: 4px solid rgba(43, 123, 187, 0.55);
+  background: transparent !important;
+  background-color: transparent !important;
+  border-left: 4px solid rgba(43, 123, 187, 0.45);
   color: #333333;
-  border-radius: 10px;
 }
 
 
@@ -611,26 +576,30 @@ html[data-theme='light'] blockquote {
   top: 10px;
   right: 10px;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.40);
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 999px;
   font-size: 1.5rem;
   cursor: pointer;
   overflow: visible;
   padding: 0.25rem 0.45rem;
-  backdrop-filter: blur(12px) saturate(1.35);
-  -webkit-backdrop-filter: blur(12px) saturate(1.35);
+
   box-shadow:
-    0 8px 22px rgba(31, 88, 120, 0.12),
-    inset 0 1px 1px rgba(255, 255, 255, 0.50);
+    0 8px 22px rgba(31, 88, 120, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.48);
+
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 #theme-toggle:hover {
   transform: scale(1.15) rotate(6deg);
   box-shadow:
-    0 10px 28px rgba(31, 88, 120, 0.16),
-    inset 0 1px 1px rgba(255, 255, 255, 0.60);
+    0 10px 28px rgba(31, 88, 120, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.60);
 }
 
 #theme-toggle::after {
@@ -663,7 +632,7 @@ html[data-theme='light'] blockquote {
 }
 
 html[data-theme='dark'] #theme-toggle {
-  background: rgba(30, 30, 30, 0.55);
+  background: rgba(30, 30, 30, 0.55) !important;
   border: 1px solid rgba(255, 255, 255, 0.10);
   box-shadow:
     0 8px 22px rgba(0, 0, 0, 0.28),
