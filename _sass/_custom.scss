@@ -1,12 +1,18 @@
-/* ===== 🌙 Dark Mode Styles for AcademicPages ===== */
+/* ============================================================
+   🌙 Dark Mode + 🌈 Light Mode Styles for AcademicPages
+   Yang Pei Website
+   ============================================================ */
 
-/* === 全局基础背景与文字 === */
+
+/* ============================================================
+   1. Dark Mode: Global Background and Text
+   ============================================================ */
+
 html[data-theme='dark'] {
   background-color: #121212;
   color: #e0e0e0;
 }
 
-/* === 正文区域背景 + 文字 === */
 html[data-theme='dark'] body,
 html[data-theme='dark'] .site,
 html[data-theme='dark'] .page,
@@ -21,13 +27,21 @@ html[data-theme='dark'] .entry {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* === hover 高亮效果 === */
+
+/* ============================================================
+   2. Dark Mode: Hover Highlight
+   ============================================================ */
+
 html[data-theme='dark'] .page__content:hover,
 html[data-theme='dark'] .sidebar:hover {
   box-shadow: 0 0 10px rgba(100, 255, 255, 0.07);
 }
 
-/* === 标题样式 === */
+
+/* ============================================================
+   3. Dark Mode: Headings
+   ============================================================ */
+
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -38,12 +52,17 @@ html[data-theme='dark'] h6 {
   font-weight: 600;
 }
 
-/* === 链接颜色 + 渐变下划线 === */
+
+/* ============================================================
+   4. Dark Mode: Links
+   ============================================================ */
+
 html[data-theme='dark'] a {
   color: #4dd0e1;
   position: relative;
   text-decoration: none;
 }
+
 html[data-theme='dark'] a::after {
   content: "";
   position: absolute;
@@ -56,11 +75,16 @@ html[data-theme='dark'] a::after {
   transform-origin: left;
   transition: transform 0.3s ease;
 }
+
 html[data-theme='dark'] a:hover::after {
   transform: scaleX(1);
 }
 
-/* === 代码块样式（卡片效果） === */
+
+/* ============================================================
+   5. Dark Mode: Code Blocks
+   ============================================================ */
+
 html[data-theme='dark'] pre,
 html[data-theme='dark'] code {
   background-color: #1a1a1a;
@@ -72,14 +96,22 @@ html[data-theme='dark'] code {
   overflow-x: auto;
 }
 
-/* === 引用块样式 === */
+
+/* ============================================================
+   6. Dark Mode: Blockquote
+   ============================================================ */
+
 html[data-theme='dark'] blockquote {
   background-color: #1f1f1f;
   border-left: 4px solid #4fc3f7;
   color: #cccccc;
 }
 
-/* === 图像/视频不反转 === */
+
+/* ============================================================
+   7. Dark Mode: Images and Videos
+   ============================================================ */
+
 html[data-theme='dark'] img,
 html[data-theme='dark'] video {
   filter: none !important;
@@ -87,7 +119,11 @@ html[data-theme='dark'] video {
   box-shadow: none !important;
 }
 
-/* === 顶部导航栏 === */
+
+/* ============================================================
+   8. Dark Mode: Header / Navigation
+   ============================================================ */
+
 html[data-theme='dark'] body > header,
 html[data-theme='dark'] .site-header,
 html[data-theme='dark'] .masthead,
@@ -98,51 +134,190 @@ html[data-theme='dark'] .greedy-nav .visible-links {
   color: #e0e0e0 !important;
   border: none !important;
   box-shadow: none !important;
-  backdrop-filter: blur(10px); /* 🔮 Glassmorphism 背景模糊 */
-  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
+
 html[data-theme='dark'] .masthead__menu a,
 html[data-theme='dark'] .greedy-nav a {
   color: #4dd0e1 !important;
 }
+
 html[data-theme='dark'] .masthead__menu a:hover,
 html[data-theme='dark'] .greedy-nav a:hover {
   color: #80deea !important;
   text-decoration: underline;
 }
 
-/* === 侧边栏样式 === */
+
+/* ============================================================
+   9. Dark Mode: Sidebar
+   ============================================================ */
+
 html[data-theme='dark'] .sidebar {
   background-color: rgba(26, 26, 26, 0.85) !important;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(100, 255, 255, 0.04);
 }
+
 html[data-theme='dark'] .sidebar .contact__item,
 html[data-theme='dark'] .sidebar p,
 html[data-theme='dark'] .sidebar li {
   color: #cccccc !important;
 }
+
 html[data-theme='dark'] .sidebar a {
   color: #64ffda;
 }
+
 html[data-theme='dark'] .sidebar a:hover {
   color: #18ffff;
 }
+
 html[data-theme='dark'] .sidebar .contact__item svg,
 html[data-theme='dark'] .sidebar .contact__item i {
   color: #64ffda !important;
 }
 
-/* === 页脚 === */
+
+/* ============================================================
+   10. Dark Mode: Footer
+   ============================================================ */
+
 html[data-theme='dark'] .page__footer {
   background-color: #1a1a1a;
   color: #999999;
 }
 
-/* === 夜间切换按钮动效 + 提示气泡 + 水波纹效果 === */
+
+/* ============================================================
+   11. Light Mode: Global Rainbow Background
+   ============================================================ */
+
+html[data-theme='light'],
+html[data-theme='light'] body,
+html[data-theme='light'] .site {
+  background: linear-gradient(
+    145deg,
+    #fdeff9,
+    #ecf0fc,
+    #e0f7fa,
+    #e1f5fe,
+    #fffde7,
+    #fce4ec,
+    #f3e5f5
+  ) !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  color: #222222 !important;
+}
+
+
+/* ============================================================
+   12. Light Mode: Make Main Boxes Transparent
+   ============================================================ */
+
+html[data-theme='light'] .page,
+html[data-theme='light'] .page__inner-wrap,
+html[data-theme='light'] .page__content,
+html[data-theme='light'] .archive,
+html[data-theme='light'] .archive__item,
+html[data-theme='light'] .post,
+html[data-theme='light'] .entry,
+html[data-theme='light'] .initial-content {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+
+/* ============================================================
+   13. Light Mode: Make Sidebar Transparent
+   ============================================================ */
+
+html[data-theme='light'] .sidebar,
+html[data-theme='light'] .author__avatar,
+html[data-theme='light'] .author__content,
+html[data-theme='light'] .author__urls-wrapper,
+html[data-theme='light'] .author__urls {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+html[data-theme='light'] .sidebar {
+  border-radius: 0 !important;
+}
+
+
+/* ============================================================
+   14. Light Mode: Header and Footer Transparent
+   ============================================================ */
+
+html[data-theme='light'] body > header,
+html[data-theme='light'] .site-header,
+html[data-theme='light'] .masthead,
+html[data-theme='light'] .masthead__inner-wrap,
+html[data-theme='light'] .greedy-nav,
+html[data-theme='light'] .greedy-nav .visible-links,
+html[data-theme='light'] .page__footer {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+
+/* ============================================================
+   15. Light Mode: Text and Links
+   ============================================================ */
+
+html[data-theme='light'] {
+  color: #222222;
+}
+
+html[data-theme='light'] h1,
+html[data-theme='light'] h2,
+html[data-theme='light'] h3,
+html[data-theme='light'] h4,
+html[data-theme='light'] h5,
+html[data-theme='light'] h6 {
+  color: #222222 !important;
+}
+
+html[data-theme='light'] p,
+html[data-theme='light'] li,
+html[data-theme='light'] .page__content,
+html[data-theme='light'] .archive,
+html[data-theme='light'] .sidebar {
+  color: #222222 !important;
+}
+
+html[data-theme='light'] a {
+  color: #2b7bbb;
+}
+
+html[data-theme='light'] a:hover {
+  color: #005f99;
+}
+
+
+/* ============================================================
+   16. Theme Toggle Button
+   ============================================================ */
+
 #theme-toggle {
-  transition: transform 0.25s ease;
   position: fixed;
   top: 10px;
   right: 10px;
@@ -151,179 +326,55 @@ html[data-theme='dark'] .page__footer {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  overflow: hidden;
-  position: relative;
+  overflow: visible;
+  transition: transform 0.25s ease;
 }
+
 #theme-toggle:hover {
   transform: scale(1.15) rotate(6deg);
 }
+
 #theme-toggle::after {
   content: "切换暗/亮模式";
   position: absolute;
   top: 110%;
   right: 0;
-  background-color: #333;
-  color: #fff;
+  background-color: #333333;
+  color: #ffffff;
   font-size: 12px;
   padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
+
 #theme-toggle:hover::after {
   opacity: 1;
 }
-/* 水波纹点击动画 */
-#theme-toggle::before {
-  content: "";
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transform: scale(0);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.5s, opacity 1s;
-}
-#theme-toggle:active::before {
-  width: 120px;
-  height: 120px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
+
+#theme-toggle svg {
+  transition: transform 0.3s ease;
+  color: #f9d71c;
 }
 
-/* === 自动根据系统首选项设定初始模式 === */
+#theme-toggle:hover svg {
+  transform: rotate(20deg) scale(1.1);
+}
+
+html[data-theme='dark'] #theme-toggle svg {
+  color: #cccccc;
+}
+
+
+/* ============================================================
+   17. System Default Dark Mode
+   ============================================================ */
+
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]) {
     color-scheme: dark;
     background-color: #121212;
   }
 }
-
-
-
-
-
-#theme-toggle svg {
-  transition: transform 0.3s ease;
-  color: #f9d71c;
-}
-#theme-toggle:hover svg {
-  transform: rotate(20deg) scale(1.1);
-}
-[data-theme='dark'] #theme-toggle svg {
-  color: #cccccc;
-}
-
-
-
-
-
-
-html[data-theme='dark'] {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-html[data-theme='light'] {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-
-
-
-
-
-
-// === 🌈 白天模式：柔和彩虹渐变背景 ===
-html[data-theme='light'],
-html[data-theme='light'] body,
-html[data-theme='light'] .site {
-  background: linear-gradient(145deg,
-    #fdeff9,
-    #ecf0fc,
-    #e0f7fa,
-    #e1f5fe,
-    #fffde7,
-    #fce4ec,
-    #f3e5f5);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #222; // 深一点防止太淡
-}
-
- 
-
-/* 白天主题下的柔和玻璃拟态效果 */
-html[data-theme='light'] {
-  /* 主内容容器（正文） */
-  .page__content {
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 18px;
-    padding: 2rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-  }
-
-  /* 侧边栏 */
-  .sidebar {
-    background: rgba(255, 255, 255, 0.55);
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-  }
-
-  /* 顶部导航栏 */
-  .masthead,
-  .masthead__inner-wrap {
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  /* 页脚区域 */
-  .page__footer {
-    background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-  }
-}
-
-
-
-
-
-
-// // === 🌤️ 白天水彩感背景（无图片版） ===
-// html[data-theme='light'],
-// html[data-theme='light'] body,
-// html[data-theme='light'] .site {
-//   background: linear-gradient(135deg, #e3f2fd, #fef9e7), 
-//               radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 70%),
-//               radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
-//   background-blend-mode: soft-light;
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   color: #111;
-// }
-
-// html[data-theme='light'] .page__content,
-// html[data-theme='light'] .sidebar,
-// html[data-theme='light'] .masthead,
-// html[data-theme='light'] .page__footer {
-//   background-color: rgba(255, 255, 255, 0.85);  // 半透明白
-//   border-radius: 10px;
-//   padding: 1rem;
-// }
