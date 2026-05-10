@@ -24,7 +24,9 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0), Submitted.
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with [Wei Jin](https://weijinsite.weebly.com/), Bin Sheng, Chenxin Jin, HenZhang),  [Draft](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0), Submitted.
 - *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).  Draft coming soon.
+- *Domestic Integration and External Frictions in an Ageing China*.  Draft coming soon.
 
+  
 ### Selected Papers in Progress
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
@@ -45,7 +47,6 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - Nankai University (NKIIE), 2025; 
 - Shanghai Jiao Tong University (SHINE-YES-With-NO), 2025
-
 
 
 
