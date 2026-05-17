@@ -1,47 +1,73 @@
 /* ============================================================
    🌙 Dark Mode + 🌈 Light Mode Styles for AcademicPages
    Yang Pei Website
+
+   Design:
+   - Light mode: restore the original pastel/rainbow daytime style.
+   - Dark mode: use animated galaxy / meteor canvas as background.
+   - Galaxy canvas is hidden in light mode and visible only in dark mode.
    ============================================================ */
 
 
 /* ============================================================
+   0. Dynamic Galaxy Canvas Layer
+   ============================================================ */
+
+#galaxy-bg {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background: #02040d !important;
+}
+
+/* Website content should stay above the animated canvas */
+body > *:not(#galaxy-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Important: hide the galaxy completely in light mode */
+html[data-theme='light'] #galaxy-bg {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Show the galaxy only in dark mode */
+html[data-theme='dark'] #galaxy-bg {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none !important;
+}
+
+
+/* ============================================================
    1. Dark Mode: Global Background and Text
-   Add soft gradient light beams to avoid a fully black background
+   Dark mode background is the animated galaxy canvas.
+   Therefore page-level backgrounds must be transparent.
    ============================================================ */
 
 html[data-theme='dark'],
 html[data-theme='dark'] body,
 html[data-theme='dark'] .site {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
-    radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
-    radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
-    linear-gradient(118deg,
-      transparent 0%,
-      rgba(60, 130, 255, 0.06) 16%,
-      rgba(60, 130, 255, 0.03) 23%,
-      transparent 31%),
-    linear-gradient(72deg,
-      transparent 0%,
-      rgba(0, 220, 255, 0.05) 20%,
-      rgba(0, 220, 255, 0.025) 28%,
-      transparent 36%),
-    linear-gradient(145deg,
-      #080a0f 0%,
-      #0b1017 24%,
-      #0b111a 50%,
-      #0a0d14 74%,
-      #07090d 100%) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  color: #e0e0e0;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #e8eefc !important;
+}
+
+html[data-theme='dark'] body {
+  color: #e8eefc !important;
 }
 
 
 /* ============================================================
    2. Dark Mode: Base Containers
-   Keep outer layout transparent so dark beams can show through
    ============================================================ */
 
 html[data-theme='dark'] .page,
@@ -50,17 +76,20 @@ html[data-theme='dark'] .archive,
 html[data-theme='dark'] .archive__item,
 html[data-theme='dark'] .post,
 html[data-theme='dark'] .entry,
-html[data-theme='dark'] .initial-content {
+html[data-theme='dark'] .initial-content,
+html[data-theme='dark'] .layout--single,
+html[data-theme='dark'] .layout--archive {
   background: transparent !important;
   background-color: transparent !important;
-  color: #e0e0e0 !important;
+  color: #e8eefc !important;
   border-radius: 12px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 /* ============================================================
-   3. Dark Mode: Border Effects for Homepage Main Boxes
+   3. Dark Mode: Homepage Main Boxes
+   Semi-transparent dark glass above galaxy background
    ============================================================ */
 
 html[data-theme='dark'] .page__content,
@@ -69,19 +98,22 @@ html[data-theme='dark'] .sidebar {
   overflow: hidden;
   border-radius: 18px !important;
 
-  background-color: rgba(18, 22, 30, 0.78) !important;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(7, 10, 22, 0.68) !important;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
 
-  border-top: 1px solid rgba(255, 255, 255, 0.16) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  border-top: 1px solid rgba(180, 220, 255, 0.22) !important;
+  border-left: 1px solid rgba(180, 220, 255, 0.16) !important;
+  border-right: 1px solid rgba(180, 220, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(180, 220, 255, 0.06) !important;
 
   box-shadow:
-    0 14px 34px rgba(0, 0, 0, 0.30),
-    inset 0 1px 0 rgba(255, 255, 255, 0.10),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.03) !important;
+    0 18px 42px rgba(0, 0, 0, 0.42),
+    0 0 22px rgba(90, 140, 255, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
+
+  color: #e8eefc !important;
 
   transition:
     background-color 0.3s ease,
@@ -91,21 +123,24 @@ html[data-theme='dark'] .sidebar {
 
 html[data-theme='dark'] .page__content:hover,
 html[data-theme='dark'] .sidebar:hover {
-  border-top: 1px solid rgba(120, 240, 255, 0.22) !important;
-  border-left: 1px solid rgba(120, 240, 255, 0.16) !important;
-  border-right: 1px solid rgba(120, 240, 255, 0.08) !important;
-  border-bottom: 1px solid rgba(120, 240, 255, 0.06) !important;
+  background-color: rgba(7, 10, 22, 0.74) !important;
+
+  border-top: 1px solid rgba(120, 240, 255, 0.30) !important;
+  border-left: 1px solid rgba(120, 240, 255, 0.22) !important;
+  border-right: 1px solid rgba(120, 240, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(120, 240, 255, 0.08) !important;
 
   box-shadow:
-    0 18px 42px rgba(0, 0, 0, 0.36),
-    0 0 14px rgba(100, 255, 255, 0.07),
-    inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
+    0 22px 50px rgba(0, 0, 0, 0.50),
+    0 0 18px rgba(100, 255, 255, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05) !important;
 }
 
 
 /* ============================================================
-   4. Dark Mode: Headings
+   4. Dark Mode: Text
+   Make all normal text readable on dark galaxy background
    ============================================================ */
 
 html[data-theme='dark'] h1,
@@ -118,13 +153,39 @@ html[data-theme='dark'] h6 {
   font-weight: 600;
 }
 
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] span,
+html[data-theme='dark'] .page__content,
+html[data-theme='dark'] .archive,
+html[data-theme='dark'] .archive__item,
+html[data-theme='dark'] .sidebar,
+html[data-theme='dark'] .author__name,
+html[data-theme='dark'] .author__bio,
+html[data-theme='dark'] .author__urls,
+html[data-theme='dark'] .author__urls li,
+html[data-theme='dark'] .author__urls a,
+html[data-theme='dark'] .contact__item {
+  color: #e8eefc !important;
+}
+
+html[data-theme='dark'] strong,
+html[data-theme='dark'] b {
+  color: #ffffff !important;
+}
+
+html[data-theme='dark'] em,
+html[data-theme='dark'] i {
+  color: #f0f4ff !important;
+}
+
 
 /* ============================================================
    5. Dark Mode: Links
    ============================================================ */
 
 html[data-theme='dark'] a {
-  color: #4dd0e1;
+  color: #64d9ff !important;
   position: relative;
   text-decoration: none;
 }
@@ -136,10 +197,14 @@ html[data-theme='dark'] a::after {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #4dd0e1, #80deea);
+  background: linear-gradient(90deg, #64d9ff, #9ffcff);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
+}
+
+html[data-theme='dark'] a:hover {
+  color: #9ffcff !important;
 }
 
 html[data-theme='dark'] a:hover::after {
@@ -153,8 +218,8 @@ html[data-theme='dark'] a:hover::after {
 
 html[data-theme='dark'] pre,
 html[data-theme='dark'] code {
-  background-color: #1a1a1a;
-  color: #80cbc4;
+  background-color: rgba(5, 8, 18, 0.86) !important;
+  color: #9ffcff !important;
   border-radius: 6px;
   padding: 0.6rem 0.9rem;
   font-family: Consolas, Menlo, monospace;
@@ -168,9 +233,9 @@ html[data-theme='dark'] code {
    ============================================================ */
 
 html[data-theme='dark'] blockquote {
-  background-color: #1f1f1f;
-  border-left: 4px solid #4fc3f7;
-  color: #cccccc;
+  background-color: rgba(8, 12, 26, 0.78) !important;
+  border-left: 4px solid #64d9ff !important;
+  color: #d8e7ff !important;
 }
 
 
@@ -188,7 +253,7 @@ html[data-theme='dark'] video {
 
 /* ============================================================
    9. Dark Mode: Header / Navigation
-   Use the same gradient-beam background as the page
+   Glass layer above galaxy background
    ============================================================ */
 
 html[data-theme='dark'] body > header,
@@ -198,46 +263,24 @@ html[data-theme='dark'] .masthead__inner-wrap,
 html[data-theme='dark'] .greedy-nav,
 html[data-theme='dark'] .greedy-nav .visible-links,
 html[data-theme='dark'] .greedy-nav .hidden-links {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
-    radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
-    radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
-    linear-gradient(118deg,
-      transparent 0%,
-      rgba(60, 130, 255, 0.06) 16%,
-      rgba(60, 130, 255, 0.03) 23%,
-      transparent 31%),
-    linear-gradient(72deg,
-      transparent 0%,
-      rgba(0, 220, 255, 0.05) 20%,
-      rgba(0, 220, 255, 0.025) 28%,
-      transparent 36%),
-    linear-gradient(145deg,
-      #080a0f 0%,
-      #0b1017 24%,
-      #0b111a 50%,
-      #0a0d14 74%,
-      #07090d 100%) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-
-  color: #e0e0e0 !important;
+  background: rgba(3, 6, 16, 0.52) !important;
+  background-color: rgba(3, 6, 16, 0.52) !important;
+  color: #e8eefc !important;
   border: none !important;
-  box-shadow: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 html[data-theme='dark'] .masthead__menu a,
 html[data-theme='dark'] .greedy-nav a {
-  color: #4dd0e1 !important;
+  color: #64d9ff !important;
 }
 
 html[data-theme='dark'] .masthead__menu a:hover,
 html[data-theme='dark'] .greedy-nav a:hover {
-  color: #80deea !important;
-  text-decoration: underline;
+  color: #9ffcff !important;
+  text-decoration: none;
 }
 
 
@@ -252,15 +295,15 @@ html[data-theme='dark'] .sidebar {
 html[data-theme='dark'] .sidebar .contact__item,
 html[data-theme='dark'] .sidebar p,
 html[data-theme='dark'] .sidebar li {
-  color: #cccccc !important;
+  color: #e8eefc !important;
 }
 
 html[data-theme='dark'] .sidebar a {
-  color: #64ffda;
+  color: #64ffda !important;
 }
 
 html[data-theme='dark'] .sidebar a:hover {
-  color: #18ffff;
+  color: #18ffff !important;
 }
 
 html[data-theme='dark'] .sidebar .contact__item svg,
@@ -271,45 +314,25 @@ html[data-theme='dark'] .sidebar .contact__item i {
 
 /* ============================================================
    11. Dark Mode: Footer
-   Use the same gradient-beam background as the page
    ============================================================ */
 
 html[data-theme='dark'] .page__footer,
 html[data-theme='dark'] .page__footer footer,
 html[data-theme='dark'] .page__footer-follow,
 html[data-theme='dark'] .page__footer-copyright {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
-    radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
-    radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
-    linear-gradient(118deg,
-      transparent 0%,
-      rgba(60, 130, 255, 0.06) 16%,
-      rgba(60, 130, 255, 0.03) 23%,
-      transparent 31%),
-    linear-gradient(72deg,
-      transparent 0%,
-      rgba(0, 220, 255, 0.05) 20%,
-      rgba(0, 220, 255, 0.025) 28%,
-      transparent 36%),
-    linear-gradient(145deg,
-      #080a0f 0%,
-      #0b1017 24%,
-      #0b111a 50%,
-      #0a0d14 74%,
-      #07090d 100%) !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-
-  color: #999999;
+  background: rgba(3, 6, 16, 0.58) !important;
+  background-color: rgba(3, 6, 16, 0.58) !important;
+  color: #c8d6ee !important;
   border: none !important;
   box-shadow: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 
 /* ============================================================
    12. Light Mode: Global Rainbow Background
+   RESTORED original daytime style
    ============================================================ */
 
 html[data-theme='light'],
@@ -334,6 +357,7 @@ html[data-theme='light'] .site {
 
 /* ============================================================
    13. Light Mode: Make Main Boxes Transparent
+   RESTORED original daytime layout
    ============================================================ */
 
 html[data-theme='light'] .page,
@@ -355,6 +379,7 @@ html[data-theme='light'] .initial-content {
 
 /* ============================================================
    14. Light Mode: Make Sidebar Transparent
+   RESTORED original daytime layout
    ============================================================ */
 
 html[data-theme='light'] .sidebar,
@@ -377,6 +402,7 @@ html[data-theme='light'] .sidebar {
 
 /* ============================================================
    15. Light Mode: Header and Footer Transparent
+   RESTORED original daytime layout
    ============================================================ */
 
 html[data-theme='light'] body > header,
@@ -397,6 +423,7 @@ html[data-theme='light'] .page__footer {
 
 /* ============================================================
    16. Light Mode: Border Effects for Homepage Main Boxes
+   RESTORED original daytime style
    ============================================================ */
 
 html[data-theme='light'] .page__content,
@@ -438,6 +465,7 @@ html[data-theme='light'] .sidebar:hover {
 
 /* ============================================================
    17. Light Mode: Text and Links
+   RESTORED original daytime colors
    ============================================================ */
 
 html[data-theme='light'] {
@@ -527,348 +555,80 @@ html[data-theme='dark'] #theme-toggle svg {
 
 /* ============================================================
    19. System Default Dark Mode
+   If browser prefers dark and no manual theme exists,
+   use the animated galaxy background.
    ============================================================ */
 
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) {
-    color-scheme: dark;
-    background:
-      radial-gradient(circle at 12% 18%, rgba(70, 150, 255, 0.10), transparent 26%),
-      radial-gradient(circle at 84% 14%, rgba(0, 210, 255, 0.07), transparent 24%),
-      radial-gradient(circle at 78% 78%, rgba(120, 100, 255, 0.05), transparent 28%),
-      linear-gradient(118deg,
-        transparent 0%,
-        rgba(60, 130, 255, 0.06) 16%,
-        rgba(60, 130, 255, 0.03) 23%,
-        transparent 31%),
-      linear-gradient(72deg,
-        transparent 0%,
-        rgba(0, 220, 255, 0.05) 20%,
-        rgba(0, 220, 255, 0.025) 28%,
-        transparent 36%),
-      linear-gradient(145deg,
-        #080a0f 0%,
-        #0b1017 24%,
-        #0b111a 50%,
-        #0a0d14 74%,
-        #07090d 100%) !important;
-  }
-}
-
-
-
-
-
-/* ============================================================
-   Dynamic Galaxy Background
-   Real animated background: canvas stars + nebula + meteors
-   ============================================================ */
-
-#galaxy-bg {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-  background: #02040d;
-}
-
-/* Keep all site content above the animated canvas */
-body > *:not(#galaxy-bg) {
-  position: relative;
-  z-index: 1;
-}
-
-/* Dark mode: let the animated galaxy show through */
-html[data-theme='dark'],
-html[data-theme='dark'] body,
-html[data-theme='dark'] .site {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* If no manual theme is set but system is dark */
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]),
   html:not([data-theme]) body,
   html:not([data-theme]) .site {
+    color-scheme: dark;
     background: transparent !important;
     background-color: transparent !important;
+    color: #e8eefc !important;
   }
-}
 
-/* Main content glass effect */
-html[data-theme='dark'] .page__content,
-html[data-theme='dark'] .sidebar {
-  background-color: rgba(7, 10, 22, 0.78) !important;
-  border: 1px solid rgba(160, 210, 255, 0.14) !important;
-  box-shadow:
-    0 18px 44px rgba(0, 0, 0, 0.42),
-    inset 0 1px 0 rgba(255, 255, 255, 0.10),
-    0 0 24px rgba(90, 140, 255, 0.055) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
+  html:not([data-theme]) #galaxy-bg {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 
-/* Header / nav: darker transparent layer */
-html[data-theme='dark'] body > header,
-html[data-theme='dark'] .site-header,
-html[data-theme='dark'] .masthead,
-html[data-theme='dark'] .masthead__inner-wrap,
-html[data-theme='dark'] .greedy-nav,
-html[data-theme='dark'] .greedy-nav .visible-links,
-html[data-theme='dark'] .greedy-nav .hidden-links {
-  background: rgba(3, 6, 16, 0.72) !important;
-  border: none !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
+  html:not([data-theme]) .page,
+  html:not([data-theme]) .page__inner-wrap,
+  html:not([data-theme]) .archive,
+  html:not([data-theme]) .archive__item,
+  html:not([data-theme]) .post,
+  html:not([data-theme]) .entry,
+  html:not([data-theme]) .initial-content {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #e8eefc !important;
+  }
 
-/* Footer: also transparent */
-html[data-theme='dark'] .page__footer,
-html[data-theme='dark'] .page__footer footer,
-html[data-theme='dark'] .page__footer-follow,
-html[data-theme='dark'] .page__footer-copyright {
-  background: rgba(3, 6, 16, 0.68) !important;
-  border: none !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
+  html:not([data-theme]) .page__content,
+  html:not([data-theme]) .sidebar {
+    background-color: rgba(7, 10, 22, 0.68) !important;
+    color: #e8eefc !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(180, 220, 255, 0.16) !important;
+    box-shadow:
+      0 18px 42px rgba(0, 0, 0, 0.42),
+      0 0 22px rgba(90, 140, 255, 0.09) !important;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+  }
 
-/* Improve readability above the moving background */
-html[data-theme='dark'] .page__content,
-html[data-theme='dark'] .sidebar,
-html[data-theme='dark'] .archive,
-html[data-theme='dark'] .archive__item,
-html[data-theme='dark'] .page__inner-wrap {
-  color: #e8eefc !important;
-}
+  html:not([data-theme]) h1,
+  html:not([data-theme]) h2,
+  html:not([data-theme]) h3,
+  html:not([data-theme]) h4,
+  html:not([data-theme]) h5,
+  html:not([data-theme]) h6,
+  html:not([data-theme]) p,
+  html:not([data-theme]) li,
+  html:not([data-theme]) .page__content,
+  html:not([data-theme]) .sidebar {
+    color: #e8eefc !important;
+  }
 
-/* Optional: keep light mode clean */
-html[data-theme='light'] #galaxy-bg {
-  opacity: 0.18;
-  filter: blur(0.2px) saturate(0.85);
-}
+  html:not([data-theme]) a {
+    color: #64d9ff !important;
+  }
 
-
-
-
-/* ============================================================
-   FIX: make galaxy canvas a real full-page background
-   ============================================================ */
-
-#galaxy-bg {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  display: block !important;
-  z-index: 0 !important;
-  pointer-events: none !important;
-  background: #02040d !important;
-}
-
-/* Put the website above the canvas */
-body > *:not(#galaxy-bg) {
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* Remove the old page-level background that covers the galaxy */
-html,
-body,
-.site,
-.initial-content,
-.page,
-.page__inner-wrap,
-.archive,
-.archive__item,
-.post,
-.entry {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Also override your old light-mode rainbow background */
-html[data-theme='light'],
-html[data-theme='light'] body,
-html[data-theme='light'] .site,
-html[data-theme='light'] .initial-content,
-html[data-theme='light'] .page,
-html[data-theme='light'] .page__inner-wrap,
-html[data-theme='light'] .archive,
-html[data-theme='light'] .archive__item,
-html[data-theme='light'] .post,
-html[data-theme='light'] .entry {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Also override your old dark-mode gradient background */
-html[data-theme='dark'],
-html[data-theme='dark'] body,
-html[data-theme='dark'] .site,
-html[data-theme='dark'] .initial-content,
-html[data-theme='dark'] .page,
-html[data-theme='dark'] .page__inner-wrap,
-html[data-theme='dark'] .archive,
-html[data-theme='dark'] .archive__item,
-html[data-theme='dark'] .post,
-html[data-theme='dark'] .entry {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Header / navigation becomes glass instead of a solid block */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav .visible-links,
-.greedy-nav .hidden-links,
-.site-header {
-  background: rgba(255, 255, 255, 0.58) !important;
-  background-color: rgba(255, 255, 255, 0.58) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Main text area: transparent glass card */
-.page__content,
-.sidebar {
-  background: rgba(255, 255, 255, 0.70) !important;
-  background-color: rgba(255, 255, 255, 0.70) !important;
-  border-radius: 18px !important;
-  border: 1px solid rgba(255, 255, 255, 0.48) !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-}
-
-/* Dark mode: use darker glass */
-html[data-theme='dark'] .masthead,
-html[data-theme='dark'] .masthead__inner-wrap,
-html[data-theme='dark'] .greedy-nav,
-html[data-theme='dark'] .greedy-nav .visible-links,
-html[data-theme='dark'] .greedy-nav .hidden-links,
-html[data-theme='dark'] .site-header {
-  background: rgba(3, 6, 16, 0.62) !important;
-  background-color: rgba(3, 6, 16, 0.62) !important;
-}
-
-html[data-theme='dark'] .page__content,
-html[data-theme='dark'] .sidebar {
-  background: rgba(7, 10, 22, 0.72) !important;
-  background-color: rgba(7, 10, 22, 0.72) !important;
-  color: #e8eefc !important;
-}
-
-/* Footer glass */
-.page__footer,
-.page__footer footer,
-.page__footer-follow,
-.page__footer-copyright {
-  background: rgba(3, 6, 16, 0.50) !important;
-  background-color: rgba(3, 6, 16, 0.50) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: none !important;
-}
-/* ============================================================
-   FINAL FIX: make galaxy effects visible
-   ============================================================ */
-
-/* Do NOT fade the animated galaxy in light mode */
-html[data-theme='light'] #galaxy-bg,
-html[data-theme='dark'] #galaxy-bg,
-#galaxy-bg {
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-/* Make sure the canvas itself stays dark and visible */
-#galaxy-bg {
-  background: #02040d !important;
-}
-
-/* Remove any remaining pastel/light background that may cover the galaxy */
-html,
-body,
-.site,
-.initial-content,
-.page,
-.page__inner-wrap,
-.archive,
-.archive__item,
-.post,
-.entry,
-.layout--single,
-.layout--archive {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Main text card: more transparent, so the galaxy can show through */
-.page__content {
-  background: rgba(255, 255, 255, 0.20) !important;
-  background-color: rgba(255, 255, 255, 0.42) !important;
-  border: 1px solid rgba(255, 255, 255, 0.38) !important;
-  border-radius: 18px !important;
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16) !important;
-  backdrop-filter: blur(7px) !important;
-  -webkit-backdrop-filter: blur(7px) !important;
-}
-
-/* Sidebar/profile card: also more transparent */
-.sidebar,
-.author__avatar,
-.author__content,
-.author__urls-wrapper {
-  background: rgba(255, 255, 255, 0.34) !important;
-  background-color: rgba(255, 255, 255, 0.34) !important;
-  border-radius: 18px !important;
-  backdrop-filter: blur(7px) !important;
-  -webkit-backdrop-filter: blur(7px) !important;
-}
-
-/* Navigation bar: lighter glass, not a solid white strip */
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.greedy-nav .visible-links,
-.greedy-nav .hidden-links {
-  background: rgba(255, 255, 255, 0.08) !important;
-  background-color: rgba(255, 255, 255, 0.28) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* If you switch to dark mode, use darker glass */
-html[data-theme='dark'] .page__content {
-  background: rgba(7, 10, 22, 0.46) !important;
-  background-color: rgba(7, 10, 22, 0.46) !important;
-  color: #e8eefc !important;
-}
-
-html[data-theme='dark'] .sidebar,
-html[data-theme='dark'] .author__avatar,
-html[data-theme='dark'] .author__content,
-html[data-theme='dark'] .author__urls-wrapper {
-  background: rgba(7, 10, 22, 0.38) !important;
-  background-color: rgba(7, 10, 22, 0.38) !important;
-}
-
-html[data-theme='dark'] .masthead,
-html[data-theme='dark'] .masthead__inner-wrap,
-html[data-theme='dark'] .greedy-nav,
-html[data-theme='dark'] .greedy-nav .visible-links,
-html[data-theme='dark'] .greedy-nav .hidden-links {
-  background: rgba(3, 6, 16, 0.38) !important;
-  background-color: rgba(3, 6, 16, 0.38) !important;
+  html:not([data-theme]) body > header,
+  html:not([data-theme]) .site-header,
+  html:not([data-theme]) .masthead,
+  html:not([data-theme]) .masthead__inner-wrap,
+  html:not([data-theme]) .greedy-nav,
+  html:not([data-theme]) .greedy-nav .visible-links,
+  html:not([data-theme]) .greedy-nav .hidden-links {
+    background: rgba(3, 6, 16, 0.52) !important;
+    color: #e8eefc !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
