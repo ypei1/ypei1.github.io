@@ -554,3 +554,100 @@ html[data-theme='dark'] #theme-toggle svg {
         #07090d 100%) !important;
   }
 }
+
+
+
+
+
+/* ============================================================
+   Dynamic Galaxy Background
+   Real animated background: canvas stars + nebula + meteors
+   ============================================================ */
+
+#galaxy-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: #02040d;
+}
+
+/* Keep all site content above the animated canvas */
+body > *:not(#galaxy-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark mode: let the animated galaxy show through */
+html[data-theme='dark'],
+html[data-theme='dark'] body,
+html[data-theme='dark'] .site {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* If no manual theme is set but system is dark */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]),
+  html:not([data-theme]) body,
+  html:not([data-theme]) .site {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* Main content glass effect */
+html[data-theme='dark'] .page__content,
+html[data-theme='dark'] .sidebar {
+  background-color: rgba(7, 10, 22, 0.78) !important;
+  border: 1px solid rgba(160, 210, 255, 0.14) !important;
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    0 0 24px rgba(90, 140, 255, 0.055) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Header / nav: darker transparent layer */
+html[data-theme='dark'] body > header,
+html[data-theme='dark'] .site-header,
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav .visible-links,
+html[data-theme='dark'] .greedy-nav .hidden-links {
+  background: rgba(3, 6, 16, 0.72) !important;
+  border: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Footer: also transparent */
+html[data-theme='dark'] .page__footer,
+html[data-theme='dark'] .page__footer footer,
+html[data-theme='dark'] .page__footer-follow,
+html[data-theme='dark'] .page__footer-copyright {
+  background: rgba(3, 6, 16, 0.68) !important;
+  border: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Improve readability above the moving background */
+html[data-theme='dark'] .page__content,
+html[data-theme='dark'] .sidebar,
+html[data-theme='dark'] .archive,
+html[data-theme='dark'] .archive__item,
+html[data-theme='dark'] .page__inner-wrap {
+  color: #e8eefc !important;
+}
+
+/* Optional: keep light mode clean */
+html[data-theme='light'] #galaxy-bg {
+  opacity: 0.18;
+  filter: blur(0.2px) saturate(0.85);
+}
