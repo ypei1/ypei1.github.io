@@ -778,3 +778,97 @@ html[data-theme='dark'] .sidebar {
   -webkit-backdrop-filter: blur(10px) !important;
   border: none !important;
 }
+/* ============================================================
+   FINAL FIX: make galaxy effects visible
+   ============================================================ */
+
+/* Do NOT fade the animated galaxy in light mode */
+html[data-theme='light'] #galaxy-bg,
+html[data-theme='dark'] #galaxy-bg,
+#galaxy-bg {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* Make sure the canvas itself stays dark and visible */
+#galaxy-bg {
+  background: #02040d !important;
+}
+
+/* Remove any remaining pastel/light background that may cover the galaxy */
+html,
+body,
+.site,
+.initial-content,
+.page,
+.page__inner-wrap,
+.archive,
+.archive__item,
+.post,
+.entry,
+.layout--single,
+.layout--archive {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Main text card: more transparent, so the galaxy can show through */
+.page__content {
+  background: rgba(255, 255, 255, 0.42) !important;
+  background-color: rgba(255, 255, 255, 0.42) !important;
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16) !important;
+  backdrop-filter: blur(7px) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+}
+
+/* Sidebar/profile card: also more transparent */
+.sidebar,
+.author__avatar,
+.author__content,
+.author__urls-wrapper {
+  background: rgba(255, 255, 255, 0.34) !important;
+  background-color: rgba(255, 255, 255, 0.34) !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(7px) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+}
+
+/* Navigation bar: lighter glass, not a solid white strip */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links {
+  background: rgba(255, 255, 255, 0.28) !important;
+  background-color: rgba(255, 255, 255, 0.28) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* If you switch to dark mode, use darker glass */
+html[data-theme='dark'] .page__content {
+  background: rgba(7, 10, 22, 0.46) !important;
+  background-color: rgba(7, 10, 22, 0.46) !important;
+  color: #e8eefc !important;
+}
+
+html[data-theme='dark'] .sidebar,
+html[data-theme='dark'] .author__avatar,
+html[data-theme='dark'] .author__content,
+html[data-theme='dark'] .author__urls-wrapper {
+  background: rgba(7, 10, 22, 0.38) !important;
+  background-color: rgba(7, 10, 22, 0.38) !important;
+}
+
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav .visible-links,
+html[data-theme='dark'] .greedy-nav .hidden-links {
+  background: rgba(3, 6, 16, 0.38) !important;
+  background-color: rgba(3, 6, 16, 0.38) !important;
+}
