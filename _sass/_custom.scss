@@ -651,3 +651,130 @@ html[data-theme='light'] #galaxy-bg {
   opacity: 0.18;
   filter: blur(0.2px) saturate(0.85);
 }
+
+
+
+
+/* ============================================================
+   FIX: make galaxy canvas a real full-page background
+   ============================================================ */
+
+#galaxy-bg {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background: #02040d !important;
+}
+
+/* Put the website above the canvas */
+body > *:not(#galaxy-bg) {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Remove the old page-level background that covers the galaxy */
+html,
+body,
+.site,
+.initial-content,
+.page,
+.page__inner-wrap,
+.archive,
+.archive__item,
+.post,
+.entry {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Also override your old light-mode rainbow background */
+html[data-theme='light'],
+html[data-theme='light'] body,
+html[data-theme='light'] .site,
+html[data-theme='light'] .initial-content,
+html[data-theme='light'] .page,
+html[data-theme='light'] .page__inner-wrap,
+html[data-theme='light'] .archive,
+html[data-theme='light'] .archive__item,
+html[data-theme='light'] .post,
+html[data-theme='light'] .entry {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Also override your old dark-mode gradient background */
+html[data-theme='dark'],
+html[data-theme='dark'] body,
+html[data-theme='dark'] .site,
+html[data-theme='dark'] .initial-content,
+html[data-theme='dark'] .page,
+html[data-theme='dark'] .page__inner-wrap,
+html[data-theme='dark'] .archive,
+html[data-theme='dark'] .archive__item,
+html[data-theme='dark'] .post,
+html[data-theme='dark'] .entry {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Header / navigation becomes glass instead of a solid block */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links,
+.site-header {
+  background: rgba(255, 255, 255, 0.58) !important;
+  background-color: rgba(255, 255, 255, 0.58) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Main text area: transparent glass card */
+.page__content,
+.sidebar {
+  background: rgba(255, 255, 255, 0.70) !important;
+  background-color: rgba(255, 255, 255, 0.70) !important;
+  border-radius: 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.48) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+/* Dark mode: use darker glass */
+html[data-theme='dark'] .masthead,
+html[data-theme='dark'] .masthead__inner-wrap,
+html[data-theme='dark'] .greedy-nav,
+html[data-theme='dark'] .greedy-nav .visible-links,
+html[data-theme='dark'] .greedy-nav .hidden-links,
+html[data-theme='dark'] .site-header {
+  background: rgba(3, 6, 16, 0.62) !important;
+  background-color: rgba(3, 6, 16, 0.62) !important;
+}
+
+html[data-theme='dark'] .page__content,
+html[data-theme='dark'] .sidebar {
+  background: rgba(7, 10, 22, 0.72) !important;
+  background-color: rgba(7, 10, 22, 0.72) !important;
+  color: #e8eefc !important;
+}
+
+/* Footer glass */
+.page__footer,
+.page__footer footer,
+.page__footer-follow,
+.page__footer-copyright {
+  background: rgba(3, 6, 16, 0.50) !important;
+  background-color: rgba(3, 6, 16, 0.50) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: none !important;
+}
