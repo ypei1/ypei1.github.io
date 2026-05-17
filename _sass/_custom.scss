@@ -814,7 +814,7 @@ body,
 
 /* Main text card: more transparent, so the galaxy can show through */
 .page__content {
-  background: rgba(255, 255, 255, 0.42) !important;
+  background: rgba(255, 255, 255, 0.20) !important;
   background-color: rgba(255, 255, 255, 0.42) !important;
   border: 1px solid rgba(255, 255, 255, 0.38) !important;
   border-radius: 18px !important;
@@ -841,7 +841,7 @@ body,
 .greedy-nav,
 .greedy-nav .visible-links,
 .greedy-nav .hidden-links {
-  background: rgba(255, 255, 255, 0.28) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   background-color: rgba(255, 255, 255, 0.28) !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
