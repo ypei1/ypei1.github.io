@@ -49,59 +49,37 @@
 
 
 /* ============================================================
-   Custom: wider text area + normal-sized sidebar card
+   Custom: widen main text area only
+   Keep the profile/sidebar/photo area at the default size
    ============================================================ */
 
 @media screen and (min-width: 1024px) {
 
-  /* Whole central container */
+  /* Make the whole page container wider */
   #main {
     max-width: 1450px !important;
     width: 92% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
   }
 
-  /* Left sidebar: do NOT make the profile card too wide */
-  .sidebar {
-    width: 230px !important;
-    max-width: 230px !important;
-    float: left !important;
-    margin-left: 0 !important;
-    margin-right: 55px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Homepage / research page text area */
+  /* Widen homepage / research page text area */
   .archive {
-    float: left !important;
-    width: calc(100% - 310px) !important;
+    width: calc(100% - 300px) !important;
     max-width: 1080px !important;
-
     padding-left: 0 !important;
     padding-right: 0 !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   }
 
-  /* Normal page text area */
+  /* Widen normal page text area */
   .page {
-    float: left !important;
-    width: calc(100% - 310px) !important;
+    width: calc(100% - 300px) !important;
     max-width: 1080px !important;
-
     padding-left: 0 !important;
     padding-right: 0 !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   }
 
-  /* Let text use the full content width */
+  /* Let text use the full width */
   .page__content,
   .archive__item,
   .archive__item-body,
@@ -110,83 +88,10 @@
     max-width: none !important;
   }
 
-  /* Remove unnecessary right-side reserved blank space */
+  /* Remove right-side blank area */
   .sidebar__right {
     display: none !important;
     width: 0 !important;
     max-width: 0 !important;
-  }
-}
-
-
-/* ============================================================
-   Custom: fix profile card and center avatar
-   ============================================================ */
-
-/* Keep the profile card compact */
-.sidebar .author__content,
-.sidebar .author__urls-wrapper,
-.sidebar .author__urls {
-  width: 100% !important;
-  max-width: 230px !important;
-}
-
-/* Center the avatar block */
-.sidebar .author__avatar {
-  display: block !important;
-  width: 100% !important;
-  max-width: 230px !important;
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 1em !important;
-}
-
-/* Center and control the photo size */
-.sidebar .author__avatar img {
-  display: block !important;
-  width: 160px !important;
-  height: 160px !important;
-  max-width: 160px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Keep name, affiliation, and links left-aligned */
-.sidebar .author__content,
-.sidebar .author__urls-wrapper {
-  text-align: left !important;
-}
-
-
-/* ============================================================
-   Mobile / narrow screen: avoid an oversized sidebar card
-   ============================================================ */
-
-@media screen and (max-width: 1023px) {
-
-  .sidebar {
-    max-width: 260px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .sidebar .author__avatar {
-    text-align: center !important;
-  }
-
-  .sidebar .author__avatar img {
-    display: block !important;
-    width: 160px !important;
-    height: 160px !important;
-    max-width: 160px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
