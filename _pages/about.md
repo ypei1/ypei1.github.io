@@ -21,7 +21,11 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
 - *Demographics, Trade, and Growth*, **Job Market Paper**, (joint with [Wei Jin](https://weijinsite.weebly.com/)), [old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970).
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*, [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968), Submitted.
-- *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).  Draft coming soon.
+- *Biofuel Policy, Trade, and Land-Use Change*, (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).  Draft coming soon.
+- *Domestic Market Segmentation and Spatial Income Inequality*, (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0), Submitted.
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC*, (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, HenZhang),  [Draft](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0), Submitted.
+- *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China*. (joint with Bin Sheng, Bing Yan, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin),  [Draft](https://www.dropbox.com/scl/fi/c4o2akm081gs7e2n78fh2/Greying-and-Gravity-Population-Ageing-and-the-Regional-Gains-from-Integration-in-China.pdf?rlkey=fb38f0cre4iobwvo3dg8r2o25&st=ep9htwgp&dl=0), Submitted.
+
   
 ### Selected Papers in Progress
 
@@ -66,10 +70,6 @@ redirect_from:
 - *On Deglobalization* (joint with [Jun Nie](https://www.junnie27.com/))  
 - *Firms, Immigration, and Home Trade Bias* (joint with [Jun Nie](https://www.junnie27.com/))
 
-- *Domestic Integration and External Frictions in an Ageing China*.  Draft coming soon.
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with [Wei Jin](https://weijinsite.weebly.com/), Bin Sheng, Chenxin Jin, HenZhang),  [Draft](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0), Submitted.
-
-- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)), [Draft](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0), Submitted.
 - *On CGE and NQTM Models* (joint with [Anton C. Yang](https://www.antonyang.com/) ).
 
 - On Green Energy  ( joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/),  and [Chenfei Qu](https://chenfeiqu.com/) ) <br>
