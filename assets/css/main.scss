@@ -49,37 +49,107 @@
 
 
 /* ============================================================
-   Custom: widen main text area only
-   Keep the profile/sidebar/photo area at the default size
+   Custom: wider text area, but restore profile/sidebar size
+   Right-side text area is reduced to 4/5 of the previous width
    ============================================================ */
 
 @media screen and (min-width: 1024px) {
 
-  /* Make the whole page container wider */
+  /* Whole page layout */
   #main {
-    max-width: 1450px !important;
+    max-width: 1320px !important;
     width: 92% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 55px !important;
   }
 
-  /* Widen homepage / research page text area */
+  /* Restore left profile/sidebar area */
+  .sidebar {
+    flex: 0 0 220px !important;
+    width: 220px !important;
+    max-width: 220px !important;
+
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Restore author profile card size */
+  .author__avatar {
+    width: 130px !important;
+    max-width: 130px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1em !important;
+  }
+
+  .author__avatar img {
+    width: 130px !important;
+    max-width: 130px !important;
+    height: 130px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+
+  .author__content {
+    width: 100% !important;
+    max-width: 220px !important;
+  }
+
+  .author__name {
+    font-size: 1.05em !important;
+    line-height: 1.2 !important;
+  }
+
+  .author__bio {
+    font-size: 0.85em !important;
+    line-height: 1.35 !important;
+  }
+
+  .author__urls-wrapper {
+    width: 100% !important;
+    max-width: 220px !important;
+  }
+
+  .author__urls {
+    font-size: 0.85em !important;
+  }
+
+  /* Homepage / research / archive text area */
   .archive {
-    width: calc(100% - 300px) !important;
-    max-width: 1080px !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: 784px !important;
+
+    float: none !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Widen normal page text area */
+  /* Normal page text area */
   .page {
-    width: calc(100% - 300px) !important;
-    max-width: 1080px !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: 784px !important;
+
+    float: none !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Let text use the full width */
+  /* Let text fully use the content width */
   .page__content,
   .archive__item,
   .archive__item-body,
@@ -88,7 +158,7 @@
     max-width: none !important;
   }
 
-  /* Remove right-side blank area */
+  /* Remove right-side blank space */
   .sidebar__right {
     display: none !important;
     width: 0 !important;
