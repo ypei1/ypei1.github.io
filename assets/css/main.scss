@@ -45,6 +45,44 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-
-
 @import "custom";
+
+
+/* ============================================================
+   Custom: widen the main text area
+   ============================================================ */
+
+@media screen and (min-width: 1024px) {
+
+  /* Overall page width */
+  #main {
+    max-width: 1400px !important;
+  }
+
+  /* Homepage / archive layout */
+  .archive {
+    width: calc(100% - 260px) !important;
+    padding-right: 0 !important;
+  }
+
+  /* Regular page layout */
+  .page {
+    width: calc(100% - 260px) !important;
+    padding-right: 0 !important;
+  }
+
+  /* Main text content */
+  .page__content {
+    max-width: 1050px !important;
+  }
+
+  /* Items on homepage, such as working papers */
+  .archive__item {
+    max-width: 1050px !important;
+  }
+
+  /* Reduce the unnecessary right-side blank space */
+  .sidebar__right {
+    display: none !important;
+  }
+}
