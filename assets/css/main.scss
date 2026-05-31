@@ -49,40 +49,71 @@
 
 
 /* ============================================================
-   Custom: widen the main text area
+   Custom: widen the homepage text area
+   This is for Minimal Mistakes / academicpages layout
    ============================================================ */
 
 @media screen and (min-width: 1024px) {
 
-  /* Overall page width */
+  /* Make the whole central area wider */
   #main {
-    max-width: 1400px !important;
+    max-width: 1280px !important;
+    width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  /* Homepage / archive layout */
+  /* Keep the left profile card fixed */
+  .sidebar {
+    width: 220px !important;
+    float: left !important;
+    margin-left: 0 !important;
+    margin-right: 35px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Widen homepage / archive content */
   .archive {
-    width: calc(100% - 260px) !important;
+    float: left !important;
+    width: 900px !important;
+    max-width: 900px !important;
+
+    /* These two lines are the key */
+    padding-left: 0 !important;
     padding-right: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Regular page layout */
+  /* Widen normal page content too */
   .page {
-    width: calc(100% - 260px) !important;
+    float: left !important;
+    width: 900px !important;
+    max-width: 900px !important;
+
+    padding-left: 0 !important;
     padding-right: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Main text content */
-  .page__content {
-    max-width: 1050px !important;
+  /* Let text use the full width */
+  .page__content,
+  .archive__item,
+  .archive__item-body,
+  .archive__item-excerpt {
+    max-width: none !important;
+    width: 100% !important;
   }
 
-  /* Items on homepage, such as working papers */
-  .archive__item {
-    max-width: 1050px !important;
-  }
-
-  /* Reduce the unnecessary right-side blank space */
+  /* Remove right-side reserved space */
   .sidebar__right {
     display: none !important;
+    width: 0 !important;
   }
 }
