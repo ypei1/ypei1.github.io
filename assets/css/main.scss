@@ -49,39 +49,37 @@
 
 
 /* ============================================================
-   Custom: widen the homepage text area
-   This is for Minimal Mistakes / academicpages layout
+   Custom: make the main research text area wider
    ============================================================ */
 
 @media screen and (min-width: 1024px) {
 
-  /* Make the whole central area wider */
+  /* Whole body container */
   #main {
-    max-width: 1280px !important;
-    width: 1280px !important;
+    max-width: 1450px !important;
+    width: 92% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
-  /* Keep the left profile card fixed */
+  /* Left profile/sidebar */
   .sidebar {
-    width: 220px !important;
+    width: 230px !important;
     float: left !important;
     margin-left: 0 !important;
-    margin-right: 35px !important;
+    margin-right: 55px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
-  /* Widen homepage / archive content */
+  /* Homepage / research page content */
   .archive {
     float: left !important;
-    width: 900px !important;
-    max-width: 900px !important;
+    width: calc(100% - 310px) !important;
+    max-width: 1080px !important;
 
-    /* These two lines are the key */
     padding-left: 0 !important;
     padding-right: 0 !important;
 
@@ -89,11 +87,11 @@
     margin-right: 0 !important;
   }
 
-  /* Widen normal page content too */
+  /* Normal page content */
   .page {
     float: left !important;
-    width: 900px !important;
-    max-width: 900px !important;
+    width: calc(100% - 310px) !important;
+    max-width: 1080px !important;
 
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -102,18 +100,19 @@
     margin-right: 0 !important;
   }
 
-  /* Let text use the full width */
+  /* Let text occupy the full content width */
   .page__content,
   .archive__item,
   .archive__item-body,
   .archive__item-excerpt {
-    max-width: none !important;
     width: 100% !important;
+    max-width: none !important;
   }
 
-  /* Remove right-side reserved space */
+  /* Remove right-side reserved blank space */
   .sidebar__right {
     display: none !important;
     width: 0 !important;
+    max-width: 0 !important;
   }
 }
