@@ -15,8 +15,8 @@ I received my Ph.D. in Economics from the [University of Houston](https://www.uh
 My current research lies at the intersection of international economics, environmental economics, and the Chinese economy. My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, as well as deriving policy implications. I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
- 
-<span style="color:#1f77b4;">I will be on the academic job market in the 2026–2027 academic year.</span>
+
+ <span style="color: blue; font-weight: bold;">I will be on the 2026–2027 academic job market.</span>
 
 ### Working Papers
  
