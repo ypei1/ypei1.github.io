@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+ 
 I am a Postdoctoral  Research Fellow at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University, where I work closely with Dr. [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en) and Dr. [Anton C. Yang](https://www.antonyang.com/). 
 
 I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
@@ -16,7 +16,8 @@ My current research lies at the intersection of international economics, environ
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  
- 
+<span style="color:#1f77b4;">I will be on the academic job market in the 2026–2027 academic year.</span>
+
 ### Working Papers
  
 - *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
