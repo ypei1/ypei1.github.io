@@ -19,22 +19,24 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
  <span style="color: blue; font-weight: bold;">I will be on the 2026–2027 academic job market.</span>
 
 ### Working Papers
+
+- *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft submitted](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968).
+  
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).
+  
+- *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0).
  
 - *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
 
 - *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.weebly.com/)). [Old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970). New draft coming soon.
-
-- *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft submitted](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968).
-
-- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft submitted](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0).
-
-
  
 ###  Papers Working in Progress
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
   
 - *Carbon Consequences of Deglobalization* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)).
+
+- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)).
  
 ### Conference
 
@@ -82,6 +84,8 @@ redirect_from:
   
 - *The Trade and Welfare Effects of the Mainland--Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/u6hrk5m592mzxiq0vhlvt/melize-1.pdf?rlkey=d719e3d1kx13b02s5b3udb79x&st=01k7esa9&dl=0).
 - *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Bin Sheng, Bing Yan, [Wei Jin](https://weijinsite.weebly.com/), and Chenxin Jin). [Draft submitted](https://www.dropbox.com/scl/fi/c4o2akm081gs7e2n78fh2/Greying-and-Gravity-Population-Ageing-and-the-Regional-Gains-from-Integration-in-China.pdf?rlkey=fb38f0cre4iobwvo3dg8r2o25&st=ep9htwgp&dl=0).
+
+- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft submitted](https://www.dropbox.com/scl/fi/tn427936p8xvz17myl0sn/draft_new.pdf?rlkey=qzl43r0sme9e8f3ox18qft8jh&e=1&dl=0).
 
 - *The Trade and Welfare Effects of the Mainland--Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/u6hrk5m592mzxiq0vhlvt/melize-1.pdf?rlkey=d719e3d1kx13b02s5b3udb79x&st=01k7esa9&dl=0).
 
