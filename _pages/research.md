@@ -16,13 +16,12 @@ My current research filed lie at the intersection of International Economics, En
 
 - The Decline in China’s Trade Share of GDP: A Structural Accounting (<a href="/files/2024TD1_5.pdf">PDF</a>)
  
-- Lines That Matter: Provincial Borders, Welfare, and  Inequality in China ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
+- Domestic Market Segmentation and Spatial Income Inequality ( joint with [Jun Nie](https://www.junnie27.com/). )    draft coming soon  <br>
 
 ### Working in Progress
-- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 
 - Firms, immigrations, and home trade bias ( joint with [Jun Nie](https://www.junnie27.com/). )     <br>
-
+- Internal trade and optimal external tariff ( joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home). )    <br>
 - Expectation Sentiment and Consumption Fluctuation: Insights from the Covid Era ( joint with [Richard Xu](https://elliott.gwu.edu/richard-xu). )     <br>
  
 ### Conference Presentations 
