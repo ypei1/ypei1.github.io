@@ -20,7 +20,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 ### Working Papers
 
-- *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047968). **R&R at the *European Economic Review*.**
+- *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372). **R&R at the *European Economic Review*.**
   
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).
   
