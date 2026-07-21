@@ -76,24 +76,143 @@
 
 <div class="page__footer-copyright">
 
-  &copy; {{ site.time | date: '%Y' }}
+  <!-- ===================================================== -->
+  <!-- 页脚单行显示样式                                      -->
+  <!-- ===================================================== -->
 
-  <!-- Busuanzi 网站访问统计 -->
+  <style>
+    .footer-meta-line {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      column-gap: 0.45rem;
+
+      width: 100%;
+      max-width: 100%;
+
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      padding: 0.12rem 0 0.18rem 0;
+
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .footer-meta-line > span {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+    }
+
+    .footer-meta-separator {
+      opacity: 0.65;
+      user-select: none;
+    }
+
+    .footer-meta-credit {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+    }
+
+    .footer-meta-line a {
+      white-space: nowrap;
+    }
+  </style>
+
+
+  <!-- Busuanzi 访问统计 -->
   <script
     async
     src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
   </script>
 
-  <!-- 建站时间 -->
-  <span id="sitetime"></span>
+
+  <!-- ===================================================== -->
+  <!-- 页脚所有信息放在同一行                                -->
+  <!-- ===================================================== -->
+
+  <div class="footer-meta-line">
+
+    <span>
+      &copy; {{ site.time | date: '%Y' }}
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span id="sitetime">
+      🕓 Loading site time...
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span id="busuanzi_container_site_uv">
+      👤 Total visitors&nbsp;
+      <span id="busuanzi_value_site_uv"></span>
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span id="busuanzi_container_site_pv">
+      👁️ Total views&nbsp;
+      <span id="busuanzi_value_site_pv"></span>
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span class="footer-meta-credit">
+      {{ site.name | default: site.title }}.
+      &nbsp;
+      {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
+      &nbsp;
+
+      <a
+        href="https://jekyllrb.com"
+        rel="nofollow">
+        Jekyll
+      </a>
+
+      &nbsp;&amp;&nbsp;
+
+      <a href="https://github.com/academicpages/academicpages.github.io">
+        AcademicPages
+      </a>,
+
+      &nbsp;a fork of&nbsp;
+
+      <a
+        href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+        rel="nofollow">
+        Minimal Mistakes
+      </a>.
+    </span>
+
+  </div>
+
+
+  <!-- ===================================================== -->
+  <!-- 建站运行时间                                          -->
+  <!-- ===================================================== -->
 
   <script>
   (function () {
     'use strict';
 
     /*
-     * JavaScript 月份从 0 开始：
-     * 6 表示 7 月。
+     * 月份从 0 开始：
+     * 6 代表 7 月。
      */
     const siteStartTime =
       new Date(
@@ -106,13 +225,10 @@
       ).getTime();
 
     function updateSiteTime() {
-      const now =
-        Date.now();
-
       const difference =
         Math.max(
           0,
-          now - siteStartTime
+          Date.now() - siteStartTime
         );
 
       const totalSeconds =
@@ -138,38 +254,38 @@
           secondsPerYear
         );
 
-      const afterYears =
+      const secondsAfterYears =
         totalSeconds -
         years * secondsPerYear;
 
       const days =
         Math.floor(
-          afterYears /
+          secondsAfterYears /
           secondsPerDay
         );
 
-      const afterDays =
-        afterYears -
+      const secondsAfterDays =
+        secondsAfterYears -
         days * secondsPerDay;
 
       const hours =
         Math.floor(
-          afterDays /
+          secondsAfterDays /
           secondsPerHour
         );
 
-      const afterHours =
-        afterDays -
+      const secondsAfterHours =
+        secondsAfterDays -
         hours * secondsPerHour;
 
       const minutes =
         Math.floor(
-          afterHours /
+          secondsAfterHours /
           secondsPerMinute
         );
 
       const seconds =
-        afterHours -
+        secondsAfterHours -
         minutes * secondsPerMinute;
 
       const element =
@@ -202,51 +318,30 @@
   })();
   </script>
 
-  <br />
-
-  <span id="busuanzi_container_site_uv">
-    👤Total visitors
-    <span id="busuanzi_value_site_uv"></span>
-    |
-  </span>
-
-  <span id="busuanzi_container_site_pv">
-    👁️Total views
-    <span id="busuanzi_value_site_pv"></span>
-  </span>
-
 
   <!-- ===================================================== -->
-  <!-- Visitor logging                                       -->
+  <!-- 访客记录程序                                          -->
   <!-- ===================================================== -->
 
   <script>
   (function () {
     'use strict';
 
-    /*
-     * 这是你当前 Apps Script Web App 的部署地址。
-     *
-     * 修改 Code.gs 后，只要更新原有 deployment，
-     * 这个地址通常不会改变。
-     */
     const LOGGER_URL =
       'https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec';
 
     const IPPURE_URL =
       'https://my.ippure.com/v1/info';
 
-    /*
-     * localStorage 中的 ID：
-     * 在访客清除浏览器数据前保持不变。
-     */
+    const IPIFY_URL =
+      'https://api.ipify.org?format=json';
+
+    const IPWHO_BASE_URL =
+      'https://ipwho.is/';
+
     const VISITOR_ID_KEY =
       'ypei_visitor_id';
 
-    /*
-     * sessionStorage 中的 ID：
-     * 同一个浏览器标签页会话中保持不变。
-     */
     const SESSION_ID_KEY =
       'ypei_session_id';
 
@@ -277,7 +372,7 @@
 
 
     /**
-     * 从 localStorage 或 sessionStorage 获取固定 ID。
+     * 获取或创建浏览器存储 ID。
      */
     function getOrCreateStorageId(
       storage,
@@ -300,9 +395,6 @@
         return value;
 
       } catch (error) {
-        /*
-         * 隐私模式或浏览器禁用 Storage 时使用临时 ID。
-         */
         return createRandomId();
       }
     }
@@ -319,6 +411,7 @@
             .timeZone ||
           ''
         );
+
       } catch (error) {
         return '';
       }
@@ -326,10 +419,440 @@
 
 
     /**
-     * 将字符串转换为 SHA-256 哈希。
+     * 请求 JSON。
+     */
+    async function fetchJson(
+      url,
+      options
+    ) {
+      const response =
+        await fetch(
+          url,
+          options || {
+            method: 'GET',
+            cache: 'no-store',
+            credentials: 'omit'
+          }
+        );
+
+      if (!response.ok) {
+        throw new Error(
+          'HTTP ' +
+          response.status +
+          ' from ' +
+          url
+        );
+      }
+
+      return response.json();
+    }
+
+
+    /**
+     * 只在原字段为空时补充字段。
+     */
+    function fillMissing(
+      object,
+      field,
+      value
+    ) {
+      if (
+        (
+          object[field] === undefined ||
+          object[field] === null ||
+          object[field] === ''
+        ) &&
+        value !== undefined &&
+        value !== null &&
+        value !== ''
+      ) {
+        object[field] =
+          value;
+      }
+    }
+
+
+    /**
+     * 标准化 IPPure 返回字段。
+     */
+    function normalizeIpPure(raw) {
+      raw =
+        raw &&
+        typeof raw === 'object'
+          ? raw
+          : {};
+
+      return {
+        ip:
+          raw.ip || '',
+
+        apiSource:
+          'IPPure',
+
+        asn:
+          raw.asn !== undefined
+            ? raw.asn
+            : '',
+
+        asOrganization:
+          raw.asOrganization ||
+          '',
+
+        country:
+          raw.country ||
+          '',
+
+        countryCode:
+          raw.countryCode ||
+          '',
+
+        region:
+          raw.region ||
+          '',
+
+        regionCode:
+          raw.regionCode ||
+          '',
+
+        city:
+          raw.city ||
+          '',
+
+        postalCode:
+          raw.postalCode ||
+          '',
+
+        continent:
+          raw.continent ||
+          '',
+
+        ipType:
+          raw.ipType ||
+          raw.type ||
+          '',
+
+        timezone:
+          raw.timezone ||
+          '',
+
+        longitude:
+          raw.longitude !== undefined
+            ? raw.longitude
+            : '',
+
+        latitude:
+          raw.latitude !== undefined
+            ? raw.latitude
+            : '',
+
+        fraudScore:
+          raw.fraudScore !== undefined
+            ? raw.fraudScore
+            : '',
+
+        isResidential:
+          raw.isResidential !== undefined
+            ? raw.isResidential
+            : '',
+
+        isBroadcast:
+          raw.isBroadcast !== undefined
+            ? raw.isBroadcast
+            : '',
+
+        userAgent:
+          raw.userAgent ||
+          ''
+      };
+    }
+
+
+    /**
+     * 使用 ipwho.is 补充缺少的地理和 ASN 信息。
+     */
+    function mergeIpWho(
+      base,
+      raw
+    ) {
+      if (
+        !raw ||
+        typeof raw !== 'object' ||
+        raw.success === false
+      ) {
+        return;
+      }
+
+      fillMissing(
+        base,
+        'ip',
+        raw.ip
+      );
+
+      fillMissing(
+        base,
+        'country',
+        raw.country
+      );
+
+      fillMissing(
+        base,
+        'countryCode',
+        raw.country_code
+      );
+
+      fillMissing(
+        base,
+        'region',
+        raw.region
+      );
+
+      fillMissing(
+        base,
+        'regionCode',
+        raw.region_code
+      );
+
+      fillMissing(
+        base,
+        'city',
+        raw.city
+      );
+
+      fillMissing(
+        base,
+        'postalCode',
+        raw.postal
+      );
+
+      fillMissing(
+        base,
+        'continent',
+        raw.continent
+      );
+
+      fillMissing(
+        base,
+        'ipType',
+        raw.type
+      );
+
+      fillMissing(
+        base,
+        'longitude',
+        raw.longitude
+      );
+
+      fillMissing(
+        base,
+        'latitude',
+        raw.latitude
+      );
+
+      if (
+        raw.timezone &&
+        typeof raw.timezone === 'object'
+      ) {
+        fillMissing(
+          base,
+          'timezone',
+          raw.timezone.id
+        );
+      }
+
+      if (
+        raw.connection &&
+        typeof raw.connection === 'object'
+      ) {
+        fillMissing(
+          base,
+          'asn',
+          raw.connection.asn
+        );
+
+        fillMissing(
+          base,
+          'asOrganization',
+          raw.connection.org ||
+          raw.connection.isp
+        );
+      }
+
+      if (
+        base.apiSource === 'IPPure'
+      ) {
+        base.apiSource =
+          'IPPure + ipwho.is';
+      } else {
+        base.apiSource =
+          'ipwho.is';
+      }
+    }
+
+
+    /**
+     * 判断 IP 信息是否缺少核心地理字段。
+     */
+    function needsGeoFallback(data) {
+      return (
+        !data.country ||
+        !data.region ||
+        !data.city ||
+        !data.asn ||
+        !data.asOrganization
+      );
+    }
+
+
+    /**
+     * 获取完整 IP 信息。
      *
-     * 这里生成的是轻量级浏览器指纹，
-     * 不读取 Canvas、WebGL、字体或音频数据。
+     * 顺序：
+     * 1. IPPure
+     * 2. ipify 补充 IP
+     * 3. ipwho.is 补充地理与 ASN
+     */
+    async function getIpInformation() {
+      let data = {};
+      const errors = [];
+
+      /*
+       * 第一步：IPPure。
+       */
+      try {
+        const ippureRaw =
+          await fetchJson(
+            IPPURE_URL,
+            {
+              method: 'GET',
+              cache: 'no-store',
+              credentials: 'omit'
+            }
+          );
+
+        data =
+          normalizeIpPure(
+            ippureRaw
+          );
+
+      } catch (error) {
+        errors.push(
+          'IPPure: ' +
+          String(
+            error &&
+            error.message
+              ? error.message
+              : error
+          )
+        );
+
+        data = {
+          apiSource: ''
+        };
+      }
+
+
+      /*
+       * 第二步：如果 IPPure 没有返回 IP，使用 ipify。
+       */
+      if (!data.ip) {
+        try {
+          const ipifyRaw =
+            await fetchJson(
+              IPIFY_URL,
+              {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'omit'
+              }
+            );
+
+          if (
+            ipifyRaw &&
+            ipifyRaw.ip
+          ) {
+            data.ip =
+              ipifyRaw.ip;
+
+            data.apiSource =
+              data.apiSource
+                ? data.apiSource + ' + ipify'
+                : 'ipify';
+          }
+
+        } catch (error) {
+          errors.push(
+            'ipify: ' +
+            String(
+              error &&
+              error.message
+                ? error.message
+                : error
+            )
+          );
+        }
+      }
+
+
+      /*
+       * 第三步：缺少地理信息时使用 ipwho.is。
+       */
+      if (
+        data.ip &&
+        needsGeoFallback(data)
+      ) {
+        try {
+          const ipWhoRaw =
+            await fetchJson(
+              IPWHO_BASE_URL +
+              encodeURIComponent(data.ip),
+              {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'omit'
+              }
+            );
+
+          if (
+            ipWhoRaw &&
+            ipWhoRaw.success === false
+          ) {
+            throw new Error(
+              ipWhoRaw.message ||
+              'ipwho.is lookup failed'
+            );
+          }
+
+          mergeIpWho(
+            data,
+            ipWhoRaw
+          );
+
+        } catch (error) {
+          errors.push(
+            'ipwho.is: ' +
+            String(
+              error &&
+              error.message
+                ? error.message
+                : error
+            )
+          );
+        }
+      }
+
+
+      return {
+        data:
+          data,
+
+        error:
+          errors.join('; ')
+      };
+    }
+
+
+    /**
+     * SHA-256 轻量指纹。
      */
     async function hashText(text) {
       if (
@@ -358,9 +881,6 @@
           .join('');
       }
 
-      /*
-       * 旧浏览器备用哈希。
-       */
       let hash = 0;
 
       for (
@@ -383,123 +903,16 @@
 
 
     /**
-     * 获取 IPPure 信息。
-     *
-     * 必须由访客浏览器直接调用。
-     * 不能由 Apps Script 调用，否则会得到 Google 服务器 IP。
-     */
-    async function getIpInformation() {
-      const result = {
-        data: {},
-        error: ''
-      };
-
-      try {
-        const response =
-          await fetch(
-            IPPURE_URL,
-            {
-              method: 'GET',
-              cache: 'no-store',
-              credentials: 'omit'
-            }
-          );
-
-        if (!response.ok) {
-          throw new Error(
-            'IPPure HTTP ' +
-            response.status
-          );
-        }
-
-        const data =
-          await response.json();
-
-        if (
-          !data ||
-          typeof data !== 'object'
-        ) {
-          throw new Error(
-            'IPPure returned invalid data.'
-          );
-        }
-
-        result.data =
-          data;
-
-        return result;
-
-      } catch (ippureError) {
-        result.error =
-          'IPPure: ' +
-          String(
-            ippureError &&
-            ippureError.message
-              ? ippureError.message
-              : ippureError
-          );
-      }
-
-      /*
-       * IPPure 失败时，使用 ipify 仅获取 IP。
-       * 地理位置和风险信息会留空。
-       */
-      try {
-        const fallbackResponse =
-          await fetch(
-            'https://api.ipify.org?format=json',
-            {
-              method: 'GET',
-              cache: 'no-store'
-            }
-          );
-
-        if (!fallbackResponse.ok) {
-          throw new Error(
-            'ipify HTTP ' +
-            fallbackResponse.status
-          );
-        }
-
-        const fallbackData =
-          await fallbackResponse.json();
-
-        if (
-          fallbackData &&
-          fallbackData.ip
-        ) {
-          result.data.ip =
-            fallbackData.ip;
-        }
-
-      } catch (fallbackError) {
-        result.error +=
-          '; ipify fallback: ' +
-          String(
-            fallbackError &&
-            fallbackError.message
-              ? fallbackError.message
-              : fallbackError
-          );
-      }
-
-      return result;
-    }
-
-
-    /**
-     * 将访问记录发送到 Apps Script。
+     * 发送记录。
      */
     function sendLog(payload) {
       const body =
         JSON.stringify(payload);
 
       /*
-       * sendBeacon 在页面关闭、切换或跳转时更可靠。
+       * 优先使用 sendBeacon。
        */
-      if (
-        navigator.sendBeacon
-      ) {
+      if (navigator.sendBeacon) {
         const blob =
           new Blob(
             [body],
@@ -521,9 +934,7 @@
       }
 
       /*
-       * sendBeacon 不可用时使用 fetch。
-       *
-       * no-cors 允许跨域发送，但浏览器不会暴露响应内容。
+       * 备用 fetch。
        */
       fetch(
         LOGGER_URL,
@@ -537,18 +948,19 @@
               'text/plain;charset=UTF-8'
           },
 
-          body: body
+          body:
+            body
         }
       ).catch(function () {
         /*
-         * 记录失败不影响主页显示。
+         * 日志失败不影响网站运行。
          */
       });
     }
 
 
     /**
-     * 收集并提交访问信息。
+     * 收集访问信息。
      */
     async function logVisitor() {
       try {
@@ -614,11 +1026,6 @@
             ? navigator.languages
             : [];
 
-        /*
-         * 轻量级指纹组成。
-         *
-         * 不包括 Canvas、WebGL、字体、音频等高侵入性项目。
-         */
         const fingerprintComponents = {
           userAgent:
             navigator.userAgent || '',
@@ -666,12 +1073,6 @@
             )
           );
 
-        /*
-         * Object.assign 的后面字段优先级更高。
-         *
-         * IPPure 返回的 userAgent 保存在 userAgent；
-         * 浏览器直接读取的 UA 保存在 browserUserAgent。
-         */
         const payload =
           Object.assign(
             {},
@@ -680,14 +1081,30 @@
               clientTimestamp:
                 new Date().toISOString(),
 
-              eventId:
-                eventId,
-
               visitorId:
                 visitorId,
 
               sessionId:
                 sessionId,
+
+              eventId:
+                eventId,
+
+              pageTitle:
+                document.title ||
+                '',
+
+              pageUrl:
+                window.location.href,
+
+              path:
+                window.location.pathname +
+                window.location.search +
+                window.location.hash,
+
+              referrer:
+                document.referrer ||
+                '',
 
               browserUserAgent:
                 navigator.userAgent ||
@@ -766,22 +1183,6 @@
                   ? connection.saveData
                   : '',
 
-              pageTitle:
-                document.title ||
-                '',
-
-              pageUrl:
-                window.location.href,
-
-              path:
-                window.location.pathname +
-                window.location.search +
-                window.location.hash,
-
-              referrer:
-                document.referrer ||
-                '',
-
               fingerprintId:
                 fingerprintId,
 
@@ -794,9 +1195,6 @@
         sendLog(payload);
 
       } catch (error) {
-        /*
-         * 日志程序本身失败时，不影响网站其他部分。
-         */
         console.error(
           'Visitor logging failed:',
           error
@@ -805,8 +1203,8 @@
     }
 
 
-    /*
-     * 页面完成加载后执行一次。
+    /**
+     * 页面加载完成后执行一次。
      */
     if (
       document.readyState === 'complete'
@@ -815,6 +1213,7 @@
         logVisitor,
         0
       );
+
     } else {
       window.addEventListener(
         'load',
@@ -832,31 +1231,5 @@
 
   })();
   </script>
-
-
-  <br />
-
-  {{ site.name | default: site.title }}.
-  {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
-
-  <a
-    href="https://jekyllrb.com"
-    rel="nofollow">
-    Jekyll
-  </a>
-
-  &amp;
-
-  <a href="https://github.com/academicpages/academicpages.github.io">
-    AcademicPages
-  </a>,
-
-  a fork of
-
-  <a
-    href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
-    rel="nofollow">
-    Minimal Mistakes
-  </a>.
 
 </div>
