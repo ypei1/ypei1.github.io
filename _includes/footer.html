@@ -2,115 +2,861 @@
 
 <div class="page__footer-follow">
   <ul class="social-icons">
+
     {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      <li>
+        <strong>
+          {{ site.data.ui-text[site.locale].follow_label }}
+        </strong>
+      </li>
     {% endif %}
+
     {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter.username }}">
+          <i
+            class="fab fa-twitter-square"
+            aria-hidden="true">
+          </i>
+          Twitter
+        </a>
+      </li>
     {% endif %}
+
     {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+      <li>
+        <a href="https://facebook.com/{{ site.facebook.username }}">
+          <i
+            class="fab fa-facebook-square"
+            aria-hidden="true">
+          </i>
+          Facebook
+        </a>
+      </li>
     {% endif %}
+
     {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li>
+        <a href="https://github.com/{{ site.author.github }}">
+          <i
+            class="fab fa-github"
+            aria-hidden="true">
+          </i>
+          GitHub
+        </a>
+      </li>
     {% endif %}
+
     {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+      <li>
+        <a href="https://bitbucket.org/{{ site.author.bitbucket }}">
+          <i
+            class="fab fa-bitbucket"
+            aria-hidden="true">
+          </i>
+          Bitbucket
+        </a>
+      </li>
     {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+
+    <li>
+      <a
+        href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">
+        <i
+          class="fa fa-fw fa-rss-square"
+          aria-hidden="true">
+        </i>
+        {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
+      </a>
+    </li>
+
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }}
 
+<div class="page__footer-copyright">
 
+  &copy; {{ site.time | date: '%Y' }}
 
-  
- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="sitetime"></span> <!--显示建站时间的地方放置此代码 可以加上其他代HTML代码加粗颜色等-->
-<script language=javascript>
-function siteTime(){
-    window.setTimeout("siteTime()", 1000);
-    var seconds = 1000;
-    var minutes = seconds * 60;
-    var hours = minutes * 60;
-    var days = hours * 24;
-    var years = days * 365;
-    var today = new Date();
-    var todayYear = today.getFullYear();
-    var todayMonth = today.getMonth()+1;
-    var todayDate = today.getDate();
-    var todayHour = today.getHours();
-    var todayMinute = today.getMinutes();
-    var todaySecond = today.getSeconds();
-    var t1 = Date.UTC(2023,6,24,20,00,00);  //此处填写建站时间 依次为 年,月,日,时,分,秒注意格式 半角,
-    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-    var diff = t2-t1;
-    var diffYears = Math.floor(diff/years);
-    var diffDays = Math.floor((diff/days)-diffYears*365);
-    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-    document.getElementById("sitetime").innerHTML="🕓ThreeStones's Blog already run "+diffYears+" years "+diffDays+" days "+diffHours+" hours "+diffMinutes+" mins "+diffSeconds+" s";
+  <!-- Busuanzi 网站访问统计 -->
+  <script
+    async
+    src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+
+  <!-- 建站时间 -->
+  <span id="sitetime"></span>
+
+  <script>
+  (function () {
+    'use strict';
+
+    /*
+     * JavaScript 月份从 0 开始：
+     * 6 表示 7 月。
+     */
+    const siteStartTime =
+      new Date(
+        2023,
+        6,
+        24,
+        20,
+        0,
+        0
+      ).getTime();
+
+    function updateSiteTime() {
+      const now =
+        Date.now();
+
+      const difference =
+        Math.max(
+          0,
+          now - siteStartTime
+        );
+
+      const totalSeconds =
+        Math.floor(
+          difference / 1000
+        );
+
+      const secondsPerMinute =
+        60;
+
+      const secondsPerHour =
+        60 * secondsPerMinute;
+
+      const secondsPerDay =
+        24 * secondsPerHour;
+
+      const secondsPerYear =
+        365 * secondsPerDay;
+
+      const years =
+        Math.floor(
+          totalSeconds /
+          secondsPerYear
+        );
+
+      const afterYears =
+        totalSeconds -
+        years * secondsPerYear;
+
+      const days =
+        Math.floor(
+          afterYears /
+          secondsPerDay
+        );
+
+      const afterDays =
+        afterYears -
+        days * secondsPerDay;
+
+      const hours =
+        Math.floor(
+          afterDays /
+          secondsPerHour
+        );
+
+      const afterHours =
+        afterDays -
+        hours * secondsPerHour;
+
+      const minutes =
+        Math.floor(
+          afterHours /
+          secondsPerMinute
+        );
+
+      const seconds =
+        afterHours -
+        minutes * secondsPerMinute;
+
+      const element =
+        document.getElementById(
+          'sitetime'
+        );
+
+      if (element) {
+        element.textContent =
+          "🕓 ThreeStones's Blog already run " +
+          years +
+          ' years ' +
+          days +
+          ' days ' +
+          hours +
+          ' hours ' +
+          minutes +
+          ' mins ' +
+          seconds +
+          ' s';
+      }
+
+      window.setTimeout(
+        updateSiteTime,
+        1000
+      );
     }
-    siteTime();
-</script>
-<br />
-<span id="busuanzi_container_site_uv">
-👤Total visitors <span id="busuanzi_value_site_uv"></span> |
-</span>
-<span id="busuanzi_container_site_pv">
-👁️Total views <span id="busuanzi_value_site_pv"></span>
-</span>
+
+    updateSiteTime();
+  })();
+  </script>
+
+  <br />
+
+  <span id="busuanzi_container_site_uv">
+    👤Total visitors
+    <span id="busuanzi_value_site_uv"></span>
+    |
+  </span>
+
+  <span id="busuanzi_container_site_pv">
+    👁️Total views
+    <span id="busuanzi_value_site_pv"></span>
+  </span>
 
 
+  <!-- ===================================================== -->
+  <!-- Visitor logging                                       -->
+  <!-- ===================================================== -->
+
+  <script>
+  (function () {
+    'use strict';
+
+    /*
+     * 这是你当前 Apps Script Web App 的部署地址。
+     *
+     * 修改 Code.gs 后，只要更新原有 deployment，
+     * 这个地址通常不会改变。
+     */
+    const LOGGER_URL =
+      'https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec';
+
+    const IPPURE_URL =
+      'https://my.ippure.com/v1/info';
+
+    /*
+     * localStorage 中的 ID：
+     * 在访客清除浏览器数据前保持不变。
+     */
+    const VISITOR_ID_KEY =
+      'ypei_visitor_id';
+
+    /*
+     * sessionStorage 中的 ID：
+     * 同一个浏览器标签页会话中保持不变。
+     */
+    const SESSION_ID_KEY =
+      'ypei_session_id';
 
 
+    /**
+     * 创建随机 ID。
+     */
+    function createRandomId() {
+      if (
+        window.crypto &&
+        typeof window.crypto.randomUUID === 'function'
+      ) {
+        return window.crypto.randomUUID();
+      }
+
+      return (
+        Date.now().toString(36) +
+        '-' +
+        Math.random()
+          .toString(36)
+          .substring(2) +
+        '-' +
+        Math.random()
+          .toString(36)
+          .substring(2)
+      );
+    }
 
 
-<script>
-(async () => {
-  try {
-    const ipRes = await fetch("https://api.ipify.org?format=json");
-    const ipData = await ipRes.json();
-    const ip = ipData.ip;
+    /**
+     * 从 localStorage 或 sessionStorage 获取固定 ID。
+     */
+    function getOrCreateStorageId(
+      storage,
+      key
+    ) {
+      try {
+        let value =
+          storage.getItem(key);
 
-    const geoRes = await fetch(`https://ip-api.com/json/${ip}`);
-    const geo = await geoRes.json();
-    const country = geo.country || "unknown";
-    const city = geo.city || "unknown";
+        if (!value) {
+          value =
+            createRandomId();
 
-    const userAgent = navigator.userAgent;
-    const path = window.location.pathname;
+          storage.setItem(
+            key,
+            value
+          );
+        }
 
-    const query = new URLSearchParams({
-      ip: ip,
-      ua: userAgent,
-      country: country,
-      city: city,
-      path: path
-    });
+        return value;
 
-    await fetch("https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec?" + query.toString());
-  } catch (err) {
-    console.error("Logging failed:", err);
-  }
-})();
-</script>
- 
- 
-
+      } catch (error) {
+        /*
+         * 隐私模式或浏览器禁用 Storage 时使用临时 ID。
+         */
+        return createRandomId();
+      }
+    }
 
 
-  
-<script>
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data.ip);
-  });
-</script>
-  
-  
-  
-  {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> <a href="https://docs.google.com/spreadsheets/d/1Az2vBc7oCl5j_1myZdBG--zELsr1_lUw71ceunNThN0/edit?gid=0#gid=0">&</a> <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+    /**
+     * 获取浏览器时区。
+     */
+    function getBrowserTimezone() {
+      try {
+        return (
+          Intl.DateTimeFormat()
+            .resolvedOptions()
+            .timeZone ||
+          ''
+        );
+      } catch (error) {
+        return '';
+      }
+    }
+
+
+    /**
+     * 将字符串转换为 SHA-256 哈希。
+     *
+     * 这里生成的是轻量级浏览器指纹，
+     * 不读取 Canvas、WebGL、字体或音频数据。
+     */
+    async function hashText(text) {
+      if (
+        window.crypto &&
+        window.crypto.subtle &&
+        window.TextEncoder
+      ) {
+        const bytes =
+          new TextEncoder()
+            .encode(text);
+
+        const digest =
+          await window.crypto.subtle.digest(
+            'SHA-256',
+            bytes
+          );
+
+        return Array.from(
+          new Uint8Array(digest)
+        )
+          .map(function (byte) {
+            return byte
+              .toString(16)
+              .padStart(2, '0');
+          })
+          .join('');
+      }
+
+      /*
+       * 旧浏览器备用哈希。
+       */
+      let hash = 0;
+
+      for (
+        let i = 0;
+        i < text.length;
+        i++
+      ) {
+        hash =
+          ((hash << 5) - hash) +
+          text.charCodeAt(i);
+
+        hash |= 0;
+      }
+
+      return (
+        'legacy-' +
+        Math.abs(hash)
+      );
+    }
+
+
+    /**
+     * 获取 IPPure 信息。
+     *
+     * 必须由访客浏览器直接调用。
+     * 不能由 Apps Script 调用，否则会得到 Google 服务器 IP。
+     */
+    async function getIpInformation() {
+      const result = {
+        data: {},
+        error: ''
+      };
+
+      try {
+        const response =
+          await fetch(
+            IPPURE_URL,
+            {
+              method: 'GET',
+              cache: 'no-store',
+              credentials: 'omit'
+            }
+          );
+
+        if (!response.ok) {
+          throw new Error(
+            'IPPure HTTP ' +
+            response.status
+          );
+        }
+
+        const data =
+          await response.json();
+
+        if (
+          !data ||
+          typeof data !== 'object'
+        ) {
+          throw new Error(
+            'IPPure returned invalid data.'
+          );
+        }
+
+        result.data =
+          data;
+
+        return result;
+
+      } catch (ippureError) {
+        result.error =
+          'IPPure: ' +
+          String(
+            ippureError &&
+            ippureError.message
+              ? ippureError.message
+              : ippureError
+          );
+      }
+
+      /*
+       * IPPure 失败时，使用 ipify 仅获取 IP。
+       * 地理位置和风险信息会留空。
+       */
+      try {
+        const fallbackResponse =
+          await fetch(
+            'https://api.ipify.org?format=json',
+            {
+              method: 'GET',
+              cache: 'no-store'
+            }
+          );
+
+        if (!fallbackResponse.ok) {
+          throw new Error(
+            'ipify HTTP ' +
+            fallbackResponse.status
+          );
+        }
+
+        const fallbackData =
+          await fallbackResponse.json();
+
+        if (
+          fallbackData &&
+          fallbackData.ip
+        ) {
+          result.data.ip =
+            fallbackData.ip;
+        }
+
+      } catch (fallbackError) {
+        result.error +=
+          '; ipify fallback: ' +
+          String(
+            fallbackError &&
+            fallbackError.message
+              ? fallbackError.message
+              : fallbackError
+          );
+      }
+
+      return result;
+    }
+
+
+    /**
+     * 将访问记录发送到 Apps Script。
+     */
+    function sendLog(payload) {
+      const body =
+        JSON.stringify(payload);
+
+      /*
+       * sendBeacon 在页面关闭、切换或跳转时更可靠。
+       */
+      if (
+        navigator.sendBeacon
+      ) {
+        const blob =
+          new Blob(
+            [body],
+            {
+              type:
+                'text/plain;charset=UTF-8'
+            }
+          );
+
+        const accepted =
+          navigator.sendBeacon(
+            LOGGER_URL,
+            blob
+          );
+
+        if (accepted) {
+          return;
+        }
+      }
+
+      /*
+       * sendBeacon 不可用时使用 fetch。
+       *
+       * no-cors 允许跨域发送，但浏览器不会暴露响应内容。
+       */
+      fetch(
+        LOGGER_URL,
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          keepalive: true,
+
+          headers: {
+            'Content-Type':
+              'text/plain;charset=UTF-8'
+          },
+
+          body: body
+        }
+      ).catch(function () {
+        /*
+         * 记录失败不影响主页显示。
+         */
+      });
+    }
+
+
+    /**
+     * 收集并提交访问信息。
+     */
+    async function logVisitor() {
+      try {
+        const visitorId =
+          getOrCreateStorageId(
+            window.localStorage,
+            VISITOR_ID_KEY
+          );
+
+        const sessionId =
+          getOrCreateStorageId(
+            window.sessionStorage,
+            SESSION_ID_KEY
+          );
+
+        const eventId =
+          createRandomId();
+
+        const ipResult =
+          await getIpInformation();
+
+        const ipInfo =
+          ipResult.data || {};
+
+        const connection =
+          navigator.connection ||
+          navigator.mozConnection ||
+          navigator.webkitConnection ||
+          {};
+
+        const screenWidth =
+          window.screen &&
+          window.screen.width
+            ? window.screen.width
+            : '';
+
+        const screenHeight =
+          window.screen &&
+          window.screen.height
+            ? window.screen.height
+            : '';
+
+        const screenResolution =
+          screenWidth &&
+          screenHeight
+            ? screenWidth +
+              'x' +
+              screenHeight
+            : '';
+
+        const viewport =
+          window.innerWidth +
+          'x' +
+          window.innerHeight;
+
+        const browserTimezone =
+          getBrowserTimezone();
+
+        const languages =
+          Array.isArray(
+            navigator.languages
+          )
+            ? navigator.languages
+            : [];
+
+        /*
+         * 轻量级指纹组成。
+         *
+         * 不包括 Canvas、WebGL、字体、音频等高侵入性项目。
+         */
+        const fingerprintComponents = {
+          userAgent:
+            navigator.userAgent || '',
+
+          language:
+            navigator.language || '',
+
+          languages:
+            languages,
+
+          platform:
+            navigator.platform || '',
+
+          screenResolution:
+            screenResolution,
+
+          colorDepth:
+            window.screen
+              ? window.screen.colorDepth
+              : '',
+
+          devicePixelRatio:
+            window.devicePixelRatio || '',
+
+          timezone:
+            browserTimezone,
+
+          hardwareConcurrency:
+            navigator.hardwareConcurrency ||
+            '',
+
+          deviceMemory:
+            navigator.deviceMemory ||
+            '',
+
+          maxTouchPoints:
+            navigator.maxTouchPoints ||
+            0
+        };
+
+        const fingerprintId =
+          await hashText(
+            JSON.stringify(
+              fingerprintComponents
+            )
+          );
+
+        /*
+         * Object.assign 的后面字段优先级更高。
+         *
+         * IPPure 返回的 userAgent 保存在 userAgent；
+         * 浏览器直接读取的 UA 保存在 browserUserAgent。
+         */
+        const payload =
+          Object.assign(
+            {},
+            ipInfo,
+            {
+              clientTimestamp:
+                new Date().toISOString(),
+
+              eventId:
+                eventId,
+
+              visitorId:
+                visitorId,
+
+              sessionId:
+                sessionId,
+
+              browserUserAgent:
+                navigator.userAgent ||
+                '',
+
+              language:
+                navigator.language ||
+                '',
+
+              languages:
+                languages,
+
+              platform:
+                navigator.platform ||
+                '',
+
+              screenResolution:
+                screenResolution,
+
+              viewport:
+                viewport,
+
+              colorDepth:
+                window.screen
+                  ? window.screen.colorDepth
+                  : '',
+
+              devicePixelRatio:
+                window.devicePixelRatio ||
+                '',
+
+              browserTimezone:
+                browserTimezone,
+
+              hardwareConcurrency:
+                navigator.hardwareConcurrency ||
+                '',
+
+              deviceMemory:
+                navigator.deviceMemory ||
+                '',
+
+              maxTouchPoints:
+                navigator.maxTouchPoints ||
+                0,
+
+              cookieEnabled:
+                navigator.cookieEnabled,
+
+              doNotTrack:
+                navigator.doNotTrack ||
+                window.doNotTrack ||
+                navigator.msDoNotTrack ||
+                '',
+
+              connectionType:
+                connection.type ||
+                '',
+
+              effectiveType:
+                connection.effectiveType ||
+                '',
+
+              downlinkMbps:
+                connection.downlink !== undefined
+                  ? connection.downlink
+                  : '',
+
+              rttMs:
+                connection.rtt !== undefined
+                  ? connection.rtt
+                  : '',
+
+              saveData:
+                connection.saveData !== undefined
+                  ? connection.saveData
+                  : '',
+
+              pageTitle:
+                document.title ||
+                '',
+
+              pageUrl:
+                window.location.href,
+
+              path:
+                window.location.pathname +
+                window.location.search +
+                window.location.hash,
+
+              referrer:
+                document.referrer ||
+                '',
+
+              fingerprintId:
+                fingerprintId,
+
+              apiError:
+                ipResult.error ||
+                ''
+            }
+          );
+
+        sendLog(payload);
+
+      } catch (error) {
+        /*
+         * 日志程序本身失败时，不影响网站其他部分。
+         */
+        console.error(
+          'Visitor logging failed:',
+          error
+        );
+      }
+    }
+
+
+    /*
+     * 页面完成加载后执行一次。
+     */
+    if (
+      document.readyState === 'complete'
+    ) {
+      window.setTimeout(
+        logVisitor,
+        0
+      );
+    } else {
+      window.addEventListener(
+        'load',
+        function () {
+          window.setTimeout(
+            logVisitor,
+            0
+          );
+        },
+        {
+          once: true
+        }
+      );
+    }
+
+  })();
+  </script>
+
+
+  <br />
+
+  {{ site.name | default: site.title }}.
+  {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
+
+  <a
+    href="https://jekyllrb.com"
+    rel="nofollow">
+    Jekyll
+  </a>
+
+  &amp;
+
+  <a href="https://github.com/academicpages/academicpages.github.io">
+    AcademicPages
+  </a>,
+
+  a fork of
+
+  <a
+    href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+    rel="nofollow">
+    Minimal Mistakes
+  </a>.
+
+</div>
