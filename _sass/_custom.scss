@@ -1,16 +1,281 @@
 /* ============================================================
-   🌙 Dark Mode + 🌈 Light Mode Styles for AcademicPages
-   Yang Pei Website
+   Yang Pei Website — Complete _sass/_custom.scss Replacement
 
-   Design:
-   - Light mode: restore the original pastel/rainbow daytime style.
-   - Dark mode: use animated galaxy / meteor canvas as background.
-   - Galaxy canvas is hidden in light mode and visible only in dark mode.
+   Goals:
+   1. Preserve the existing light / dark theme behavior.
+   2. Preserve the animated galaxy background in dark mode.
+   3. Use a wider, symmetric, centered desktop layout.
+   4. Give the profile sidebar and main content balanced spacing.
+   5. Center the profile photograph and author information cleanly.
+   6. Keep the layout responsive on tablets and phones.
    ============================================================ */
 
 
 /* ============================================================
-   0. Dynamic Galaxy Canvas Layer
+   0. Global Layout Variables and Basic Normalization
+   ============================================================ */
+
+:root {
+  --yp-site-max-width: 1540px;
+  --yp-site-side-space: 64px;
+  --yp-sidebar-width: 286px;
+  --yp-column-gap: 34px;
+  --yp-card-radius: 18px;
+  --yp-content-padding-x: 42px;
+  --yp-content-padding-y: 34px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+/* ============================================================
+   1. Wide, Symmetric, Centered Site Layout
+   ============================================================ */
+
+/* Header, main body, and footer use the same centered width. */
+.masthead__inner-wrap,
+#main,
+.page__footer footer {
+  width: calc(100% - var(--yp-site-side-space)) !important;
+  max-width: var(--yp-site-max-width) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.masthead__inner-wrap {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/*
+   AcademicPages normally uses floats and a relatively narrow max-width.
+   Flexbox makes the two columns stable, symmetric, and easy to resize.
+*/
+#main {
+  display: flex !important;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--yp-column-gap);
+  padding-top: 1.35rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Remove clearfix pseudo-elements so they do not become flex items. */
+#main::before,
+#main::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Left profile column. */
+#main > .sidebar,
+.sidebar {
+  flex: 0 0 var(--yp-sidebar-width) !important;
+  width: var(--yp-sidebar-width) !important;
+  max-width: var(--yp-sidebar-width) !important;
+  min-width: 0 !important;
+
+  float: none !important;
+  clear: none !important;
+
+  margin: 0 !important;
+  padding: 25px 22px 23px !important;
+
+  opacity: 1 !important;
+  transform: none !important;
+
+  position: sticky;
+  top: 86px;
+  align-self: flex-start;
+}
+
+/* Right article column. */
+#main > .page,
+#main > .archive,
+.page,
+.archive {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  float: none !important;
+  clear: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page__content {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding:
+    var(--yp-content-padding-y)
+    var(--yp-content-padding-x) !important;
+
+  font-size: 1rem;
+  line-height: 1.68;
+  overflow-wrap: anywhere;
+}
+
+/* Prevent long URLs, equations, images, and tables from breaking the layout. */
+.page__content img,
+.page__content video,
+.page__content iframe,
+.page__content table,
+.page__content pre {
+  max-width: 100%;
+}
+
+.page__content table,
+.page__content pre {
+  overflow-x: auto;
+}
+
+.page__content p:first-child {
+  margin-top: 0;
+}
+
+.page__content > :last-child {
+  margin-bottom: 0;
+}
+
+/* Slightly improve long research-list readability. */
+.page__content ul,
+.page__content ol {
+  padding-left: 1.45rem;
+}
+
+.page__content li {
+  margin-bottom: 0.62rem;
+}
+
+
+/* ============================================================
+   2. Center and Balance the Profile Sidebar
+   ============================================================ */
+
+.sidebar .author__avatar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto 1.05rem !important;
+  padding: 0 !important;
+}
+
+.sidebar .author__avatar img {
+  display: block !important;
+  width: 172px !important;
+  height: 172px !important;
+  max-width: 82% !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50% !important;
+}
+
+.sidebar .author__content {
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.sidebar .author__name {
+  margin-top: 0 !important;
+  margin-bottom: 0.45rem !important;
+  text-align: center !important;
+}
+
+.sidebar .author__bio,
+.sidebar .author__location {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/*
+   On desktop, show the social/contact list as a centered permanent list.
+   On tablets and phones, AcademicPages keeps its original dropdown behavior.
+*/
+@media (min-width: 960px) {
+  .sidebar .author__urls-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0.85rem auto 0 !important;
+    padding: 0 !important;
+  }
+
+  .sidebar .author__urls {
+    display: block !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+
+    width: max-content !important;
+    max-width: 100% !important;
+    min-width: 150px;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+    box-shadow: none;
+  }
+
+  .sidebar .author__urls li {
+    margin: 0.12rem 0 !important;
+    white-space: normal;
+  }
+
+  .sidebar .author__urls a {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .sidebar .author__urls-button {
+    display: none !important;
+  }
+}
+
+
+/* ============================================================
+   3. Dynamic Galaxy Canvas Layer
    ============================================================ */
 
 #galaxy-bg {
@@ -24,20 +289,20 @@
   background: #02040d !important;
 }
 
-/* Website content should stay above the animated canvas */
+/* Website content stays above the animated canvas. */
 body > *:not(#galaxy-bg) {
   position: relative;
   z-index: 1;
 }
 
-/* Important: hide the galaxy completely in light mode */
+/* Hide the galaxy completely in light mode. */
 html[data-theme='light'] #galaxy-bg {
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
 }
 
-/* Show the galaxy only in dark mode */
+/* Show the galaxy only in dark mode. */
 html[data-theme='dark'] #galaxy-bg {
   display: block !important;
   opacity: 1 !important;
@@ -47,9 +312,24 @@ html[data-theme='dark'] #galaxy-bg {
 
 
 /* ============================================================
-   1. Dark Mode: Global Background and Text
-   Dark mode background is the animated galaxy canvas.
-   Therefore page-level backgrounds must be transparent.
+   4. Shared Card Geometry
+   ============================================================ */
+
+.page__content,
+.sidebar {
+  position: relative;
+  border-radius: var(--yp-card-radius) !important;
+  overflow: hidden;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* ============================================================
+   5. Dark Mode: Global Background and Text
    ============================================================ */
 
 html[data-theme='dark'],
@@ -67,7 +347,7 @@ html[data-theme='dark'] body {
 
 
 /* ============================================================
-   2. Dark Mode: Base Containers
+   6. Dark Mode: Base Containers
    ============================================================ */
 
 html[data-theme='dark'] .page,
@@ -82,22 +362,16 @@ html[data-theme='dark'] .layout--archive {
   background: transparent !important;
   background-color: transparent !important;
   color: #e8eefc !important;
-  border-radius: 12px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 /* ============================================================
-   3. Dark Mode: Homepage Main Boxes
-   Semi-transparent dark glass above galaxy background
+   7. Dark Mode: Main Glass Cards
    ============================================================ */
 
 html[data-theme='dark'] .page__content,
 html[data-theme='dark'] .sidebar {
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px !important;
-
   background-color: rgba(7, 10, 22, 0.68) !important;
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
@@ -114,11 +388,6 @@ html[data-theme='dark'] .sidebar {
     inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
 
   color: #e8eefc !important;
-
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
 }
 
 html[data-theme='dark'] .page__content:hover,
@@ -139,8 +408,7 @@ html[data-theme='dark'] .sidebar:hover {
 
 
 /* ============================================================
-   4. Dark Mode: Text
-   Make all normal text readable on dark galaxy background
+   8. Dark Mode: Text
    ============================================================ */
 
 html[data-theme='dark'] h1,
@@ -181,7 +449,7 @@ html[data-theme='dark'] i {
 
 
 /* ============================================================
-   5. Dark Mode: Links
+   9. Dark Mode: Links
    ============================================================ */
 
 html[data-theme='dark'] a {
@@ -211,9 +479,16 @@ html[data-theme='dark'] a:hover::after {
   transform: scaleX(1);
 }
 
+/* Do not draw animated underlines beneath linked images or icon-only links. */
+html[data-theme='dark'] .author__avatar a::after,
+html[data-theme='dark'] .social-icons a::after,
+html[data-theme='dark'] .greedy-nav button::after {
+  content: none;
+}
+
 
 /* ============================================================
-   6. Dark Mode: Code Blocks
+   10. Dark Mode: Code Blocks and Blockquotes
    ============================================================ */
 
 html[data-theme='dark'] pre,
@@ -221,16 +496,18 @@ html[data-theme='dark'] code {
   background-color: rgba(5, 8, 18, 0.86) !important;
   color: #9ffcff !important;
   border-radius: 6px;
-  padding: 0.6rem 0.9rem;
   font-family: Consolas, Menlo, monospace;
   font-size: 0.9rem;
-  overflow-x: auto;
 }
 
+html[data-theme='dark'] code {
+  padding: 0.12rem 0.34rem;
+}
 
-/* ============================================================
-   7. Dark Mode: Blockquote
-   ============================================================ */
+html[data-theme='dark'] pre {
+  padding: 0.8rem 1rem;
+  overflow-x: auto;
+}
 
 html[data-theme='dark'] blockquote {
   background-color: rgba(8, 12, 26, 0.78) !important;
@@ -240,7 +517,7 @@ html[data-theme='dark'] blockquote {
 
 
 /* ============================================================
-   8. Dark Mode: Images and Videos
+   11. Dark Mode: Images and Videos
    ============================================================ */
 
 html[data-theme='dark'] img,
@@ -252,8 +529,7 @@ html[data-theme='dark'] video {
 
 
 /* ============================================================
-   9. Dark Mode: Header / Navigation
-   Glass layer above galaxy background
+   12. Dark Mode: Header / Navigation
    ============================================================ */
 
 html[data-theme='dark'] body > header,
@@ -285,12 +561,8 @@ html[data-theme='dark'] .greedy-nav a:hover {
 
 
 /* ============================================================
-   10. Dark Mode: Sidebar
+   13. Dark Mode: Sidebar
    ============================================================ */
-
-html[data-theme='dark'] .sidebar {
-  border-radius: 18px !important;
-}
 
 html[data-theme='dark'] .sidebar .contact__item,
 html[data-theme='dark'] .sidebar p,
@@ -313,7 +585,7 @@ html[data-theme='dark'] .sidebar .contact__item i {
 
 
 /* ============================================================
-   11. Dark Mode: Footer
+   14. Dark Mode: Footer
    ============================================================ */
 
 html[data-theme='dark'] .page__footer,
@@ -331,8 +603,7 @@ html[data-theme='dark'] .page__footer-copyright {
 
 
 /* ============================================================
-   12. Light Mode: Global Rainbow Background
-   RESTORED original daytime style
+   15. Light Mode: Global Pastel / Rainbow Background
    ============================================================ */
 
 html[data-theme='light'],
@@ -356,13 +627,11 @@ html[data-theme='light'] .site {
 
 
 /* ============================================================
-   13. Light Mode: Make Main Boxes Transparent
-   RESTORED original daytime layout
+   16. Light Mode: Transparent Base Containers
    ============================================================ */
 
 html[data-theme='light'] .page,
 html[data-theme='light'] .page__inner-wrap,
-html[data-theme='light'] .page__content,
 html[data-theme='light'] .archive,
 html[data-theme='light'] .archive__item,
 html[data-theme='light'] .post,
@@ -376,13 +645,6 @@ html[data-theme='light'] .initial-content {
   -webkit-backdrop-filter: none !important;
 }
 
-
-/* ============================================================
-   14. Light Mode: Make Sidebar Transparent
-   RESTORED original daytime layout
-   ============================================================ */
-
-html[data-theme='light'] .sidebar,
 html[data-theme='light'] .author__avatar,
 html[data-theme='light'] .author__content,
 html[data-theme='light'] .author__urls-wrapper,
@@ -395,14 +657,9 @@ html[data-theme='light'] .author__urls {
   -webkit-backdrop-filter: none !important;
 }
 
-html[data-theme='light'] .sidebar {
-  border-radius: 0 !important;
-}
-
 
 /* ============================================================
-   15. Light Mode: Header and Footer Transparent
-   RESTORED original daytime layout
+   17. Light Mode: Header and Footer
    ============================================================ */
 
 html[data-theme='light'] body > header,
@@ -422,36 +679,32 @@ html[data-theme='light'] .page__footer {
 
 
 /* ============================================================
-   16. Light Mode: Border Effects for Homepage Main Boxes
-   RESTORED original daytime style
+   18. Light Mode: Main Glass Cards
    ============================================================ */
 
 html[data-theme='light'] .page__content,
 html[data-theme='light'] .sidebar {
-  position: relative;
-  overflow: hidden;
-  border-radius: 18px !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 
-  border-top: 1px solid rgba(255, 255, 255, 0.75) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.58) !important;
-  border-right: 1px solid rgba(255, 255, 255, 0.28) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.78) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.62) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.30) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24) !important;
 
   box-shadow:
     0 14px 34px rgba(31, 88, 120, 0.10),
     inset 0 1px 0 rgba(255, 255, 255, 0.62),
     inset 0 -1px 0 rgba(255, 255, 255, 0.12) !important;
-
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
 }
 
 html[data-theme='light'] .page__content:hover,
 html[data-theme='light'] .sidebar:hover {
-  border-top: 1px solid rgba(255, 255, 255, 0.90) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.72) !important;
+  background-color: rgba(255, 255, 255, 0.18) !important;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.92) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.76) !important;
   border-right: 1px solid rgba(43, 123, 187, 0.22) !important;
   border-bottom: 1px solid rgba(43, 123, 187, 0.16) !important;
 
@@ -464,8 +717,7 @@ html[data-theme='light'] .sidebar:hover {
 
 
 /* ============================================================
-   17. Light Mode: Text and Links
-   RESTORED original daytime colors
+   19. Light Mode: Text and Links
    ============================================================ */
 
 html[data-theme='light'] {
@@ -499,7 +751,7 @@ html[data-theme='light'] a:hover {
 
 
 /* ============================================================
-   18. Theme Toggle Button
+   20. Theme Toggle Button
    ============================================================ */
 
 #theme-toggle {
@@ -554,9 +806,128 @@ html[data-theme='dark'] #theme-toggle svg {
 
 
 /* ============================================================
-   19. System Default Dark Mode
-   If browser prefers dark and no manual theme exists,
-   use the animated galaxy background.
+   21. Responsive Layout: Medium Desktop / Laptop
+   ============================================================ */
+
+@media (max-width: 1279px) {
+  :root {
+    --yp-site-side-space: 40px;
+    --yp-sidebar-width: 250px;
+    --yp-column-gap: 25px;
+    --yp-content-padding-x: 30px;
+    --yp-content-padding-y: 28px;
+  }
+
+  .sidebar .author__avatar img {
+    width: 154px !important;
+    height: 154px !important;
+  }
+}
+
+
+/* ============================================================
+   22. Responsive Layout: Tablet and Narrow Windows
+   ============================================================ */
+
+@media (max-width: 959px) {
+  :root {
+    --yp-site-side-space: 28px;
+    --yp-content-padding-x: 26px;
+    --yp-content-padding-y: 25px;
+  }
+
+  #main {
+    display: block !important;
+    padding-top: 1rem;
+  }
+
+  #main > .sidebar,
+  .sidebar {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    position: static !important;
+    top: auto !important;
+
+    margin: 0 0 24px !important;
+    padding: 24px !important;
+  }
+
+  #main > .page,
+  #main > .archive,
+  .page,
+  .archive {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .sidebar .author__avatar img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .sidebar .author__urls {
+    width: max-content !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/* ============================================================
+   23. Responsive Layout: Phones
+   ============================================================ */
+
+@media (max-width: 600px) {
+  :root {
+    --yp-site-side-space: 18px;
+    --yp-card-radius: 14px;
+    --yp-content-padding-x: 18px;
+    --yp-content-padding-y: 20px;
+  }
+
+  .masthead__inner-wrap,
+  #main,
+  .page__footer footer {
+    width: calc(100% - var(--yp-site-side-space)) !important;
+  }
+
+  #main {
+    padding-top: 0.8rem;
+  }
+
+  #main > .sidebar,
+  .sidebar {
+    margin-bottom: 16px !important;
+    padding: 20px 16px !important;
+  }
+
+  .sidebar .author__avatar img {
+    width: 132px !important;
+    height: 132px !important;
+  }
+
+  .page__content {
+    font-size: 0.97rem;
+    line-height: 1.62;
+  }
+
+  .page__content ul,
+  .page__content ol {
+    padding-left: 1.2rem;
+  }
+
+  #theme-toggle {
+    top: 8px;
+    right: 8px;
+    font-size: 1.35rem;
+  }
+}
+
+
+/* ============================================================
+   24. System Default Dark Mode
+   Used only when no manual data-theme attribute exists.
    ============================================================ */
 
 @media (prefers-color-scheme: dark) {
@@ -591,7 +962,7 @@ html[data-theme='dark'] #theme-toggle svg {
   html:not([data-theme]) .sidebar {
     background-color: rgba(7, 10, 22, 0.68) !important;
     color: #e8eefc !important;
-    border-radius: 18px !important;
+    border-radius: var(--yp-card-radius) !important;
     border: 1px solid rgba(180, 220, 255, 0.16) !important;
     box-shadow:
       0 18px 42px rgba(0, 0, 0, 0.42),
