@@ -126,7 +126,7 @@
 
 
   <!-- 访问统计改为在页面加载完成后非阻塞请求。 -->
-  <!-- 这样第三方统计服务即使超时，也不会让浏览器标签一直转圈。 -->
+  <!-- 第三方统计服务即使超时，也不会阻塞网页加载。 -->
 
 
   <!-- ===================================================== -->
@@ -200,25 +200,20 @@
 
 
   <!-- ===================================================== -->
-  <!-- 非阻塞访问统计：主服务 + 备用服务 + 本地缓存          -->
+  <!-- 非阻塞 Busuanzi 访问统计                              -->
   <!-- ===================================================== -->
 
   <script>
   (function () {
     'use strict';
 
-    /*
-     * 主服务使用兼容 Busuanzi 的备用后端。
-     * 如果主服务失败，再尝试原 Busuanzi 服务。
-     * 两个请求都只会在页面 load 完成后发出，因此不会阻塞网页。
-     */
     const counterEndpoints = [
-      'https://counter.busuanzi.icodeq.com/?jsonpCallback=BusuanziCallback',
-      'https://busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback'
+      'https://busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback',
+      'https://counter.busuanzi.icodeq.com/?jsonpCallback=BusuanziCallback'
     ];
 
     const requestTimeoutMs =
-      8000;
+      6000;
 
     const cachedUvKey =
       'ypei_cached_site_uv';
@@ -227,49 +222,50 @@
       'ypei_cached_site_pv';
 
 
-    function isValidCount(value) {
-      return (
-        typeof value === 'string' &&
-        /^[0-9][0-9,]*$/.test(value)
-      );
+    function normalizeCount(value) {
+      if (
+        value === undefined ||
+        value === null
+      ) {
+        return '';
+      }
+
+      const normalized =
+        String(value).replace(
+          /,/g,
+          ''
+        );
+
+      if (!/^\d+$/.test(normalized)) {
+        return '';
+      }
+
+      return Number(normalized)
+        .toLocaleString('en-US');
     }
 
 
     function setCounterText(
       valueElementId,
-      containerElementId,
       value
     ) {
-      const valueElement =
+      const element =
         document.getElementById(
           valueElementId
         );
 
-      const containerElement =
-        document.getElementById(
-          containerElementId
-        );
-
-      if (valueElement) {
-        valueElement.textContent =
+      if (element) {
+        element.textContent =
           value;
-      }
-
-      if (containerElement) {
-        containerElement.style.display =
-          'inline-flex';
       }
     }
 
 
     function readCachedValue(key) {
       try {
-        const value =
-          window.localStorage.getItem(key);
-
-        return isValidCount(value)
-          ? value
-          : '';
+        return normalizeCount(
+          window.localStorage.getItem(key)
+        );
 
       } catch (error) {
         return '';
@@ -288,9 +284,7 @@
         );
 
       } catch (error) {
-        /*
-         * 浏览器禁用本地存储时，不影响统计显示。
-         */
+        /* 本地存储不可用时不影响统计。 */
       }
     }
 
@@ -305,7 +299,6 @@
       if (cachedUv) {
         setCounterText(
           'busuanzi_value_site_uv',
-          'busuanzi_container_site_uv',
           cachedUv
         );
       }
@@ -313,7 +306,6 @@
       if (cachedPv) {
         setCounterText(
           'busuanzi_value_site_pv',
-          'busuanzi_container_site_pv',
           cachedPv
         );
       }
@@ -329,33 +321,25 @@
       }
 
       const siteUv =
-        data.site_uv !== undefined &&
-        data.site_uv !== null
-          ? String(data.site_uv)
-          : '';
+        normalizeCount(data.site_uv);
 
       const sitePv =
-        data.site_pv !== undefined &&
-        data.site_pv !== null
-          ? String(data.site_pv)
-          : '';
+        normalizeCount(data.site_pv);
 
       if (
-        !isValidCount(siteUv) ||
-        !isValidCount(sitePv)
+        !siteUv ||
+        !sitePv
       ) {
         return false;
       }
 
       setCounterText(
         'busuanzi_value_site_uv',
-        'busuanzi_container_site_uv',
         siteUv
       );
 
       setCounterText(
         'busuanzi_value_site_pv',
-        'busuanzi_container_site_pv',
         sitePv
       );
 
@@ -378,13 +362,16 @@
         resolve,
         reject
       ) {
+        /*
+         * Busuanzi 后端只接受它原生使用的回调格式：
+         * BusuanziCallback_ + 纯数字。
+         */
         const callbackName =
-          'ypeiBusuanziCallback_' +
-          Date.now().toString(36) +
-          '_' +
-          Math.random()
-            .toString(36)
-            .substring(2);
+          'BusuanziCallback_' +
+          Math.floor(
+            1099511627776 *
+            Math.random()
+          );
 
         const script =
           document.createElement(
@@ -397,12 +384,16 @@
         let timeoutId =
           null;
 
+
         function cleanUp() {
           if (timeoutId !== null) {
             window.clearTimeout(
               timeoutId
             );
           }
+
+          script.onerror =
+            null;
 
           if (script.parentNode) {
             script.parentNode.removeChild(
@@ -418,6 +409,7 @@
           }
         }
 
+
         function fail(error) {
           if (finished) {
             return;
@@ -429,6 +421,7 @@
           cleanUp();
           reject(error);
         }
+
 
         window[callbackName] =
           function (data) {
@@ -446,13 +439,16 @@
         script.async =
           true;
 
+        script.defer =
+          true;
+
         script.referrerPolicy =
           'no-referrer-when-downgrade';
 
         script.src =
           endpoint.replace(
-            'BusuanziCallback',
-            callbackName
+            '=BusuanziCallback',
+            '=' + callbackName
           );
 
         script.onerror =
@@ -502,47 +498,49 @@
           }
 
         } catch (error) {
-          /*
-           * 当前服务失败时自动尝试下一个服务。
-           */
+          console.warn(
+            'Visitor counter endpoint failed:',
+            counterEndpoints[index],
+            error
+          );
         }
       }
 
-      const currentUvElement =
+      const uvElement =
         document.getElementById(
           'busuanzi_value_site_uv'
         );
 
-      const currentPvElement =
+      const pvElement =
         document.getElementById(
           'busuanzi_value_site_pv'
         );
 
       if (
-        currentUvElement &&
-        !isValidCount(
-          currentUvElement.textContent.trim()
+        uvElement &&
+        !normalizeCount(
+          uvElement.textContent
         )
       ) {
-        currentUvElement.textContent =
+        uvElement.textContent =
           '—';
       }
 
       if (
-        currentPvElement &&
-        !isValidCount(
-          currentPvElement.textContent.trim()
+        pvElement &&
+        !normalizeCount(
+          pvElement.textContent
         )
       ) {
-        currentPvElement.textContent =
+        pvElement.textContent =
           '—';
       }
     }
 
 
     /*
-     * 必须等页面 load 完成后才请求统计服务。
-     * 因此统计服务超时不会让网页标签持续转圈。
+     * 页面完成加载后才请求统计服务。
+     * 统计服务器超时不会阻塞主页面。
      */
     if (
       document.readyState === 'complete'
@@ -585,12 +583,12 @@
      */
     const siteStartTime =
       new Date(
-        2022,
+        2023,
         6,
-        6,
-        6,
-        6,
-        6
+        24,
+        20,
+        0,
+        0
       ).getTime();
 
     function updateSiteTime() {
