@@ -125,11 +125,8 @@
   </style>
 
 
-  <!-- Busuanzi 访问统计 -->
-  <script
-    async
-    src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-  </script>
+  <!-- 访问统计改为在页面加载完成后非阻塞请求。 -->
+  <!-- 这样第三方统计服务即使超时，也不会让浏览器标签一直转圈。 -->
 
 
   <!-- ===================================================== -->
@@ -156,7 +153,7 @@
 
     <span id="busuanzi_container_site_uv">
       👤 Total visitors&nbsp;
-      <span id="busuanzi_value_site_uv"></span>
+      <span id="busuanzi_value_site_uv">…</span>
     </span>
 
     <span class="footer-meta-separator">
@@ -165,7 +162,7 @@
 
     <span id="busuanzi_container_site_pv">
       👁️ Total views&nbsp;
-      <span id="busuanzi_value_site_pv"></span>
+      <span id="busuanzi_value_site_pv">…</span>
     </span>
 
     <span class="footer-meta-separator">
@@ -200,6 +197,378 @@
     </span>
 
   </div>
+
+
+  <!-- ===================================================== -->
+  <!-- 非阻塞访问统计：主服务 + 备用服务 + 本地缓存          -->
+  <!-- ===================================================== -->
+
+  <script>
+  (function () {
+    'use strict';
+
+    /*
+     * 主服务使用兼容 Busuanzi 的备用后端。
+     * 如果主服务失败，再尝试原 Busuanzi 服务。
+     * 两个请求都只会在页面 load 完成后发出，因此不会阻塞网页。
+     */
+    const counterEndpoints = [
+      'https://counter.busuanzi.icodeq.com/?jsonpCallback=BusuanziCallback',
+      'https://busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback'
+    ];
+
+    const requestTimeoutMs =
+      8000;
+
+    const cachedUvKey =
+      'ypei_cached_site_uv';
+
+    const cachedPvKey =
+      'ypei_cached_site_pv';
+
+
+    function isValidCount(value) {
+      return (
+        typeof value === 'string' &&
+        /^[0-9][0-9,]*$/.test(value)
+      );
+    }
+
+
+    function setCounterText(
+      valueElementId,
+      containerElementId,
+      value
+    ) {
+      const valueElement =
+        document.getElementById(
+          valueElementId
+        );
+
+      const containerElement =
+        document.getElementById(
+          containerElementId
+        );
+
+      if (valueElement) {
+        valueElement.textContent =
+          value;
+      }
+
+      if (containerElement) {
+        containerElement.style.display =
+          'inline-flex';
+      }
+    }
+
+
+    function readCachedValue(key) {
+      try {
+        const value =
+          window.localStorage.getItem(key);
+
+        return isValidCount(value)
+          ? value
+          : '';
+
+      } catch (error) {
+        return '';
+      }
+    }
+
+
+    function writeCachedValue(
+      key,
+      value
+    ) {
+      try {
+        window.localStorage.setItem(
+          key,
+          value
+        );
+
+      } catch (error) {
+        /*
+         * 浏览器禁用本地存储时，不影响统计显示。
+         */
+      }
+    }
+
+
+    function restoreCachedCounts() {
+      const cachedUv =
+        readCachedValue(cachedUvKey);
+
+      const cachedPv =
+        readCachedValue(cachedPvKey);
+
+      if (cachedUv) {
+        setCounterText(
+          'busuanzi_value_site_uv',
+          'busuanzi_container_site_uv',
+          cachedUv
+        );
+      }
+
+      if (cachedPv) {
+        setCounterText(
+          'busuanzi_value_site_pv',
+          'busuanzi_container_site_pv',
+          cachedPv
+        );
+      }
+    }
+
+
+    function applyCounterData(data) {
+      if (
+        !data ||
+        typeof data !== 'object'
+      ) {
+        return false;
+      }
+
+      const siteUv =
+        data.site_uv !== undefined &&
+        data.site_uv !== null
+          ? String(data.site_uv)
+          : '';
+
+      const sitePv =
+        data.site_pv !== undefined &&
+        data.site_pv !== null
+          ? String(data.site_pv)
+          : '';
+
+      if (
+        !isValidCount(siteUv) ||
+        !isValidCount(sitePv)
+      ) {
+        return false;
+      }
+
+      setCounterText(
+        'busuanzi_value_site_uv',
+        'busuanzi_container_site_uv',
+        siteUv
+      );
+
+      setCounterText(
+        'busuanzi_value_site_pv',
+        'busuanzi_container_site_pv',
+        sitePv
+      );
+
+      writeCachedValue(
+        cachedUvKey,
+        siteUv
+      );
+
+      writeCachedValue(
+        cachedPvKey,
+        sitePv
+      );
+
+      return true;
+    }
+
+
+    function requestCounter(endpoint) {
+      return new Promise(function (
+        resolve,
+        reject
+      ) {
+        const callbackName =
+          'ypeiBusuanziCallback_' +
+          Date.now().toString(36) +
+          '_' +
+          Math.random()
+            .toString(36)
+            .substring(2);
+
+        const script =
+          document.createElement(
+            'script'
+          );
+
+        let finished =
+          false;
+
+        let timeoutId =
+          null;
+
+        function cleanUp() {
+          if (timeoutId !== null) {
+            window.clearTimeout(
+              timeoutId
+            );
+          }
+
+          if (script.parentNode) {
+            script.parentNode.removeChild(
+              script
+            );
+          }
+
+          try {
+            delete window[callbackName];
+          } catch (error) {
+            window[callbackName] =
+              undefined;
+          }
+        }
+
+        function fail(error) {
+          if (finished) {
+            return;
+          }
+
+          finished =
+            true;
+
+          cleanUp();
+          reject(error);
+        }
+
+        window[callbackName] =
+          function (data) {
+            if (finished) {
+              return;
+            }
+
+            finished =
+              true;
+
+            cleanUp();
+            resolve(data);
+          };
+
+        script.async =
+          true;
+
+        script.referrerPolicy =
+          'no-referrer-when-downgrade';
+
+        script.src =
+          endpoint.replace(
+            'BusuanziCallback',
+            callbackName
+          );
+
+        script.onerror =
+          function () {
+            fail(
+              new Error(
+                'Counter request failed'
+              )
+            );
+          };
+
+        timeoutId =
+          window.setTimeout(
+            function () {
+              fail(
+                new Error(
+                  'Counter request timed out'
+                )
+              );
+            },
+            requestTimeoutMs
+          );
+
+        document.head.appendChild(
+          script
+        );
+      });
+    }
+
+
+    async function loadCounters() {
+      restoreCachedCounts();
+
+      for (
+        let index = 0;
+        index < counterEndpoints.length;
+        index++
+      ) {
+        try {
+          const data =
+            await requestCounter(
+              counterEndpoints[index]
+            );
+
+          if (applyCounterData(data)) {
+            return;
+          }
+
+        } catch (error) {
+          /*
+           * 当前服务失败时自动尝试下一个服务。
+           */
+        }
+      }
+
+      const currentUvElement =
+        document.getElementById(
+          'busuanzi_value_site_uv'
+        );
+
+      const currentPvElement =
+        document.getElementById(
+          'busuanzi_value_site_pv'
+        );
+
+      if (
+        currentUvElement &&
+        !isValidCount(
+          currentUvElement.textContent.trim()
+        )
+      ) {
+        currentUvElement.textContent =
+          '—';
+      }
+
+      if (
+        currentPvElement &&
+        !isValidCount(
+          currentPvElement.textContent.trim()
+        )
+      ) {
+        currentPvElement.textContent =
+          '—';
+      }
+    }
+
+
+    /*
+     * 必须等页面 load 完成后才请求统计服务。
+     * 因此统计服务超时不会让网页标签持续转圈。
+     */
+    if (
+      document.readyState === 'complete'
+    ) {
+      window.setTimeout(
+        loadCounters,
+        0
+      );
+
+    } else {
+      window.addEventListener(
+        'load',
+        function () {
+          window.setTimeout(
+            loadCounters,
+            0
+          );
+        },
+        {
+          once: true
+        }
+      );
+    }
+
+  })();
+  </script>
 
 
   <!-- ===================================================== -->
@@ -423,28 +792,65 @@
      */
     async function fetchJson(
       url,
-      options
+      options,
+      timeoutMs
     ) {
-      const response =
-        await fetch(
-          url,
-          options || {
+      const requestOptions =
+        Object.assign(
+          {
             method: 'GET',
             cache: 'no-store',
             credentials: 'omit'
-          }
+          },
+          options || {}
         );
 
-      if (!response.ok) {
-        throw new Error(
-          'HTTP ' +
-          response.status +
-          ' from ' +
-          url
-        );
+      const controller =
+        typeof AbortController !== 'undefined'
+          ? new AbortController()
+          : null;
+
+      let timeoutId =
+        null;
+
+      if (controller) {
+        requestOptions.signal =
+          controller.signal;
+
+        timeoutId =
+          window.setTimeout(
+            function () {
+              controller.abort();
+            },
+            timeoutMs || 5000
+          );
       }
 
-      return response.json();
+      try {
+        const response =
+          await fetch(
+            url,
+            requestOptions
+          );
+
+        if (!response.ok) {
+          throw new Error(
+            'HTTP ' +
+            response.status +
+            ' from ' +
+            url
+          );
+        }
+
+        return response.json();
+
+      } finally {
+        if (timeoutId !== null) {
+          window.clearTimeout(
+            timeoutId
+          );
+        }
+      }
     }
 
 
