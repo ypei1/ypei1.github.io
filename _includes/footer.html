@@ -1,4 +1,5 @@
 {% include base_path %}
+<!-- YANG-PEI-FOOTER-BASE-COUNTS-2026-07-24 -->
 
 <!-- YANG-PEI-FOOTER-BUSUANZI-FIX-2026-07-24 -->
 
@@ -161,7 +162,12 @@
 
     <span>
       👤 Total visitors&nbsp;
-      <span id="busuanzi_site_uv">…</span>
+      <span id="ypei_site_uv">8,066</span>
+      <span
+        id="busuanzi_site_uv"
+        aria-hidden="true"
+        style="display: none;">
+      </span>
     </span>
 
     <span class="footer-meta-separator">
@@ -170,7 +176,12 @@
 
     <span>
       👁️ Total views&nbsp;
-      <span id="busuanzi_site_pv">…</span>
+      <span id="ypei_site_pv">14,666</span>
+      <span
+        id="busuanzi_site_pv"
+        aria-hidden="true"
+        style="display: none;">
+      </span>
     </span>
 
     <span class="footer-meta-separator">
@@ -221,12 +232,12 @@
      */
     const siteStartTime =
       new Date(
-        2023,
+        2022,
         6,
-        24,
-        20,
-        0,
-        0
+        6,
+        6,
+        6,
+        6
       ).getTime();
 
     function updateSiteTime() {
@@ -325,7 +336,7 @@
 
 
   <!-- ===================================================== -->
-  <!-- 不蒜子统计：页面完成后加载，避免地址栏长时间转圈        -->
+  <!-- 不蒜子统计：基础数值 + 实时新增访问量                     -->
   <!-- ===================================================== -->
   <script>
   (function () {
@@ -334,41 +345,186 @@
     const BUSUANZI_URL =
       'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
 
+    /*
+     * 基础数值：
+     * Total visitors = 8,066
+     * Total views    = 14,666
+     *
+     * 页面显示值 = 基础数值 + Busuanzi 实时统计值。
+     */
+    const BASE_SITE_UV =
+      8066;
+
+    const BASE_SITE_PV =
+      14666;
+
+
+    function formatCount(value) {
+      return Number(value).toLocaleString('en-US');
+    }
+
+
+    function readRawCount(element) {
+      if (!element) {
+        return null;
+      }
+
+      const normalized =
+        String(element.textContent || '')
+          .replace(/[^0-9]/g, '');
+
+      if (!normalized) {
+        return null;
+      }
+
+      const value =
+        Number.parseInt(normalized, 10);
+
+      return Number.isFinite(value)
+        ? value
+        : null;
+    }
+
+
+    function updateDisplayedCount(
+      rawElement,
+      displayElement,
+      baseValue
+    ) {
+      if (!displayElement) {
+        return;
+      }
+
+      const rawValue =
+        readRawCount(rawElement);
+
+      const totalValue =
+        baseValue +
+        (rawValue === null ? 0 : rawValue);
+
+      displayElement.textContent =
+        formatCount(totalValue);
+    }
+
+
+    function observeCounter(
+      rawElementId,
+      displayElementId,
+      baseValue
+    ) {
+      const rawElement =
+        document.getElementById(rawElementId);
+
+      const displayElement =
+        document.getElementById(displayElementId);
+
+      updateDisplayedCount(
+        rawElement,
+        displayElement,
+        baseValue
+      );
+
+      if (
+        !rawElement ||
+        typeof MutationObserver === 'undefined'
+      ) {
+        return;
+      }
+
+      const observer =
+        new MutationObserver(function () {
+          updateDisplayedCount(
+            rawElement,
+            displayElement,
+            baseValue
+          );
+        });
+
+      observer.observe(
+        rawElement,
+        {
+          childList: true,
+          characterData: true,
+          subtree: true
+        }
+      );
+    }
+
+
     function loadBusuanzi() {
       if (document.getElementById('ypei-busuanzi-script')) {
         return;
       }
 
-      const script = document.createElement('script');
-      script.id = 'ypei-busuanzi-script';
-      script.src = BUSUANZI_URL;
-      script.async = true;
+      observeCounter(
+        'busuanzi_site_uv',
+        'ypei_site_uv',
+        BASE_SITE_UV
+      );
 
-      script.onerror = function () {
-        const uv = document.getElementById('busuanzi_site_uv');
-        const pv = document.getElementById('busuanzi_site_pv');
+      observeCounter(
+        'busuanzi_site_pv',
+        'ypei_site_pv',
+        BASE_SITE_PV
+      );
 
-        if (uv && (uv.textContent === '' || uv.textContent === '…')) {
-          uv.textContent = '—';
-        }
+      const script =
+        document.createElement('script');
 
-        if (pv && (pv.textContent === '' || pv.textContent === '…')) {
-          pv.textContent = '—';
-        }
-      };
+      script.id =
+        'ypei-busuanzi-script';
+
+      script.src =
+        BUSUANZI_URL;
+
+      script.async =
+        true;
+
+      /*
+       * 即使 Busuanzi 暂时不可用，也继续显示基础数值，
+       * 不显示破折号，也不会阻塞网页。
+       */
+      script.onerror =
+        function () {
+          const uvDisplay =
+            document.getElementById('ypei_site_uv');
+
+          const pvDisplay =
+            document.getElementById('ypei_site_pv');
+
+          if (uvDisplay) {
+            uvDisplay.textContent =
+              formatCount(BASE_SITE_UV);
+          }
+
+          if (pvDisplay) {
+            pvDisplay.textContent =
+              formatCount(BASE_SITE_PV);
+          }
+        };
 
       document.head.appendChild(script);
     }
 
+
     if (document.readyState === 'complete') {
-      window.setTimeout(loadBusuanzi, 100);
+      window.setTimeout(
+        loadBusuanzi,
+        100
+      );
+
     } else {
       window.addEventListener(
         'load',
         function () {
-          window.setTimeout(loadBusuanzi, 100);
+          window.setTimeout(
+            loadBusuanzi,
+            100
+          );
         },
-        { once: true }
+        {
+          once: true
+        }
       );
     }
   })();
