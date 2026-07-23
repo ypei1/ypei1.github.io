@@ -1,167 +1,1312 @@
 {% include base_path %}
 
+<!-- YANG-PEI-FOOTER-BUSUANZI-FIX-2026-07-24 -->
+
 <div class="page__footer-follow">
   <ul class="social-icons">
+
     {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      <li>
+        <strong>
+          {{ site.data.ui-text[site.locale].follow_label }}
+        </strong>
+      </li>
     {% endif %}
 
     {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter.username }}">
+          <i
+            class="fab fa-twitter-square"
+            aria-hidden="true">
+          </i>
+          Twitter
+        </a>
+      </li>
     {% endif %}
 
     {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+      <li>
+        <a href="https://facebook.com/{{ site.facebook.username }}">
+          <i
+            class="fab fa-facebook-square"
+            aria-hidden="true">
+          </i>
+          Facebook
+        </a>
+      </li>
     {% endif %}
 
     {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li>
+        <a href="https://github.com/{{ site.author.github }}">
+          <i
+            class="fab fa-github"
+            aria-hidden="true">
+          </i>
+          GitHub
+        </a>
+      </li>
     {% endif %}
 
     {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+      <li>
+        <a href="https://bitbucket.org/{{ site.author.bitbucket }}">
+          <i
+            class="fab fa-bitbucket"
+            aria-hidden="true">
+          </i>
+          Bitbucket
+        </a>
+      </li>
     {% endif %}
 
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <li>
+      <a
+        href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">
+        <i
+          class="fa fa-fw fa-rss-square"
+          aria-hidden="true">
+        </i>
+        {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
+      </a>
+    </li>
+
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }}
 
-  <!-- footer-counter-fix-v3-2026-07-24 -->
-  <!-- 等页面加载完成后，再调用当前可用的不蒜子兼容服务。 -->
-  <!-- 第三方统计服务不会再阻塞网页的初始加载。 -->
+<div class="page__footer-copyright">
+
+  <!-- ===================================================== -->
+  <!-- 页脚单行显示样式                                      -->
+  <!-- ===================================================== -->
+
+  <style>
+    .page__footer-copyright {
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      white-space: nowrap !important;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .footer-meta-line {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+
+      column-gap: 0.45rem;
+
+      width: max-content !important;
+      min-width: max-content !important;
+      max-width: none !important;
+
+      white-space: nowrap !important;
+      overflow: visible !important;
+
+      padding: 0.12rem 0 0.18rem 0;
+
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .footer-meta-line > span {
+      display: inline-flex !important;
+      flex: 0 0 auto !important;
+      align-items: center !important;
+      white-space: nowrap !important;
+    }
+
+    .footer-meta-separator {
+      opacity: 0.65;
+      user-select: none;
+    }
+
+    .footer-meta-credit {
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+    }
+
+    .footer-meta-line a {
+      white-space: nowrap;
+    }
+  </style>
+
+  <!-- Busuanzi 在 window.load 后动态加载，不阻塞页面 -->
+<!-- ===================================================== -->
+  <!-- 页脚所有信息放在同一行                                -->
+  <!-- ===================================================== -->
+
+  <div class="footer-meta-line">
+
+    <span>
+      &copy; {{ site.time | date: '%Y' }}
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span id="sitetime">
+      🕓 Loading site time...
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span>
+      👤 Total visitors&nbsp;
+      <span id="busuanzi_site_uv">…</span>
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span>
+      👁️ Total views&nbsp;
+      <span id="busuanzi_site_pv">…</span>
+    </span>
+
+    <span class="footer-meta-separator">
+      |
+    </span>
+
+    <span class="footer-meta-credit">
+      {{ site.name | default: site.title }}.
+      &nbsp;
+      {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
+      &nbsp;
+
+      <a
+        href="https://jekyllrb.com"
+        rel="nofollow">
+        Jekyll
+      </a>
+
+      &nbsp;&amp;&nbsp;
+
+      <a href="https://github.com/academicpages/academicpages.github.io">
+        AcademicPages
+      </a>,
+
+      &nbsp;a fork of&nbsp;
+
+      <a
+        href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+        rel="nofollow">
+        Minimal Mistakes
+      </a>.
+    </span>
+
+  </div>
+
+
+  <!-- ===================================================== -->
+  <!-- 建站运行时间                                          -->
+  <!-- ===================================================== -->
+
   <script>
   (function () {
     'use strict';
 
-    function loadVisitorCounter() {
-      var script = document.createElement('script');
-      var timeoutId;
+    /*
+     * 月份从 0 开始：
+     * 6 代表 7 月。
+     */
+    const siteStartTime =
+      new Date(
+        2023,
+        6,
+        24,
+        20,
+        0,
+        0
+      ).getTime();
 
+    function updateSiteTime() {
+      const difference =
+        Math.max(
+          0,
+          Date.now() - siteStartTime
+        );
+
+      const totalSeconds =
+        Math.floor(
+          difference / 1000
+        );
+
+      const secondsPerMinute =
+        60;
+
+      const secondsPerHour =
+        60 * secondsPerMinute;
+
+      const secondsPerDay =
+        24 * secondsPerHour;
+
+      const secondsPerYear =
+        365 * secondsPerDay;
+
+      const years =
+        Math.floor(
+          totalSeconds /
+          secondsPerYear
+        );
+
+      const secondsAfterYears =
+        totalSeconds -
+        years * secondsPerYear;
+
+      const days =
+        Math.floor(
+          secondsAfterYears /
+          secondsPerDay
+        );
+
+      const secondsAfterDays =
+        secondsAfterYears -
+        days * secondsPerDay;
+
+      const hours =
+        Math.floor(
+          secondsAfterDays /
+          secondsPerHour
+        );
+
+      const secondsAfterHours =
+        secondsAfterDays -
+        hours * secondsPerHour;
+
+      const minutes =
+        Math.floor(
+          secondsAfterHours /
+          secondsPerMinute
+        );
+
+      const seconds =
+        secondsAfterHours -
+        minutes * secondsPerMinute;
+
+      const element =
+        document.getElementById(
+          'sitetime'
+        );
+
+      if (element) {
+        element.textContent =
+          "🕓 already run " +
+          years +
+          ' years ' +
+          days +
+          ' days ' +
+          hours +
+          ' hours ' +
+          minutes +
+          ' mins ' +
+          seconds +
+          ' s';
+      }
+
+      window.setTimeout(
+        updateSiteTime,
+        1000
+      );
+    }
+
+    updateSiteTime();
+  })();
+  </script>
+
+
+  <!-- ===================================================== -->
+  <!-- 不蒜子统计：页面完成后加载，避免地址栏长时间转圈        -->
+  <!-- ===================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    const BUSUANZI_URL =
+      'https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js';
+
+    function loadBusuanzi() {
+      if (document.getElementById('ypei-busuanzi-script')) {
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.id = 'ypei-busuanzi-script';
+      script.src = BUSUANZI_URL;
       script.async = true;
-      script.src = 'https://busuanzi.icodeq.com/busuanzi.pure.mini.js';
-      script.referrerPolicy = 'no-referrer-when-downgrade';
-
-      script.onload = function () {
-        window.clearTimeout(timeoutId);
-      };
 
       script.onerror = function () {
-        window.clearTimeout(timeoutId);
+        const uv = document.getElementById('busuanzi_site_uv');
+        const pv = document.getElementById('busuanzi_site_pv');
 
-        var uv = document.getElementById('busuanzi_value_site_uv');
-        var pv = document.getElementById('busuanzi_value_site_pv');
-
-        if (uv && !uv.textContent.trim()) {
+        if (uv && (uv.textContent === '' || uv.textContent === '…')) {
           uv.textContent = '—';
         }
 
-        if (pv && !pv.textContent.trim()) {
+        if (pv && (pv.textContent === '' || pv.textContent === '…')) {
           pv.textContent = '—';
         }
       };
-
-      timeoutId = window.setTimeout(function () {
-        if (script.parentNode) {
-          script.parentNode.removeChild(script);
-        }
-
-        script.onerror();
-      }, 10000);
 
       document.head.appendChild(script);
     }
 
     if (document.readyState === 'complete') {
-      window.setTimeout(loadVisitorCounter, 0);
+      window.setTimeout(loadBusuanzi, 100);
     } else {
-      window.addEventListener('load', loadVisitorCounter, { once: true });
+      window.addEventListener(
+        'load',
+        function () {
+          window.setTimeout(loadBusuanzi, 100);
+        },
+        { once: true }
+      );
     }
   })();
   </script>
 
-  <span id="sitetime"></span>
-  <script>
-  function siteTime() {
-    window.setTimeout("siteTime()", 1000);
-    var seconds = 1000;
-    var minutes = seconds * 60;
-    var hours = minutes * 60;
-    var days = hours * 24;
-    var years = days * 365;
-    var today = new Date();
-    var todayYear = today.getFullYear();
-    var todayMonth = today.getMonth() + 1;
-    var todayDate = today.getDate();
-    var todayHour = today.getHours();
-    var todayMinute = today.getMinutes();
-    var todaySecond = today.getSeconds();
-    var t1 = Date.UTC(2023, 6, 24, 20, 0, 0);
-    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-    var diff = t2 - t1;
-    var diffYears = Math.floor(diff / years);
-    var diffDays = Math.floor((diff / days) - diffYears * 365);
-    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
-    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
-    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
 
-    document.getElementById("sitetime").innerHTML =
-      "ThreeStones's Blog already run " +
-      diffYears + " years " +
-      diffDays + " days " +
-      diffHours + " hours " +
-      diffMinutes + " mins " +
-      diffSeconds + " s";
-  }
-
-  siteTime();
-  </script>
-
-  <br />
-
-  <span id="busuanzi_container_site_uv">
-    Total visitors <span id="busuanzi_value_site_uv"></span> |
-  </span>
-
-  <span id="busuanzi_container_site_pv">
-    ️Total views <span id="busuanzi_value_site_pv"></span>
-  </span>
+  <!-- ===================================================== -->
+  <!-- 访客记录程序：sendBeacon，不创建 iframe，不阻塞页面     -->
+  <!-- ===================================================== -->
 
   <script>
-  (async () => {
-    try {
-      const ipRes = await fetch("https://api.ipify.org?format=json");
-      const ipData = await ipRes.json();
-      const ip = ipData.ip;
-      const geoRes = await fetch(`https://ip-api.com/json/${ip}`);
-      const geo = await geoRes.json();
-      const country = geo.country || "unknown";
-      const city = geo.city || "unknown";
-      const userAgent = navigator.userAgent;
-      const path = window.location.pathname;
-      const query = new URLSearchParams({
-        ip: ip,
-        ua: userAgent,
-        country: country,
-        city: city,
-        path: path
+  (function () {
+    'use strict';
+
+    const LOGGER_URL =
+      'https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec';
+
+    const IPPURE_URL =
+      'https://my.ippure.com/v1/info';
+
+    const IPIFY_URL =
+      'https://api.ipify.org?format=json';
+
+    const IPWHO_BASE_URL =
+      'https://ipwho.is/';
+
+    const VISITOR_ID_KEY =
+      'ypei_visitor_id';
+
+    const SESSION_ID_KEY =
+      'ypei_session_id';
+
+
+    /**
+     * 创建随机 ID。
+     */
+    function createRandomId() {
+      if (
+        window.crypto &&
+        typeof window.crypto.randomUUID === 'function'
+      ) {
+        return window.crypto.randomUUID();
+      }
+
+      return (
+        Date.now().toString(36) +
+        '-' +
+        Math.random()
+          .toString(36)
+          .substring(2) +
+        '-' +
+        Math.random()
+          .toString(36)
+          .substring(2)
+      );
+    }
+
+
+    /**
+     * 获取或创建浏览器存储 ID。
+     */
+    function getOrCreateStorageId(
+      storage,
+      key
+    ) {
+      try {
+        let value =
+          storage.getItem(key);
+
+        if (!value) {
+          value =
+            createRandomId();
+
+          storage.setItem(
+            key,
+            value
+          );
+        }
+
+        return value;
+
+      } catch (error) {
+        return createRandomId();
+      }
+    }
+
+
+    /**
+     * 获取浏览器时区。
+     */
+    function getBrowserTimezone() {
+      try {
+        return (
+          Intl.DateTimeFormat()
+            .resolvedOptions()
+            .timeZone ||
+          ''
+        );
+
+      } catch (error) {
+        return '';
+      }
+    }
+
+
+    /**
+     * 请求 JSON。
+     */
+    async function fetchJson(
+      url,
+      options
+    ) {
+      const controller =
+        typeof AbortController !== 'undefined'
+          ? new AbortController()
+          : null;
+
+      const timeoutId =
+        controller
+          ? window.setTimeout(
+              function () {
+                controller.abort();
+              },
+              3500
+            )
+          : null;
+
+      try {
+        const requestOptions =
+          Object.assign(
+            {
+              method: 'GET',
+              cache: 'no-store',
+              credentials: 'omit'
+            },
+            options || {}
+          );
+
+        if (controller) {
+          requestOptions.signal = controller.signal;
+        }
+
+        const response =
+          await fetch(
+            url,
+            requestOptions
+          );
+
+        if (!response.ok) {
+          throw new Error(
+            'HTTP ' +
+            response.status +
+            ' from ' +
+            url
+          );
+        }
+
+        return await response.json();
+
+      } finally {
+        if (timeoutId) {
+          window.clearTimeout(timeoutId);
+        }
+      }
+    }
+
+
+    /**
+     * 只在原字段为空时补充字段。
+     */
+    function fillMissing(
+      object,
+      field,
+      value
+    ) {
+      if (
+        (
+          object[field] === undefined ||
+          object[field] === null ||
+          object[field] === ''
+        ) &&
+        value !== undefined &&
+        value !== null &&
+        value !== ''
+      ) {
+        object[field] =
+          value;
+      }
+    }
+
+
+    /**
+     * 标准化 IPPure 返回字段。
+     */
+    function normalizeIpPure(raw) {
+      raw =
+        raw &&
+        typeof raw === 'object'
+          ? raw
+          : {};
+
+      return {
+        ip:
+          raw.ip || '',
+
+        apiSource:
+          'IPPure',
+
+        asn:
+          raw.asn !== undefined
+            ? raw.asn
+            : '',
+
+        asOrganization:
+          raw.asOrganization ||
+          '',
+
+        country:
+          raw.country ||
+          '',
+
+        countryCode:
+          raw.countryCode ||
+          '',
+
+        region:
+          raw.region ||
+          '',
+
+        regionCode:
+          raw.regionCode ||
+          '',
+
+        city:
+          raw.city ||
+          '',
+
+        postalCode:
+          raw.postalCode ||
+          '',
+
+        continent:
+          raw.continent ||
+          '',
+
+        ipType:
+          raw.ipType ||
+          raw.type ||
+          '',
+
+        timezone:
+          raw.timezone ||
+          '',
+
+        longitude:
+          raw.longitude !== undefined
+            ? raw.longitude
+            : '',
+
+        latitude:
+          raw.latitude !== undefined
+            ? raw.latitude
+            : '',
+
+        fraudScore:
+          raw.fraudScore !== undefined
+            ? raw.fraudScore
+            : '',
+
+        isResidential:
+          raw.isResidential !== undefined
+            ? raw.isResidential
+            : '',
+
+        isBroadcast:
+          raw.isBroadcast !== undefined
+            ? raw.isBroadcast
+            : '',
+
+        userAgent:
+          raw.userAgent ||
+          ''
+      };
+    }
+
+
+    /**
+     * 使用 ipwho.is 补充缺少的地理和 ASN 信息。
+     */
+    function mergeIpWho(
+      base,
+      raw
+    ) {
+      if (
+        !raw ||
+        typeof raw !== 'object' ||
+        raw.success === false
+      ) {
+        return;
+      }
+
+      fillMissing(
+        base,
+        'ip',
+        raw.ip
+      );
+
+      fillMissing(
+        base,
+        'country',
+        raw.country
+      );
+
+      fillMissing(
+        base,
+        'countryCode',
+        raw.country_code
+      );
+
+      fillMissing(
+        base,
+        'region',
+        raw.region
+      );
+
+      fillMissing(
+        base,
+        'regionCode',
+        raw.region_code
+      );
+
+      fillMissing(
+        base,
+        'city',
+        raw.city
+      );
+
+      fillMissing(
+        base,
+        'postalCode',
+        raw.postal
+      );
+
+      fillMissing(
+        base,
+        'continent',
+        raw.continent
+      );
+
+      fillMissing(
+        base,
+        'ipType',
+        raw.type
+      );
+
+      fillMissing(
+        base,
+        'longitude',
+        raw.longitude
+      );
+
+      fillMissing(
+        base,
+        'latitude',
+        raw.latitude
+      );
+
+      if (
+        raw.timezone &&
+        typeof raw.timezone === 'object'
+      ) {
+        fillMissing(
+          base,
+          'timezone',
+          raw.timezone.id
+        );
+      }
+
+      if (
+        raw.connection &&
+        typeof raw.connection === 'object'
+      ) {
+        fillMissing(
+          base,
+          'asn',
+          raw.connection.asn
+        );
+
+        fillMissing(
+          base,
+          'asOrganization',
+          raw.connection.org ||
+          raw.connection.isp
+        );
+      }
+
+      if (
+        base.apiSource === 'IPPure'
+      ) {
+        base.apiSource =
+          'IPPure + ipwho.is';
+      } else {
+        base.apiSource =
+          'ipwho.is';
+      }
+    }
+
+
+    /**
+     * 判断 IP 信息是否缺少核心地理字段。
+     */
+    function needsGeoFallback(data) {
+      return (
+        !data.country ||
+        !data.region ||
+        !data.city ||
+        !data.asn ||
+        !data.asOrganization
+      );
+    }
+
+
+    /**
+     * 获取完整 IP 信息。
+     *
+     * 顺序：
+     * 1. IPPure
+     * 2. ipify 补充 IP
+     * 3. ipwho.is 补充地理与 ASN
+     */
+    async function getIpInformation() {
+      const data = {};
+      const errors = [];
+
+      /*
+       * 三个接口并行请求；任何接口失败都不会阻止其他接口。
+       * 最慢约 3.5 秒，而不是依次等待多个接口。
+       */
+      const results =
+        await Promise.allSettled(
+          [
+            fetchJson(
+              IPPURE_URL,
+              {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'omit'
+              }
+            ),
+
+            fetchJson(
+              IPWHO_BASE_URL,
+              {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'omit'
+              }
+            ),
+
+            fetchJson(
+              IPIFY_URL,
+              {
+                method: 'GET',
+                cache: 'no-store',
+                credentials: 'omit'
+              }
+            )
+          ]
+        );
+
+      if (results[0].status === 'fulfilled') {
+        Object.assign(
+          data,
+          normalizeIpPure(
+            results[0].value
+          )
+        );
+      } else {
+        errors.push(
+          'IPPure: ' +
+          String(
+            results[0].reason &&
+            results[0].reason.message
+              ? results[0].reason.message
+              : results[0].reason
+          )
+        );
+      }
+
+      if (results[2].status === 'fulfilled') {
+        if (
+          results[2].value &&
+          results[2].value.ip
+        ) {
+          fillMissing(
+            data,
+            'ip',
+            results[2].value.ip
+          );
+
+          data.apiSource =
+            data.apiSource
+              ? data.apiSource + ' + ipify'
+              : 'ipify';
+        }
+      } else {
+        errors.push(
+          'ipify: ' +
+          String(
+            results[2].reason &&
+            results[2].reason.message
+              ? results[2].reason.message
+              : results[2].reason
+          )
+        );
+      }
+
+      if (results[1].status === 'fulfilled') {
+        const ipWhoRaw =
+          results[1].value;
+
+        if (
+          ipWhoRaw &&
+          ipWhoRaw.success !== false
+        ) {
+          mergeIpWho(
+            data,
+            ipWhoRaw
+          );
+        } else {
+          errors.push(
+            'ipwho.is: ' +
+            String(
+              ipWhoRaw &&
+              ipWhoRaw.message
+                ? ipWhoRaw.message
+                : 'lookup failed'
+            )
+          );
+        }
+      } else {
+        errors.push(
+          'ipwho.is: ' +
+          String(
+            results[1].reason &&
+            results[1].reason.message
+              ? results[1].reason.message
+              : results[1].reason
+          )
+        );
+      }
+
+      return {
+        data: data,
+        error: errors.join('; ')
+      };
+    }
+
+
+    /**
+     * SHA-256 轻量指纹。
+     */
+    async function hashText(text) {
+      if (
+        window.crypto &&
+        window.crypto.subtle &&
+        window.TextEncoder
+      ) {
+        const bytes =
+          new TextEncoder()
+            .encode(text);
+
+        const digest =
+          await window.crypto.subtle.digest(
+            'SHA-256',
+            bytes
+          );
+
+        return Array.from(
+          new Uint8Array(digest)
+        )
+          .map(function (byte) {
+            return byte
+              .toString(16)
+              .padStart(2, '0');
+          })
+          .join('');
+      }
+
+      let hash = 0;
+
+      for (
+        let i = 0;
+        i < text.length;
+        i++
+      ) {
+        hash =
+          ((hash << 5) - hash) +
+          text.charCodeAt(i);
+
+        hash |= 0;
+      }
+
+      return (
+        'legacy-' +
+        Math.abs(hash)
+      );
+    }
+
+
+    /**
+     * 发送记录。
+     */
+    function sendLog(payload) {
+      const body =
+        JSON.stringify(payload);
+
+      /*
+       * 优先使用 sendBeacon。
+       */
+      if (navigator.sendBeacon) {
+        const blob =
+          new Blob(
+            [body],
+            {
+              type:
+                'text/plain;charset=UTF-8'
+            }
+          );
+
+        const accepted =
+          navigator.sendBeacon(
+            LOGGER_URL,
+            blob
+          );
+
+        if (accepted) {
+          return;
+        }
+      }
+
+      /*
+       * 备用 fetch。
+       */
+      fetch(
+        LOGGER_URL,
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          keepalive: true,
+
+          headers: {
+            'Content-Type':
+              'text/plain;charset=UTF-8'
+          },
+
+          body:
+            body
+        }
+      ).catch(function () {
+        /*
+         * 日志失败不影响网站运行。
+         */
       });
-
-      await fetch("https://script.google.com/macros/s/AKfycbyMmK7M5CWF8XNgU7fNSRcCbUkSG1IoqNLoq43L1GJoq4CCMsIsGkb6ZMGJDAoUot6-WA/exec?" + query.toString());
-    } catch (err) {
-      console.error("Logging failed:", err);
     }
+
+
+    /**
+     * 收集访问信息。
+     */
+    async function logVisitor() {
+      try {
+        const visitorId =
+          getOrCreateStorageId(
+            window.localStorage,
+            VISITOR_ID_KEY
+          );
+
+        const sessionId =
+          getOrCreateStorageId(
+            window.sessionStorage,
+            SESSION_ID_KEY
+          );
+
+        const eventId =
+          createRandomId();
+
+        const ipResult =
+          await getIpInformation();
+
+        const ipInfo =
+          ipResult.data || {};
+
+        const connection =
+          navigator.connection ||
+          navigator.mozConnection ||
+          navigator.webkitConnection ||
+          {};
+
+        const screenWidth =
+          window.screen &&
+          window.screen.width
+            ? window.screen.width
+            : '';
+
+        const screenHeight =
+          window.screen &&
+          window.screen.height
+            ? window.screen.height
+            : '';
+
+        const screenResolution =
+          screenWidth &&
+          screenHeight
+            ? screenWidth +
+              'x' +
+              screenHeight
+            : '';
+
+        const viewport =
+          window.innerWidth +
+          'x' +
+          window.innerHeight;
+
+        const browserTimezone =
+          getBrowserTimezone();
+
+        const languages =
+          Array.isArray(
+            navigator.languages
+          )
+            ? navigator.languages
+            : [];
+
+        const fingerprintComponents = {
+          userAgent:
+            navigator.userAgent || '',
+
+          language:
+            navigator.language || '',
+
+          languages:
+            languages,
+
+          platform:
+            navigator.platform || '',
+
+          screenResolution:
+            screenResolution,
+
+          colorDepth:
+            window.screen
+              ? window.screen.colorDepth
+              : '',
+
+          devicePixelRatio:
+            window.devicePixelRatio || '',
+
+          timezone:
+            browserTimezone,
+
+          hardwareConcurrency:
+            navigator.hardwareConcurrency ||
+            '',
+
+          deviceMemory:
+            navigator.deviceMemory ||
+            '',
+
+          maxTouchPoints:
+            navigator.maxTouchPoints ||
+            0
+        };
+
+        const fingerprintId =
+          await hashText(
+            JSON.stringify(
+              fingerprintComponents
+            )
+          );
+
+        const payload =
+          Object.assign(
+            {},
+            ipInfo,
+            {
+              clientTimestamp:
+                new Date().toISOString(),
+
+              visitorId:
+                visitorId,
+
+              sessionId:
+                sessionId,
+
+              eventId:
+                eventId,
+
+              pageTitle:
+                document.title ||
+                '',
+
+              pageUrl:
+                window.location.href,
+
+              path:
+                window.location.pathname +
+                window.location.search +
+                window.location.hash,
+
+              referrer:
+                document.referrer ||
+                '',
+
+              browserUserAgent:
+                navigator.userAgent ||
+                '',
+
+              language:
+                navigator.language ||
+                '',
+
+              languages:
+                languages,
+
+              platform:
+                navigator.platform ||
+                '',
+
+              screenResolution:
+                screenResolution,
+
+              viewport:
+                viewport,
+
+              colorDepth:
+                window.screen
+                  ? window.screen.colorDepth
+                  : '',
+
+              devicePixelRatio:
+                window.devicePixelRatio ||
+                '',
+
+              browserTimezone:
+                browserTimezone,
+
+              hardwareConcurrency:
+                navigator.hardwareConcurrency ||
+                '',
+
+              deviceMemory:
+                navigator.deviceMemory ||
+                '',
+
+              maxTouchPoints:
+                navigator.maxTouchPoints ||
+                0,
+
+              cookieEnabled:
+                navigator.cookieEnabled,
+
+              doNotTrack:
+                navigator.doNotTrack ||
+                window.doNotTrack ||
+                navigator.msDoNotTrack ||
+                '',
+
+              connectionType:
+                connection.type ||
+                '',
+
+              effectiveType:
+                connection.effectiveType ||
+                '',
+
+              downlinkMbps:
+                connection.downlink !== undefined
+                  ? connection.downlink
+                  : '',
+
+              rttMs:
+                connection.rtt !== undefined
+                  ? connection.rtt
+                  : '',
+
+              saveData:
+                connection.saveData !== undefined
+                  ? connection.saveData
+                  : '',
+
+              fingerprintId:
+                fingerprintId,
+
+              apiError:
+                ipResult.error ||
+                ''
+            }
+          );
+
+        sendLog(payload);
+
+      } catch (error) {
+        console.error(
+          'Visitor logging failed:',
+          error
+        );
+      }
+    }
+
+
+    /**
+     * 页面加载完成后执行一次。
+     */
+    if (
+      document.readyState === 'complete'
+    ) {
+      window.setTimeout(
+        logVisitor,
+        150
+      );
+
+    } else {
+      window.addEventListener(
+        'load',
+        function () {
+          window.setTimeout(
+            logVisitor,
+            150
+          );
+        },
+        {
+          once: true
+        }
+      );
+    }
+
   })();
   </script>
 
-  <script>
-  fetch('https://api.ipify.org?format=json')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data.ip);
-    });
-  </script>
-
-  {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> <a href="https://docs.google.com/spreadsheets/d/1Az2vBc7oCl5j_1myZdBG--zELsr1_lUw71ceunNThN0/edit?gid=0#gid=0">&</a> <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
 </div>
