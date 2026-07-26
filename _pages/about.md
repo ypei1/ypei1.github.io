@@ -29,7 +29,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
   
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0).
 
-- *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/3tvc64j43c7vwlreil7ur/manuscript-r0.pdf?rlkey=ji3svx0zqrd026z85n6zkbykp&dl=0).
+- *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/3tvc64j43c7vwlreil7ur/manuscript-r0.pdf?rlkey=ji3svx0zqrd026z85zkbykp&dl=0).
  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). New draft coming soon.
  
