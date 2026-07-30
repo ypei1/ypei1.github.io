@@ -16,7 +16,6 @@ My current research lies at the intersection of international economics, environ
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
- <span style="color: blue; font-weight: bold;">I will be on the 2026–2027 academic job market.</span>
 
 ### Working Papers
 - *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
