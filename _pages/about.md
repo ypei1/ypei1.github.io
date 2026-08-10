@@ -24,7 +24,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372). **R&R at the *European Economic Review*.**
   
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).  **R&R at the *Canadian Journal of Economics*.**
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0). 
   
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0).
 
