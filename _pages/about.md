@@ -16,11 +16,7 @@ My current research lies at the intersection of international economics, environ
 
 Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
-
-### Working Papers
-- *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
-
-- *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.weebly.com/)). [Old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970). New draft coming soon.
+### Submitted or under Revision
 
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372). **R&R at the *European Economic Review*.**
   
@@ -29,8 +25,15 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0).
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/3tvc64j43c7vwlreil7ur/manuscript-r0.pdf?rlkey=ji3svx0zqrd026z85zkbykp&dl=0).
- 
+
+### Working Papers
+
+- *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
+  
+- *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.weebly.com/)). [Old draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047970). New draft coming soon.
+
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). New draft coming soon.
+
  
 ###  Papers Working in Progress
 
