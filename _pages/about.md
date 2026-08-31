@@ -26,6 +26,7 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/3tvc64j43c7vwlreil7ur/manuscript-r0.pdf?rlkey=ji3svx0zqrd026z85zkbykp&dl=0).
 
+- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.weebly.com/), Lingyi Li, and Bin Sheng#). [Draft submitted](https://www.dropbox.com/scl/fi/p4n63g6aftf70veljmosl/CEQ_manuscript_template.pdf?rlkey=tj4c1k2o2suf6at00d5mhi6sr&dl=0).
 ### Working Papers
 
 - *Biofuel Policy, Trade, and Land-Use Change* (joint with [Da Zhang](https://scholar.google.com/citations?user=_MNaBVEAAAAJ&hl=en), [Steven Berry](https://sites.google.com/site/stberry/), [Anton C. Yang](https://www.antonyang.com/), and [Chenfei Qu](https://chenfeiqu.com/)). Draft coming soon.
