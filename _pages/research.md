@@ -18,7 +18,9 @@ My current research filed lie at the intersection of International Economics, En
   
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).
   
-- *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0).
+- *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.weebly.com/) and Jiawen Yan). [Draft submitted](https://www.dropbox.com/scl/fi/rmw4u7qqcp349t9scl7dt/CEPAdraft_clickme.pdf?rlkey=wnxohu0lpnt9fqhw2swbrqumw&st=mmey3p9t&dl=0)..
+
+- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.weebly.com/), Lingyi Li, and Bin Sheng#). [Draft submitted](https://www.dropbox.com/scl/fi/p4n63g6aftf70veljmosl/CEQ_manuscript_template.pdf?rlkey=tj4c1k2o2suf6at00d5mhi6sr&dl=0).
  
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). New draft coming soon.
  
