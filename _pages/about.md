@@ -56,7 +56,6 @@ Here is my <a href="/files/YANGPEI_cv.pdf">CV</a>  .
 
 ### Seminar
 
-- Nankai University (NKIIE), 2025; 
 - Shanghai Jiao Tong University (SHINE-YES-With-NO), 2025
 
 
