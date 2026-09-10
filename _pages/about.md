@@ -10,7 +10,7 @@ redirect_from:
  
 I am a Research Associate at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University. 
 
-I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/) in 2025, where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
+I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/), where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
  
 My current research lies at the intersection of international economics, environmental economics, and the Chinese economy. My research focuses on analyzing economic and environmental interactions across space, identifying causal relationships and quantifying their underlying forces, as well as deriving policy implications. I employ both quantitative models (especially structural trade and macroeconomic models) and empirical methods (time-series, reduced form, and structural econometric model).
 
