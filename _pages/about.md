@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
  
-I am a Assistant Research Fellow at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University. 
+I am an assistant research fellow at [the Institute of Energy, Environment, and Economy (3E)](https://www.3e.tsinghua.edu.cn/en) at Tsinghua University. 
 
 I received my Ph.D. in Economics from the [University of Houston](https://www.uh.edu/class/economics/), where I was supervised by Dr. [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home).
  
