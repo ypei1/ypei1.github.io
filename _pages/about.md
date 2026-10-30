@@ -23,7 +23,8 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang). [Draft](https://ypei1.github.io/files/pdf/APEC.pdf). <!--<!--<!-- **Revise and Resubmit at the *Canadian Journal of Economics*.**-->
 
 
-### Submitted Papers
+### Preparing for Submission
+
 
 - *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).  <!--**Submitted to the *Journal of Environmental Economics and Management*.**-->
 
@@ -32,8 +33,6 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf). <!--**Submitted to the *Review of International Economics*.**-->
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf). <!--**Submitted to *Empirical Economics*.**-->
-
-### Preparing for Submission
 
 - *Love For Panda, Buy From China* (joint with [Wei Jin](https://weijinsite.github.io/)).<!-- **To be submitted to *Management Science*.**-->
 
@@ -45,7 +44,6 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Waters* (joint with [Costas Arkolakis](https://arkolakis.com/), and [Anton C. Yang](https://www.antonyang.com/)).  <!-- [José-Antonio Espín-Sánchez](https://economics.yale.edu/people/jose-antonio-espin-sanchez), -->
 
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
 
 - *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf). [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
 
@@ -54,6 +52,8 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
 
 ### Work in Progress
+
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home), and Yuta Watanabe).
 
 - *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
 
