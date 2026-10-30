@@ -53,7 +53,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Work in Progress
 
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home), and Yuta Watanabe).
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home), and Yuta Watabe).
 
 - *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
 
