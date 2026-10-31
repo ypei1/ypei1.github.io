@@ -34,10 +34,6 @@ My current research filed lie at the intersection of International Economics, En
 
 ### Working Papers
 
-- *Waters* (joint with [Costas Arkolakis](https://arkolakis.com/), and [Anton C. Yang](https://www.antonyang.com/)).  <!-- [José-Antonio Espín-Sánchez](https://economics.yale.edu/people/jose-antonio-espin-sanchez), -->
-
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
-
 - *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf). [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
 
 - *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
@@ -46,6 +42,11 @@ My current research filed lie at the intersection of International Economics, En
 
 ### Work in Progress
 
+
+- *Waters* (joint with [Costas Arkolakis](https://arkolakis.com/), and [Anton C. Yang](https://www.antonyang.com/)).  <!-- [José-Antonio Espín-Sánchez](https://economics.yale.edu/people/jose-antonio-espin-sanchez), -->
+
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home) and Yuta).
+  
 - *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
 
  <!--- *Deglobalization and Global Inequality* (joint with [Wei Jin](https://weijinsite.github.io/)).-->
