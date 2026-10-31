@@ -15,6 +15,8 @@ My current research filed lie at the intersection of International Economics, En
 
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang). [Draft](https://ypei1.github.io/files/pdf/APEC.pdf). <!--<!--<!-- **Revise and Resubmit at the *Canadian Journal of Economics*.**-->
 
+### Resubmitted
+
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf). <!--**Submitted to the *Review of International Economics*.**-->
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf). <!--**Submitted to *Empirical Economics*.**-->
