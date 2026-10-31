@@ -19,6 +19,7 @@ My current research filed lie at the intersection of International Economics, En
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf). <!--**Submitted to *Empirical Economics*.**-->
 
+- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).<!-- **To be submitted to *Economic Research Journal*.**-->
 
 ### Preparing for Submission
 
@@ -30,7 +31,6 @@ My current research filed lie at the intersection of International Economics, En
 
 - *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).<!-- **To be submitted to the *Journal of the European Economic Association*.**-->
 
-- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).<!-- **To be submitted to *Economic Research Journal*.**-->
 
 ### Working Papers
 
