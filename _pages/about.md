@@ -26,7 +26,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 ### Preparing for Submission
 
 
-- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).  <!--**Submitted to the *Journal of Environmental Economics and Management*.**-->
+- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)) [Draft](https://ypei1.github.io/files/Biofuel_Modeling_Pape.pdf)  [Online Appendix](https://ypei1.github.io/files/Biofuel_Modeling_Paper_oa.pdf).  <!--**Submitted to the *Journal of Environmental Economics and Management*.**-->
 
 - *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). <!--**Submitted to the *Journal of International Economics*.**-->
 
