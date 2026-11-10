@@ -34,32 +34,33 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf). <!--**Submitted to *Empirical Economics*.**-->
 
+
+
+
+### Work in Progress
+
+- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home), and Yuta Watabe).
+
+- *Waters* (joint with [Costas Arkolakis](https://arkolakis.com/), and [Anton C. Yang](https://www.antonyang.com/)).  <!-- [José-Antonio Espín-Sánchez](https://economics.yale.edu/people/jose-antonio-espin-sanchez), -->
+
+- *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf). [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
+  
+- *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
+
+- *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
+
+- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
+
 - *Love For Panda, Buy From China* (joint with [Wei Jin](https://weijinsite.github.io/)).<!-- **To be submitted to *Management Science*.**-->
 
 - *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).<!-- **To be submitted to the *Journal of the European Economic Association*.**-->
 
 - *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).<!-- **To be submitted to *Economic Research Journal*.**-->
 
-### Working Papers
-
-- *Waters* (joint with [Costas Arkolakis](https://arkolakis.com/), and [Anton C. Yang](https://www.antonyang.com/)).  <!-- [José-Antonio Espín-Sánchez](https://economics.yale.edu/people/jose-antonio-espin-sanchez), -->
-
-
-- *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf). [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
-
-- *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
-
-- *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
-
-### Work in Progress
-
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home), and Yuta Watabe).
-
-- *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
 
  <!--- *Deglobalization and Global Inequality* (joint with [Wei Jin](https://weijinsite.github.io/)).-->
 
- <!--- *Deglobalization, Aging, and Global Inequality* (joint with [Wei Jin](https://weijinsite.github.io/)).-->
+ <!--- *Deglobalization, Aging, and Global Inequality* (joint with [Wei Jin](https://weijinsite.github.io/)).### Working Papers-->
 
 ### Research Projects
 
