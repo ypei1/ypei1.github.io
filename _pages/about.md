@@ -45,6 +45,8 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf). [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
   
+- Optimal Mix of Trade and Migration Policies, with [Eugene Oue](https://sites.google.com/view/eugeneoue/research?authuser=0) and Zongyue Liu
+  
 - *Carbon Consequences of Deglobalization* (joint with [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).
 
 - *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
