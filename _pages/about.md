@@ -22,7 +22,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). **Revise and Resubmit at *Applied Economics*.** Draft upon request.
 
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  **Submitted to the *Canadian Journal of Economics*.** [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  **Invited to Submitted to the *Canadian Journal of Economics*.** [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
 
 - *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).  **Submitted to the *Journal of the European Economic Association*.**  Draft upon request. 
 
