@@ -30,15 +30,15 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Papers Prepared for Submission
 
-- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)). **Forthcoming in the *NBER Working Paper Series*.** Prepared for submission to the *Journal of Environmental Economics and Management*. Draft upon request.
+- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)). Forthcoming in the *NBER Working Paper Series*. Prepared for submission to the *Journal of Environmental Economics and Management*. Draft upon request.
 
-- *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). **Forthcoming in the *Cowles Foundation Discussion Paper Series*.** Prepared for submission to the *Journal of International Economics*. Draft upon request.
+- *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). Forthcoming in the *Cowles Foundation Discussion Paper Series*. Prepared for submission to the *Journal of International Economics*. Draft upon request.
 
 - *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)). Prepared for submission to *Economic Research Journal*. [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
 
-### Other Working Papers
 
-#### Selected Papers
+
+### Selected Papers Working Papers
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
 
@@ -48,7 +48,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Optimal Mix of Trade and Migration Policies* (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).
 
-#### Additional Papers
+### Additional Papers
 
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). **Submitted to the *Review of International Economics*.** [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
