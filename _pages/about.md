@@ -20,7 +20,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *The Decline in China’s Trade Share of GDP: A Structural Accounting*. **Revise and Resubmit at the *European Economic Review*.** [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372).
 
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  **Invited to Submitted to the *Canadian Journal of Economics*.** [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  **Revise and Resubmit at *Canadian Journal of Economics*.** [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
 
 - *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). **Revise and Resubmit at *Applied Economics*.** Draft upon request.
 
