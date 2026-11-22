@@ -40,13 +40,13 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Selected Working Papers
 
-- *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
+- **Internal Trade and Optimal External Tariff (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).**
 
-- *Deep Waters* (joint with [Costas Arkolakis](https://arkolakis.com/) and [Anton C. Yang](https://www.antonyang.com/)).
+- **Deep Waters (joint with [Costas Arkolakis](https://arkolakis.com/) and [Anton C. Yang](https://www.antonyang.com/)).**
 
-- *Demographics, Trade, and Growth* (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
+- **Demographics, Trade, and Growth (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).**
 
-- *Optimal Mix of Trade and Migration Policies* (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).
+- **Optimal Mix of Trade and Migration Policies (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).**
 
 ### Additional Working Papers
 
