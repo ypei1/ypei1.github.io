@@ -38,7 +38,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 
 
-### Selected Papers Working Papers
+### Selected Working Papers
 
 - *Internal Trade and Optimal External Tariff* (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).
 
@@ -48,7 +48,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Optimal Mix of Trade and Migration Policies* (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).
 
-### Additional Papers
+### Additional Working Papers
 
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). **Submitted to the *Review of International Economics*.** [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
