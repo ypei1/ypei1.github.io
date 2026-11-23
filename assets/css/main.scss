@@ -1,21 +1,10 @@
 ---
 ---
 
-/*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
+/* Yang Pei / AcademicPages: return to the original, unforced theme grid.
+   Import order follows the existing repository; no new theme dependency. */
 
-/* Ubuntu, Ubuntu */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
-
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -34,7 +23,6 @@
 @import "syntax";
 
 @import "forms";
-
 @import "page";
 @import "archive";
 @import "sidebar";
@@ -45,98 +33,5 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* Minimal light/dark colors; intentionally contains no custom layout grid. */
 @import "custom";
-
-
-/* ============================================================
-   Custom layout:
-   keep left profile area default,
-   move right text area closer,
-   set right text width to about 4/5 of the previous wide version
-   ============================================================ */
-
-@media screen and (min-width: 1024px) {
-
-  /* Overall content layout: left profile + gap + right text */
-  #main {
-    max-width: 1080px !important;
-    width: 92% !important;
-
-    margin-left: auto !important;
-    margin-right: auto !important;
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-
-    /* This controls the blank space between left card and right text */
-    gap: 55px !important;
-  }
-
-  /* Left profile/sidebar: only control position, not photo/card design */
-  .sidebar {
-    flex: 0 0 210px !important;
-    width: 210px !important;
-    max-width: 210px !important;
-
-    float: none !important;
-    clear: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Right text area: homepage / research / archive */
-  .archive {
-    flex: 0 1 784px !important;
-    width: 784px !important;
-    max-width: 784px !important;
-
-    float: none !important;
-    clear: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Right text area: normal pages */
-  .page {
-    flex: 0 1 784px !important;
-    width: 784px !important;
-    max-width: 784px !important;
-
-    float: none !important;
-    clear: none !important;
-
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Let text use the full right-column width */
-  .page__content,
-  .archive__item,
-  .archive__item-body,
-  .archive__item-excerpt {
-    width: 100% !important;
-    max-width: none !important;
-  }
-
-  /* Remove right reserved sidebar space */
-  .sidebar__right {
-    display: none !important;
-    width: 0 !important;
-    max-width: 0 !important;
-  }
-}
