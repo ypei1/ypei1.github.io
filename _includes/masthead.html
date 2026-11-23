@@ -10,11 +10,17 @@
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          <li class="masthead__menu-item masthead__menu-item--theme">
+            <button type="button" id="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false" title="Switch light/dark mode">
+              <span id="theme-icon" aria-hidden="true">☾</span>
+              <span id="theme-label">Dark</span>
+            </button>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
