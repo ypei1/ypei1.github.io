@@ -18,11 +18,11 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Revise and Resubmit & Submitted Papers
 
-- *The Decline in China’s Trade Share of GDP: A Structural Accounting*. **Revise and Resubmit** at the *European Economic Review*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372).
+- *The Decline in China’s Trade Share of GDP: A Structural Accounting*.  Revise and Resubmit at the *European Economic Review*. [Draft](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6153372).
 
-- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  **Revise and Resubmit** [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
+- *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  Revise and Resubmit [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
 
-- *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). **Revise and Resubmit** at *Applied Economics*. Draft upon request.
+- *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). Revise and Resubmit at *Applied Economics*. Draft upon request.
 
 
 ### Papers Prepared for Submission
@@ -54,7 +54,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
 
-- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang). **Submitted** to *Economic Research Journal*. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
+- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang).  Submitted. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
   
 - *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).  [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
 
