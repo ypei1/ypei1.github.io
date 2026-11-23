@@ -24,18 +24,14 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). **Revise and Resubmit** at *Applied Economics*. Draft upon request.
 
-- *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).  **Submitted** to the *Journal of the European Economic Association*.  Draft upon request. 
-
-- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang). **Submitted** to *Economic Research Journal*. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
 
 ### Papers Prepared for Submission
 
-- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)). Forthcoming in the *NBER Working Paper Series*. Prepared for submission to the *Journal of Environmental Economics and Management*. Draft upon request.
+- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)). Forthcoming in the *NBER Working Paper Series*. Draft upon request.
 
 - *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). Forthcoming in the *Cowles Foundation Discussion Paper Series*. Prepared for submission to the *Journal of International Economics*. Draft upon request.
 
-- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)). Prepared for submission to *Economic Research Journal*. [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
-
+- *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).  Draft upon request. 
 
 
 ### Selected Working Papers
@@ -50,13 +46,17 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Additional Working Papers
 
-- *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). **Submitted** to the *Review of International Economics*. [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
+- *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
-- *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). **Submitted** to *Empirical Economics*. [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf).
+- *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf).
 
 - *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
 
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
+
+- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang). **Submitted** to *Economic Research Journal*. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
+  
+- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).  [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
 
 ### Research Projects
 
@@ -117,14 +117,14 @@ author_profile: true
 redirect_from:
   - /md/
   - /markdown.html
----
+---Prepared for submission to the *Journal of Environmental Economics and Management*. 
 - *Fragmentation Abroad, Integration at Home: Regional Reallocation in an Ageing China* (joint with [Wei Jin](https://weijinsite.weebly.com/)).
 <audio controls>  % [Draft](https://ypei1.github.io/files/pdf/LROYx.pdf).
 - China's VAT Reforms, Distortions, and Intranational Trade   <br>
 - *AI and Technology Diffusion* (joint with [Wei Jin](https://weijinsite.weebly.com/) and [Jun Nie](https://www.junnie27.com/))  
 - *On Deglobalization* (joint with [Jun Nie](https://www.junnie27.com/))  
 - *Firms, Immigration, and Home Trade Bias* (joint with [Jun Nie](https://www.junnie27.com/))
-
+**Submitted** to the *Journal of the European Economic Association*.  
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).
 
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Bin Sheng, [Wei Jin](https://weijinsite.weebly.com/), Chenxin Jin, and Hen Zhang). [Draft submitted](https://www.dropbox.com/scl/fi/001y5y4jxwvpeulqs1885/APEC.pdf?rlkey=aej21929g047ffdzd6l2953bv&dl=0).
