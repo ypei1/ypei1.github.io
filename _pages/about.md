@@ -36,13 +36,13 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Selected Working Papers
 
-- **Internal Trade and Optimal External Tariff (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).**
+- *Internal Trade and Optimal External Tariff (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home)).*
 
-- **Deep Waters (joint with [Costas Arkolakis](https://arkolakis.com/) and [Anton C. Yang](https://www.antonyang.com/)).**
+- *Deep Waters (joint with [Costas Arkolakis](https://arkolakis.com/) and [Anton C. Yang](https://www.antonyang.com/)).*
 
-- **Demographics, Trade, and Growth** (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/) in the new draft). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
+- *Demographics, Trade, and Growth** (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/) in the new draft). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
 
-- **Optimal Mix of Trade and Migration Policies (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).**
+- *Optimal Mix of Trade and Migration Policies (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).*
 
 - *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang).  Submitted. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
   
