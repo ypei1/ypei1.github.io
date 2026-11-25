@@ -46,6 +46,10 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Other Working Papers
 
+- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang).  Submitted. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
+  
+- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).  [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
+
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
 - *Buy or Build Abroad? Host-Country News Tone and Chinese Firms’ OFDI Entry Mode* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/pdf/EMEC-D-26-02429.pdf).
@@ -53,10 +57,6 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 - *Greying and Gravity: Population Ageing and the Regional Gains from Integration in China* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm)). [Draft](https://ypei1.github.io/files/draft-JIMF-2026x.pdf).
 
 - *Domestic Market Segmentation and Spatial Income Inequality* (joint with [Jun Nie](https://www.junnie27.com/)). [Draft](https://ypei1.github.io/files/draft_new.pdf).
-
-- *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang).  Submitted. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
-  
-- *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).  [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
 
 ### Research Projects
 
