@@ -44,11 +44,11 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - **Optimal Mix of Trade and Migration Policies (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).**
 
-### Other Working Papers
-
 - *How Data Elements Empower Firm Exports* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), [Bin Yan](https://economics.nankai.edu.cn/2019/1006/c16878a208355/page.htm), and Yunkai Wang).  Submitted. [Draft](https://www.dropbox.com/scl/fi/aqvs5qneh086w88ajxqbs/1011.pdf?rlkey=tkthk0c07t0ra3creeyxpx520&dl=0).
   
 - *AI Knowledge Spillovers, R&D Resource Allocation, and Economic Growth in China: A Quantitative Multi-Country, Multi-Sector Trade Analysis* (in Chinese; joint with [Wei Jin](https://weijinsite.github.io/), Lingyi Li, and [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm)).  [Draft](https://ypei1.github.io/files/CEQ_manuscript.pdf).
+- 
+### Other Working Papers
 
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
