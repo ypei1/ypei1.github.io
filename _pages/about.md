@@ -40,11 +40,11 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - **Deep Waters (joint with [Costas Arkolakis](https://arkolakis.com/) and [Anton C. Yang](https://www.antonyang.com/)).**
 
-- **Demographics, Trade, and Growth (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/)). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).**
+- **Demographics, Trade, and Growth** (**Job Market Paper**; joint with [Wei Jin](https://weijinsite.github.io/) in the new draft). [New Draft](https://ypei1.github.io/files/dtg_2.pdf) · [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf).
 
 - **Optimal Mix of Trade and Migration Policies (joint with [Eugene Oue](https://sites.google.com/view/eugeneoue/) and Zongyue Liu).**
 
-### Additional Working Papers
+### Other Working Papers
 
 - *Trade and Welfare Effects of Deep Regional Integration: Evidence from the Mainland–Hong Kong CEPA* (joint with [Wei Jin](https://weijinsite.github.io/) and Jiawen Yan). Submitted. [Draft](https://ypei1.github.io/files/CEPAdraft_clickme.pdf).
 
