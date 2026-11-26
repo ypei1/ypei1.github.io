@@ -36,7 +36,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 ### Selected Working Papers
 
-- *Internal Trade and Optimal External Tariff (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home) and Yuta Watabe).*
+- *Internal Trade and Optimal External Tariff* **(Primary ongoing project)** (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home) and Yuta Watabe).
 
 - *Deep Waters* **(Primary ongoing project)** (joint with [Costas Arkolakis](https://arkolakis.com/), José-Antonio Espín-Sánchez, and [Anton C. Yang](https://www.antonyang.com/)).
 
