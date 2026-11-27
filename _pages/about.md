@@ -22,13 +22,10 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Beyond Tariffs: The Trade and Welfare Effects of APEC* (joint with Chenxin Jin, [Wei Jin](https://weijinsite.github.io/), [Bin Sheng](http://en.economics.nankai.edu.cn/2021/1129/c16714a417856/page.htm), and Heng Zhang).  Revise and Resubmit [Draft](https://ypei1.github.io/files/pdf/APEC.pdf).
   
-- *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). Submitted. Draft upon request.
-
 
 
 ### Papers Prepared for Submission
 
-- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).  Draft upon request.
 
 - *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).  Draft upon request. 
 
@@ -37,7 +34,6 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Internal Trade and Optimal External Tariff* **(Primary ongoing project)** (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home) and Yuta Watabe).
 
-- *Deep Waters* **(Primary ongoing project)** (joint with [Costas Arkolakis](https://arkolakis.com/), José-Antonio Espín-Sánchez, and [Anton C. Yang](https://www.antonyang.com/)).
 
 - *Demographics, Trade, and Growth* (**Job Market Paper**, [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf); later substantially extended in collaboration with [Wei Jin](https://weijinsite.github.io/) to endogenize the selection of workers into R&D across age groups, [New Draft](https://ypei1.github.io/files/dtg_2.pdf) ).  
 
@@ -118,6 +114,9 @@ redirect_from:
   - /markdown.html
 
 - *Retail Rush, Institutional Retreat: Investor Responses to China’s IPO Reform* (joint with Yihui Wang and Chenyu Xu). Revise and Resubmit at *Applied Economics*. Draft upon request.
+
+- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with [Steven Berry](https://sites.google.com/site/stberry/), [Chenfei Qu](https://profiles.stanford.edu/chenfei-qu), [Anton C. Yang](https://www.antonyang.com/), and [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169)).  Draft upon request.
+- *Trade Diversion beyond IIA* (joint with [Da Zhang](https://www.3e.tsinghua.edu.cn/en/article/169) and [Anton C. Yang](https://www.antonyang.com/)). Submitted. Draft upon request.
 
 
   
