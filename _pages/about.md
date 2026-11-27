@@ -28,10 +28,15 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
  
 - *Grasp the Large, but Why Not Let the Small Go: SOE Reform Inefficiency in China* (joint with [Qun Bao](https://economics.nankai.edu.cn/2019/0928/c16878a207512/page.htm) and [Wei Jin](https://weijinsite.github.io/)).  Draft upon request. 
 
+- *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with Steven Berry, Chenfei Qu, Anton C. Yang, and Da Zhang)
+
+– *Trade Diversion beyond IIA* (joint with  Anton C. Yang and Da Zhang)
 
 ### Selected Working Papers
 
 - *Internal Trade and Optimal External Tariff* **(Primary ongoing project)** (joint with [Kei-Mu Yi](https://sites.google.com/site/yikeimu2/home) and Yuta Watabe).
+
+- *Deep Waters* **(Primary ongoing project)** (joint with Costas Arkolakis, José-Antonio Espín-Sánchez, and Anton C. Yang).
  
 - *Demographics, Trade, and Growth* (**Job Market Paper**, [Old Draft](https://ypei1.github.io/files/ssrn-5047970.pdf); later substantially extended in collaboration with [Wei Jin](https://weijinsite.github.io/) to endogenize the selection of workers into R&D across age groups, [New Draft](https://ypei1.github.io/files/dtg_2.pdf) ).  
 
