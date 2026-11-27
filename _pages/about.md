@@ -30,7 +30,7 @@ Here is my [CV](/files/YANGPEI_cv.pdf).
 
 - *Land Allocation and the Carbon Consequences of Biofuel Expansion* (joint with Steven Berry, Chenfei Qu, Anton C. Yang, and Da Zhang)
 
-– *Trade Diversion beyond IIA* (joint with  Anton C. Yang and Da Zhang)
+-  *Trade Diversion beyond IIA* (joint with  Anton C. Yang and Da Zhang)
 
 ### Selected Working Papers
 
